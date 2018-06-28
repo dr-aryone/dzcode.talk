@@ -23,12 +23,12 @@ text-align: center;
 }
 .accordion {
 background: #333;
+height: 200px;
 width: 100%;
 min-width: 800px;
 display: block; 
 list-style-type: none;
 overflow:hidden;
-height: 200px;
 font-size: 0;
 }
 .tab {
@@ -45,16 +45,6 @@ transition:all 0.5s ease-in-out 0.1s;
 -moz-transition:all 0.5s ease-in-out 0.1s;
 -ms-transition:all 0.5s ease-in-out 0.1s;
 -o-transition:all 0.5s ease-in-out 0.1s;
-}
-
-.tab:hover {
-width: 450px;
-}
-.tab:hover .social a:before {
-margin-left: -100px;
-}
-.tab:hover .social a:after {
-margin-left: -5px;
 }
 
 .tab .content {
@@ -74,6 +64,17 @@ font-size: 0.85rem;
 line-height: 1.4rem;
 padding-right: 30px;
 }
+
+.tab:hover {
+width: 450px;
+}
+.tab:hover .social a:before {
+margin-left: -100px;
+}
+.tab:hover .social a:after {
+margin-left: -5px;
+}
+
 .social a:before, .social a:after {
 width: 80px;
 height: 200px;
@@ -90,6 +91,8 @@ transition: all 0.4s ease-in-out 0.1s;
 -ms-transition: all 0.4s ease-in-out 0.1s;
 -o-transition: all 0.4s ease-in-out 0.1s;
 }
+
+
 
 .social a:after {
 font-size: 48px;

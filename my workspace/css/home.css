@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
+* {
+margin: 0;
+padding: 0;
+}
+body , html{ 
+
+font-family: 'Roboto Condensed', sans-serif; 
+box-sizing: border-box;
+line-height: 1.5;
+font-size: 1rem;
+font-weight: 400;
+text-transform: capitalize;
+/* text-indent: none; */
+
+}
+
 /* footer social media */
 
 :root {
@@ -15,17 +31,216 @@
 
 @font-face{
 font-family: 'Genericons';
-src : url('../genericons/genericons-regular-webfont.woff')format('.woff'),url('../genericons/genericons-regular-webfont.eot')format('truetype');
+src: url('../genericons/genericons-regular-webfont.woff')format('woff'), url('../genericons/genericons-regular-webfont.eot')format('truetype');
+}
+
+.logo-1 {
+color: #fff;
+}
+footer , footer .tab , footer .tab .content , .social a:before , .social a:after {
+height: 30vh;
+}
+footer .tab , .social a:before , .social a:after {
+width: 80px;
+}
+footer {
+}
+footer , footer .tab, .social a:before , .social a:after {
+display: inline-block;
+position: absolute;
+}
+footer .tab , footer .tab .content {
+position: relative;
 }
 
 
-body { 
+footer {
+width: 100%;
+background-color: #333;
+bottom:0;
+overflow: hidden;
+list-style-type: none;
+}
 
-font-family: 'Roboto Condensed', sans-serif; 
+footer .tab {
+background-color: #444;
+border-right: 1px solid #333;
+overflow: hidden;
+
+transition:all 1s ease-in-out 0.1s;
+-webkit-transition:all 1s ease-in-out 0.1s;
+-moz-transition:all 1s ease-in-out 0.1s;
+-ms-transition:all 1s ease-in-out 0.1s;
+-o-transition:all 1s ease-in-out 0.1s;
+
+}
+.tab:hover {
+width: 450px;
+}
+footer .tab .content {
+background: #fff;
+width: 350px;
+margin-left: 5rem;
+padding: 2rem 0 0 1rem;
+}
+
+footer .tab .content h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+footer .tab .content p {
+font-size: 0.85rem;
+line-height: 1.4rem;
+padding-right: 30px;
+}
+
+.social a:before , .social a:after {
+text-indent: 0;
+padding-top: 5rem;
+padding-left: 1.5rem;
+font: normal 2rem Genericons;
+color:#fff;
+transition: all 0.4s ease-in-out 0.1s;
+-webkit-transition: all 0.4s ease-in-out 0.1s;
+-moz-transition: all 0.4s ease-in-out 0.1s;
+-ms-transition: all 0.4s ease-in-out 0.1s;
+-o-transition: all 0.4s ease-in-out 0.1s;
 
 }
 
 
+.tab:hover .social a:before {
+margin-left: -6.1rem;
+}
+.tab:hover .social a:after {
+margin-left: -0.5rem;
+}
+
+.social a:after {
+font-size: 3rem;
+padding-left: 1.1rem;
+padding-top: 5rem;
+margin-left: 5.1rem;
+}
+/* add icon */
+.youtube a:before ,
+.youtube a:after {
+content: var(--ytb-icon);
+}
+
+.youtube a:after {
+background-color: var(--ytb-color);
+}
+
+.facebook a:before ,
+.facebook a:after {
+content: var(--fb-icon);
+}
+
+.facebook a:after {
+background-color: var(--fb-color);
+}
+
+.linkedin a:before ,
+.linkedin a:after {
+content: var(--link-icon);
+}
+
+.linkedin a:after {
+background-color: var(--link-color);
+}
+
+.instagram a:before ,
+.instagram a:after {
+content: var(--insta-icon);
+}
+
+.instagram a:after {
+background-color: var(--insta-color);
+}
+
+.github a:before ,
+.github a:after {
+content: var(--github-icon);
+}
+
+.github a:after {
+background-color: var(--github-color);
+}
+
+footer .ytb h1{
+    color: var(--ytb-color);
+}
+footer .fb h1{
+    color: var(--fb-color);
+}
+footer .insta  h1{
+    color: var(--insta-color);
+}
+footer .github  h1{
+    color: var(--github-color);
+}
+footer .link h1{
+    color: var(--link-color);
+}
+
+
+
+@media(max-width:700px)
+{
+
+footer {
+height: auto;
+position: relative;
+/* box-sizing: border-box; */
+}
+footer .tab {
+margin-top: 1rem;
+display: block;
+width : 100%;
+border-bottom: 3px solid #333;
+}
+footer .tab .content {
+width: 85%;
+}
+}
+
+@media(max-width:460px)
+{
+
+footer .tab .content {
+text-align: center;
+margin-left:3rem;
+padding: 2rem 0 0 0;
+}
+footer .tab .content h1 {
+font-size: 1.3rem;
+}
+
+footer .tab .content p{
+font-size: 0.8rem;
+line-height: 1rem;
+padding-right: 0;
+}
+.social a:before, .social a:after {
+padding-top: 65px;
+padding-left: 0.8rem;
+font: normal 1.5rem Genericons;
+
+}
+.social a:after {
+font-size: 30px;
+padding-left: 20px;
+padding-top: 60px;
+}
+
+.tab:hover {
+/* width: 450px; */
+width: 100%;
+}
+
+
+}
 
 
 

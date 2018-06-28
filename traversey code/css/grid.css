@@ -84,4 +84,13 @@ justify-self: end;
 
 grid-column:1/3
 grid-row:4
+
+
+grid-template-columns: 1fr repeat(2,minmax(auto,25em)) 1fr;
+
+columns: 2;
+column-gap: 2em;
+
+grid-column: span 2;
+
 */
