@@ -1,0 +1,19 @@
+html {
+  font-weight: bold;
+  line-height: 1.6;
+  text-decoration: none; }
+
+body {
+  background: orangered;
+  color: white; }
+
+#header {
+  border: solid 1px black;
+  padding: 14px; }
+
+.widget {
+  border-radius: 20px;
+  text-align: center;
+  font-size: 15px; }
+
+/*# sourceMappingURL=app.css.map */
