@@ -2,8 +2,9 @@
 @font-face {
   font-family: "Genericons";
   src: url("../../../genericons/genericons-regular-webfont.woff") format("woff"), url("../../../genericons/genericons-regular-webfont.eot") format("truetype"); }
-
 body {
-  background-color: #144562;
-  text-align: center;
-  color: beige; }
+  background-color: #000;
+  color: white;
+  text-align: center; }
+
+/*# sourceMappingURL=app.css.map */

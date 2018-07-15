@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "AAAQ,uEAA+D;AAEvE,UAGC;EAFG,WAAW,EAAE,YAAY;EACzB,GAAG,EAAE,uJAAqJ",
-"sources": ["../scss/_variables.scss"],
+"mappings": "AAAQ,uEAA+D;AAEvE,UAGC;EAFG,WAAW,EAAE,YAAY;EACzB,GAAG,EAAE,uJAAqJ;ACJ9J,IAAK;EACD,gBAAgB,EAAE,IAAI;EACtB,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,MAAM",
+"sources": ["../scss/_variables.scss","../scss/_bootstrap.scss"],
 "names": [],
 "file": "app.css"
 }
