@@ -5,15 +5,202 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bootstrap youtube</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"> -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
     crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+    crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Bootstrap the best</title>
+
 </head>
 
 <body>
+
+  <div class="container">
+
+    <div class="page-header">
+      <h1>Hello World</h1>
+    </div>
+
+    <div class="jumbotron">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veniam explicabo soluta magni praesentium possimus
+        quibusdam. Dolorem quisquam voluptatum sit.</p>
+
+      <p>
+        <a href="#" class="btn btn-primary btn-lg" role="button">More Info</a>
+
+        <button type="button" class="btn btn-danger btn-md" role="button">Click me</button>
+
+        <input type="button" class="btn btn-info btn-sm" value="info">
+        <!-- success , warning , link , primary , danger , default , info -->
+
+        <button type="button" class="btn btn-lg btn-primary" disabled>Primary</button>
+
+        <div class="btn-group btn-group-lg" role="group">
+
+          <a href="#" class="btn btn-primary btn-lg" role="button">More Info</a>
+
+          <button type="button" class="btn btn-danger btn-md" role="button">Click me</button>
+
+          <input type="button" class="btn btn-info btn-sm" value="info">
+          <!-- success , warning , link , primary , danger , default , info -->
+
+          <button type="button" class="btn btn-lg btn-primary" disabled>Primary</button>
+
+        </div>
+      </p>
+    </div>
+
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h4>Column 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nulla dignissimos, fuga adipisci repudiandae laborum voluptate
+          sint porro aspernatur inventore vel similique earum numquam doloremque blanditiis? Blanditiis, odio cum ratione
+          quaerat fugit voluptatem ex itaque velit praesentium! Consequatur magnam nihil, itaque quas unde impedit veritatis
+          totam cumque, tenetur eaque laboriosam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ipsa a
+          eos culpa, voluptas sequi sint incidunt alias amet veniam. Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Tempore eveniet iste reiciendis consequuntur eum cumque dolores rem accusantium, placeat distinctio magni
+          facilis quasi repudiandae doloribus rerum? Deserunt commodi aut cupiditate!
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h4>Column 2</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nulla dignissimos, fuga adipisci repudiandae laborum voluptate
+          sint porro aspernatur inventore vel similique earum numquam doloremque blanditiis? Blanditiis, odio cum ratione
+          quaerat fugit voluptatem ex itaque velit praesentium! Consequatur magnam nihil, itaque quas unde impedit veritatis
+        </p>
+      </div>
+      <div class="clearfix visible-sm"></div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+
+        <h4>Column 3</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nulla dignissimos, fuga adipisci repudiandae laborum voluptate
+          sint porro aspernatur inventore vel similique earum numquam doloremque blanditiis? Blanditiis, odio cum ratione
+          quaerat fugit voluptatem ex itaque velit praesentium! Consequatur magnam nihil, itaque quas unde impedit veritatis
+          totam cumque, tenetur eaque laboriosam!
+        </p>
+      </div>
+
+
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+        <h4>Column 4</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nulla dignissimos, fuga adipisci repudiandae laborum voluptate
+          sint porro aspernatur inventore vel similique earum numquam doloremque blanditiis? Blanditiis, odio cum ratione
+          quaerat fugit voluptatem ex itaque velit praesentium! Consequatur magnam nihil, itaque quas unde impedit veritatis
+          totam cumque, tenetur eaque laboriosam!
+        </p>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+
+        <h4>
+          <a href="#col1content" data-toggle="collapse">Column1</a>
+        </h4>
+
+        <div id="col1content" class="collapse in">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat laborum nisi enim, quibusdam accusamus id. Molestias, ea!
+          Cum atque quidem at? Possimus eius reprehenderit adipisci facilis eos veritatis ex quae! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Labore, illo!
+        </div>
+
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+
+        <h4>
+          <a href="#col2content" data-toggle="collapse">Column2</a>
+        </h4>
+
+        <div id="col2content" class="collapse">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat laborum nisi enim, quibusdam accusamus id. Molestias, ea!
+          Cum atque quidem at? Possimus eius reprehenderit adipisci facilis eos veritatis ex quae! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Labore, illo!
+        </div>
+
+
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+        <h4>
+          <a href="#col3content" data-toggle="collapse">Column3</a>
+        </h4>
+
+        <div id="col3content" class="collapse">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat laborum nisi enim, quibusdam accusamus id. Molestias, ea!
+          Cum atque quidem at? Possimus eius reprehenderit adipisci facilis eos veritatis ex quae! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Labore, illo!
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <div class="well hidden-sm hidden-md hidden-lg">
+      <p>
+        Screen &lt; 760px
+      </p>
+    </div>
+
+    <div class="well hidden-md hidden-lg">
+      <p>
+        Screen &gt; 760px and &lt; 992px
+      </p>
+    </div>
+    <div class="well hidden-lg">
+      <p>
+        Screen &gt; 992px and &lt; 1200px
+      </p>
+    </div>
+    <div class="well">
+      <p>
+        Screen &gt; 1200px
+      </p>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -21,11 +208,17 @@
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
     crossorigin="anonymous"></script>
 
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script> -->
 </body>
 
 </html>
