@@ -5,3 +5,9 @@ frameworks/
 nice-info/
 
 .eslintrc.js
+
+node_modules/
+
+gulpfile.js
+
+package.json
