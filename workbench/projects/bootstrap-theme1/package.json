@@ -1,26 +1,29 @@
 {
-  "name": "bs4starter",
+  "name": "theme1",
   "version": "1.0.0",
-  "description": "Bootstrap 4 starter workflow",
+  "description": "bootstrap theme1",
   "main": "index.js",
   "scripts": {
     "start": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dzcode.design"
+    "url": "https://github.com/Zed-M/dzcode.design/"
   },
-  "author": "amine hammou",
+  "author": "Amine Hammou",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.1.2",
+    "bootstrap": "4.0.0-beta",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.3"
+    "gulp-uglifycss": "^1.1.0",
+    "jquery": "^3.2.1",
+    "popper": "^1.0.0",
+    "popper.js": "^1.12.6",
+    "tether": "^1.4.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.24.6",
-    "gulp": "^4.0.0",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
   }
 }
