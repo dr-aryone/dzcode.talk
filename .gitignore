@@ -1,6 +1,7 @@
 node_modules/
-
-frameworks/
+neat/
+bourbon/
+base/
 
 # .vscode/
 
