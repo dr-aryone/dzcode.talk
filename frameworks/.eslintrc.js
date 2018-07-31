@@ -29,7 +29,12 @@ module.exports = {
     "extends": "eslint:recommended" [
         "airbnb",
         "prettier",
-        "prettier/react"
+        "prettier/react",
+        "standard",
+        "plugin:flowtype/recommended",
+        "plugin:react/recommended",
+        "prettier/flowtype",
+        "prettier/standard"
     ],
     "parser": "babel-eslint",
     "parserOptions": {
@@ -37,14 +42,16 @@ module.exports = {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
             "impliedStrict": true,
-            "classes": true
+            "classes": true,
+            "jsx": true
         }
     },
     "env": {
         "browser": true,
         "node": true,
         "jquery": true,
-        "jest": true
+        "jest": true,
+        "es6": true
     },
     "rules": {
         "no-debugger": 0,
@@ -146,6 +153,9 @@ module.exports = {
     },
     "plugins": [
         // "html",
-        "prettier"
+        "prettier",
+        "flowtype",
+        "react",
+        "standard"
     ]
 }

@@ -43,3 +43,13 @@ function saveBookmark(e) {
   // Prevent form from submitting
   e.preventDefault();
 }
+//fetch bookmarks
+
+function fetchBookmarks() {
+  var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
+  // console.log(bookmarks);
+  //get output id
+  var bookmarksResults = document.getElementById('bookmarksResults');
+  bookmarksResults.innerHTML += 'hello';
+  
+}
