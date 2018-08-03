@@ -31,6 +31,7 @@ module.exports = {
         "prettier",
         "prettier/react",
         "standard",
+        "plugin:prettier/recommended",
         "plugin:flowtype/recommended",
         "plugin:react/recommended",
         "prettier/flowtype",
@@ -156,6 +157,5 @@ module.exports = {
         "prettier",
         "flowtype",
         "react",
-        "standard"
-    ]
+        "standard"    ]
 }
