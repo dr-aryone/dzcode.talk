@@ -36,31 +36,48 @@
     </div>
   </div>
   <script>
-    // examine the document object
-    //console.dir(document);
+    /*
+        // examine the document object
+        //console.dir(document);
 
-    //console.log(document.domain); // only 127.0.0.1
-    //console.log(document.URL); // the full url
-    document.title = 'Dom crash course';
-    // doctype , head , body , all [an html collection in the dom] , forms , links , images
-    console.log(document.all[10]); // it gives the dom a sort of indexes
-    document.all[10].textContent = 'Hello';
+        //console.log(document.domain); // only 127.0.0.1
+        //console.log(document.URL); // the full url
+        document.title = 'Dom crash course';
+        // doctype , head , body , all [an html collection in the dom] , forms , links , images
+        console.log(document.all[10]); // it gives the dom a sort of indexes
+        document.all[10].textContent = 'Hello';
 
-    var ht = document.getElementById('headder-title');
-    ht.textContent = 'hey';
-    ht.innerText = 'wassup';
-    ht.innerHTML = '<h3> hello </h3>';
-    // difference between textcontent and innertext is that text content show the original text even if it was like display block but innertext dont do that
-    ht.style.borderBottom = 'solid #333 1px';
-    //we use cablecast for css prop which is border-bottom
-    var submit = document.querySelector('input["submit"]').value = 'Send';
+        var ht = document.getElementById('headder-title');
+        ht.textContent = 'hey';
+        ht.innerText = 'wassup';
+        ht.innerHTML = '<h3> hello </h3>';
+        // difference between textcontent and innertext is that text content show the original text even if it was like display block but innertext dont do that
+        ht.style.borderBottom = 'solid #333 1px';
+        //we use cablecast for css prop which is border-bottom
+        var submit = document.querySelector('input["submit"]').value = 'Send';
 
-    // querySelector('.list-group-item:last-child)
-    // nth-child(2)
-    var even = document.querySelectorAll('li:nth-child(even)');
-    for (let i = 0; i < even.length; i++) {
-      even[i].style.background = '#ccc';
-    }
+        // querySelector('.list-group-item:last-child)
+        // nth-child(2)
+        var even = document.querySelectorAll('li:nth-child(even)');
+        for (let i = 0; i < even.length; i++) {
+          even[i].style.background = '#ccc';
+        }
+
+    */
+
+    // traversing the dom ( parent sibling nodes and stuff)
+    var itemList = document.querySelector('#items');
+
+    console.log(itemList.parentNode.parentNode.parentNode);
+
+    itemList.parentNode.style.backgroundColor = '#f4f4f4';
+
+    // for the most part parentElement and parentNode are the same
+    console.log(itemList.childNodes);
+
+
+
+    
   </script>
 </body>
 
