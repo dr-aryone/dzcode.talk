@@ -35,7 +35,8 @@ module.exports = {
         "plugin:flowtype/recommended",
         "plugin:react/recommended",
         "prettier/flowtype",
-        "prettier/standard"
+        "prettier/standard",
+        "plugin:jsx-a11y/recommended"
     ],
     "parser": "babel-eslint",
     "parserOptions": {
@@ -157,5 +158,6 @@ module.exports = {
         "prettier",
         "flowtype",
         "react",
-        "standard"    ]
+        "standard",
+        "jsx-a11y"   ]
 }
