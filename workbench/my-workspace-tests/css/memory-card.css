@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*  margin isnt  included here  */
+}
+
+body {
+  height: 100vh;
+  background-color: #060ab2;
+}
+
+.memory-game {
+  height: 640px;
+  width: 640px;
+  display: flex;
+  /*
+  flex-item {
+  flex : 1;
+  }
+  flex-container {
+  flex-direction : row;
+  flex-wrap : nowrap;
+  justify-content : flex-start;
+  align-items :  stretch;
+  }
+  */
+  border: 2px solid lime;
+}
+
+.memory-card {
+  border: 2px solid aqua;
+}
+
+.front-face,
+.front-back {
+  border: 2px solid deeppink;
+}
