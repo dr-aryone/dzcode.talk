@@ -10,6 +10,8 @@ function flipCard() {
   this.classList.toggle('flip');
   //classList.toggle => acess the classlist of the memory card and toggle => if the class is there remove it if its not add it
   if (!hasFlipCard) {
+    //if hasflipcard is false
+
     //first time clicked card
     hasFlipCard = true;
     firstCard = this;
