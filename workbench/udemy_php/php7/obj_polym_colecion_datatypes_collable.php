@@ -147,4 +147,40 @@ $a = new selfObj;
 echo var_export($a->dataSelfObj(new selfObj)) . " <br>";
 
 
+/* anonymous classes */
+
+class a
+{
+  public $hello = "say hello";
+}
+interface b
+{
+  public function print();
+}
+//an annonymous has no name it is good fo security reasons and for like uing it once
+$framework = new class ("read only param") extends a implements b
+{
+  //the parameter of the constructor is declared inside of the class object param
+  //if a function isnt declared private or pubic then it is left empty means it is public
+
+  private $readonly;
+
+  function __construct($ro)
+  {
+    $this->readonly = $ro;
+  }
+
+  function print()
+  {
+    echo $this->readonly;
+  }
+  static function hello()
+  {
+    echo "hey";
+  }
+};
+
+// echo $framework->print . '<br>';
+echo $framework->hello . '<br>';
+
 ?>

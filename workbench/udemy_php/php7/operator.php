@@ -30,4 +30,18 @@ if (array(20, 1, 1) <=> array(2, 1, 1)) echo "something true => 1 or -1 > less o
 
 if ((array(20, 1, 1) <=> array(2, 1, 1)) === 1) echo " 1 = 1 it is greater <br>";
 
+
+
+//json_pretty_print === 128 cause it is a constant , also const === define
+const PERSON = array("PERSON", 200, true);
+define("OFFICE", array("OFFICE", 400, false));
+echo json_encode(PERSON, 128) . '<br>' . json_encode(OFFICE, JSON_PRETTY_PRINT) . '<br>';
+
+//escaping characteres
+echo "&pound;" . '<br>';  // this is the old way
+echo "\u{2200}" . '<br>'; // the unicode of html5 utf8 of ∀
+
+
+
+
 ?>
