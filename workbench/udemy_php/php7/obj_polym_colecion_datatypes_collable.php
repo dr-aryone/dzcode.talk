@@ -14,8 +14,8 @@ primitive type declarations only in php7
 function parse(int ...$int)
 //function parse(int $int, string $str , bool $boolean)
 {
-  //print the content what is stored inside int
-  echo '<pre>' . json_encode($int, JSON_PRETTY_PRINT) . '</pre>';
+    //print the content what is stored inside int
+    echo '<pre>' . json_encode($int, JSON_PRETTY_PRINT) . '</pre>';
 }
 parse(20, "222", 22.12, true);
 
@@ -35,7 +35,7 @@ object type declarations php5 and up */
 //arrays and objects and no polymorphism
 function parse2(array $kit)
 {
-  echo '<pre>' . json_encode($kit, JSON_PRETTY_PRINT)
+    echo '<pre>' . json_encode($kit, JSON_PRETTY_PRINT)
     . '</pre>';
 }
 
@@ -48,13 +48,13 @@ parse2($arr);
 //callable calls only a function cause function are like we said objects
 function parse3(callable $callback)
 {
-  echo "this string came from the parse3 function <br>";
-  $callback();
+    echo "this string came from the parse3 function <br>";
+    $callback();
 }
 // parse3(function (){echo "callable function : this string comes from callback function";});
 
 $fcc = function () {
-  echo "callable function : this string comes from callback function";
+    echo "callable function : this string comes from callback function";
 };
 parse3($fcc);
 echo '<br>';
@@ -71,7 +71,7 @@ class salad implements checker
 function rest(checker $food)
 // function rest(cake $food)
 {
-  echo var_dump($food);
+    echo var_dump($food);
 }
 $box = new salad;
 rest($box);
@@ -80,12 +80,12 @@ echo '<br>';
 
 class potato
 {
-  //self refers to her class mother which is potato and it can only be used in classes !
-  function icing(self $thisPotato)
-  {
-    echo 'potato to ice <br>';
-    echo var_dump($thisPotato);
-  }
+    //self refers to her class mother which is potato and it can only be used in classes !
+    public function icing(self $thisPotato)
+    {
+        echo 'potato to ice <br>';
+        echo var_dump($thisPotato);
+    }
 }
 
 class podding
@@ -107,8 +107,8 @@ which means we can control what data type the return function is
 // function dataReturn():int
 function dataReturn() : array
 {
- // return "20"; // it also apply on it the polymorphism from a string to an integer
-  return array("key" => "value");
+    // return "20"; // it also apply on it the polymorphism from a string to an integer
+    return array("key" => "value");
 }
 
 echo var_export(dataReturn()) . "<br>";
@@ -118,18 +118,18 @@ class obj implements checker
 }
 function dataReturnObj() : checker
 {
-  return new obj;
+    return new obj;
 }
 echo var_export(dataReturnObj()) . "<br>";
 
 
 function dataCall() : callable
 {
-  echo "do something and then callback a function <br>";
+    echo "do something and then callback a function <br>";
 
-  return function () {
-    echo " a callable function <br>";
-  };
+    return function () {
+        echo " a callable function <br>";
+    };
 }
 echo var_export(dataCall()) . "<br>";
 
@@ -137,10 +137,10 @@ echo var_export(dataCall()) . "<br>";
 
 class selfObj
 {
-  function dataSelfObj($object) : self
-  {
-    return $object;
-  }
+    public function dataSelfObj($object) : self
+    {
+        return $object;
+    }
 }
 $a = new selfObj;
 
@@ -151,36 +151,49 @@ echo var_export($a->dataSelfObj(new selfObj)) . " <br>";
 
 class a
 {
-  public $hello = "say hello";
+    public $hello = "say hello";
 }
 interface b
 {
-  public function print();
+    public function print();
 }
 //an annonymous has no name it is good fo security reasons and for like uing it once
-$framework = new class ("read only param") extends a implements b
-{
-  //the parameter of the constructor is declared inside of the class object param
-  //if a function isnt declared private or pubic then it is left empty means it is public
+$framework = new class("read only param") extends a implements b {
+    //the parameter of the constructor is declared inside of the class object param
+    //if a function isnt declared private or pubic then it is left empty means it is public
 
-  private $readonly;
+    private $readonly;
 
-  function __construct($ro)
-  {
-    $this->readonly = $ro;
-  }
+    public function __construct($ro)
+    {
+        $this->readonly = $ro;
+    }
 
-  function print()
-  {
-    echo $this->readonly;
-  }
-  static function hello()
-  {
-    echo "hey";
-  }
+    public function print()
+    {
+        echo $this->readonly;
+    }
+    public static function hello()
+    {
+        echo "hey";
+    }
 };
 
 // echo $framework->print . '<br>';
 echo $framework->hello . '<br>';
 
-?>
+
+/* functional call context */
+// we can change $this of the function from the outside with the call method
+//take into consideration that $this only allows type of obj not primitives
+$context = function () {
+    echo var_dump($this).'<br>';
+    // echo $this->prop.'<br>';
+};
+
+class newOBJ2
+{
+    public $prop = "hello wolrd! for the million time";
+}
+
+$context->call(new newOBJ2);
