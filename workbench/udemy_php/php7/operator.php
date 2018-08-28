@@ -26,9 +26,13 @@ echo $spo . '<br>';
 
 // - 1 and 1 are true and 0 is false,, which in the if statement it will do it if it is true
 
-if (array(20, 1, 1) <=> array(2, 1, 1)) echo "something true => 1 or -1 > less or greater then happeneed <br>";
+if (array(20, 1, 1) <=> array(2, 1, 1)) {
+    echo "something true => 1 or -1 > less or greater then happeneed <br>";
+}
 
-if ((array(20, 1, 1) <=> array(2, 1, 1)) === 1) echo " 1 = 1 it is greater <br>";
+if ((array(20, 1, 1) <=> array(2, 1, 1)) === 1) {
+    echo " 1 = 1 it is greater <br>";
+}
 
 
 
@@ -40,8 +44,3 @@ echo json_encode(PERSON, 128) . '<br>' . json_encode(OFFICE, JSON_PRETTY_PRINT) 
 //escaping characteres
 echo "&pound;" . '<br>';  // this is the old way
 echo "\u{2200}" . '<br>'; // the unicode of html5 utf8 of ∀
-
-
-
-
-?>
