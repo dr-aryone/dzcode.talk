@@ -190,10 +190,28 @@ $context = function () {
     echo var_dump($this).'<br>';
     // echo $this->prop.'<br>';
 };
-
 class newOBJ2
 {
     public $prop = "hello wolrd! for the million time";
 }
-
 $context->call(new newOBJ2);
+
+
+
+/* unserialize filtering */
+// taking an object and turn it into a string => cause maybe you wanna take that string and send it into another php script and then unserialize that string
+
+class objSerialize
+{
+    public $prop = " hello fucking world";
+    private $priv = " hello fucking world privatly saying";
+    private $arr = [200, 20, 15];
+}//put the object into a string
+$data = serialize(new objSerialize);
+echo $data . '<br>';
+//now puting the string back to an object , the new feature in php7 is the allowed classes for more security reasons
+$unserialize = unserialize($data, ["allowed_classes" => ["objSerialize","newobj"]]);
+echo $unserialize->prop.'<br>';
+
+$unserialize2 = unserialize($data, ["allowed_classes" => ["blabla"]]);
+echo var_export($unserialize2).'<br>';
