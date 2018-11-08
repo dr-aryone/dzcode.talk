@@ -1,0 +1,148 @@
+{
+  "editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
+  "editor.fontLigatures": true,
+  "window.zoomLevel": 0,
+  "workbench.activityBar.visible": true,
+  "files.autoSave": "afterDelay",
+  "liveServer.settings.donotVerifyTags": true,
+  "window.menuBarVisibility": "default",
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontSize": 15,
+  "editor.wordWrap": "on",
+  "editor.smoothScrolling": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.cursorWidth": 3,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "materialTheme.fixIconsRunning": false,
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#135564"
+  },
+  "php.validate.run": "onType",
+  "sublimeTextKeymap.promptV3Features": true,
+  "phpcs.enable": true,
+  "phpcs.standard": "PSR2",
+  "editor.cursorStyle": "line",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "files.autoGuessEncoding": true,
+  "files.insertFinalNewline": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "cSpell.language": "en",
+  "git.ignoreLimitWarning": true,
+  "sync.gist": "f83d8a60bd3fbd460429331c7842daf5",
+  "sync.host": "",
+  "sync.pathPrefix": "",
+  "sync.quietSync": false,
+  "sync.askGistName": false,
+  "sync.removeExtensions": true,
+  "sync.syncExtensions": true,
+  "sync.autoDownload": false,
+  "sync.autoUpload": false,
+  "sync.lastUpload": "2018-08-23T22:10:18.467Z",
+  "sync.lastDownload": "2018-08-20T18:05:06.682Z",
+  "sync.forceDownload": false,
+  "explorer.openEditors.visible": 0,
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "gitlens.historyExplorer.enabled": true,
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "team.showWelcomeMessage": false,
+  "vscode_custom_css.imports": [
+    ""
+  ],
+  "vscode_custom_css.policy": true,
+  "workbench.editor.tabSizing": "shrink",
+  "html.format.enable": true,
+  "html.format.preserveNewLines": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.next": true,
+    "**/*.ngfactory.ts": true,
+    "**/*.ngsummary.json": true,
+    "**/*.dll.js": true,
+    "**/*.dll.js.map": true,
+    "**/usr/*": true,
+    "**/coverage/*": true,
+    "**/_node-modules": true
+    // "**/*.bundle.js": true,
+    // "**/dist/*": true,
+    // "**/dll/*": true,
+    // "**/compiled/*": true,
+  },
+  "editor.rulers": [
+    80,
+    100,
+    120
+  ],
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.alwaysShowStatus": true,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "prettier.tslintIntegration": true,
+  /*   "tslint.alwaysShowRuleFailuresAsWarnings": true,
+   */
+  /*   "tslint.alwaysShowStatus": true,
+   */ //  "tslint.configFile": "/home/zed/tslint.json",
+  // "tslint.autoFixOnSave": true,
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": true,
+  "prettier.disableLanguages": [
+    "javascript"
+  ],
+  "eslint.enable": true,
+  "prettier.eslintIntegration": true,
+  "liveServer.settings.multiRootWorkspaceName": "project",
+  "logViewer.watch": [{
+      "title": "server 1 its",
+      "pattern": "\\\\servername\\c$\\logs\\u_13264.log"
+    },
+    {
+      "title": "server 2 its",
+      "pattern": ""
+    }
+  ],
+  "emmet.includeLanguages": {
+    "blade": "html",
+    "html": "html",
+    "erb": "erb",
+    "javascript": "javascriptreact",
+    "vue": "html",
+    "ejs": "html",
+    "php": "html"
+  },
+  "gitProjectManager.baseProjectsFolders": [
+    "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.design"
+  ],
+  "editor.renderIndentGuides": false,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\git-cmd.exe",
+  //"terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
+
+  "php.executablePath": "C:\\xampp\\php\\php.exe",
+  "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+  "jshint.config": "C:\\Users\\Hp\\jshint.json",
+  "jshint.lintHTML": true,
+  "workbench.colorTheme": "Default Light+"
+  // "atomKeymap.promptV3Features": true,
+  //  "editor.formatOnPaste": true,
+  // "terminal.integrated.rendererType": "dom",
+}
