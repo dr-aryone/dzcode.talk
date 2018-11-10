@@ -30,7 +30,7 @@ module.exports = {
   //     }
   // };
   //{
-  extends: ['eslint:recommended'
+  extends: ['eslint:recommended',
     'airbnb',
     'prettier',
     'prettier/react',

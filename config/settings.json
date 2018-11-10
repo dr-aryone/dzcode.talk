@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Palenight Theme",
+  "workbench.colorTheme": "Tomorrow Night Blue",
   "editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
   "editor.fontLigatures": true,
   "window.zoomLevel": 0,
@@ -64,11 +64,11 @@
   "files.trimTrailingWhitespace": true,
   /*   "team.showWelcomeMessage": false,
    */
-  "vscode_custom_css.imports": [
-    ""
-  ],
+  "vscode_custom_css.imports": [""],
   "vscode_custom_css.policy": true,
   "workbench.editor.tabSizing": "shrink",
+  "liveServer.settings.multiRootWorkspaceName": "dzcode.design",
+
   "html.format.enable": true,
   "html.format.preserveNewLines": true,
   "files.exclude": {
@@ -90,11 +90,7 @@
     // "**/dll/*": true,
     // "**/compiled/*": true,
   },
-  "editor.rulers": [
-    80,
-    100,
-    120
-  ],
+  "editor.rulers": [80, 100, 120],
   "[javascript]": {
     "editor.formatOnSave": false
   },
@@ -103,12 +99,9 @@
   "prettier.tslintIntegration": true,
   "eslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
-  "prettier.disableLanguages": [
-    "javascript"
-  ],
+  "prettier.disableLanguages": ["javascript"],
   "eslint.enable": true,
   "prettier.eslintIntegration": true,
-  "liveServer.settings.multiRootWorkspaceName": "dzcode.design",
 
   "editor.renderIndentGuides": false,
 
@@ -125,9 +118,6 @@
   "editor.showFoldingControls": "always",
   "editor.folding": true,
   "editor.foldingStrategy": "indentation",
-
-
-
 
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
   "php.executablePath": "C:\\xampp\\php\\php.exe",
@@ -147,7 +137,10 @@
   },
   "prettier.printWidth": 100,
   "prettier.singleQuote": true,
-  "prettier.trailingComma": "all"
+  "prettier.trailingComma": "all",
+
+  "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib"
+
   /*   "tslint.alwaysShowRuleFailuresAsWarnings": true,
    */
   /*   "tslint.alwaysShowStatus": true,
