@@ -1,4 +1,5 @@
 {
+  "workbench.colorTheme": "Palenight Theme",
   "editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
   "editor.fontLigatures": true,
   "window.zoomLevel": 0,
@@ -37,20 +38,21 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "cSpell.language": "en",
+  /*   "cSpell.language": "en",
+  /*   "sync.host": "",
+  /*    "sync.pathPrefix": "",
+  /* "sync.lastUpload": "2018-08-23T22:10:18.467Z",
+  "sync.lastDownload": "2018-08-20T18:05:06.682Z",
+  */
+  "sync.forceDownload": false,
   "git.ignoreLimitWarning": true,
   "sync.gist": "f83d8a60bd3fbd460429331c7842daf5",
-  "sync.host": "",
-  "sync.pathPrefix": "",
   "sync.quietSync": false,
   "sync.askGistName": false,
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
   "sync.autoDownload": false,
   "sync.autoUpload": false,
-  "sync.lastUpload": "2018-08-23T22:10:18.467Z",
-  "sync.lastDownload": "2018-08-20T18:05:06.682Z",
-  "sync.forceDownload": false,
   "explorer.openEditors.visible": 0,
   "extensions.showRecommendationsOnlyOnDemand": true,
   "gitlens.historyExplorer.enabled": true,
@@ -60,7 +62,8 @@
   },
   "editor.tabSize": 2,
   "files.trimTrailingWhitespace": true,
-  "team.showWelcomeMessage": false,
+  /*   "team.showWelcomeMessage": false,
+   */
   "vscode_custom_css.imports": [
     ""
   ],
@@ -98,11 +101,6 @@
   "eslint.alwaysShowStatus": true,
   "javascript.implicitProjectConfig.checkJs": true,
   "prettier.tslintIntegration": true,
-  /*   "tslint.alwaysShowRuleFailuresAsWarnings": true,
-   */
-  /*   "tslint.alwaysShowStatus": true,
-   */ //  "tslint.configFile": "/home/zed/tslint.json",
-  // "tslint.autoFixOnSave": true,
   "eslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
   "prettier.disableLanguages": [
@@ -110,16 +108,10 @@
   ],
   "eslint.enable": true,
   "prettier.eslintIntegration": true,
-  "liveServer.settings.multiRootWorkspaceName": "project",
-  "logViewer.watch": [{
-      "title": "server 1 its",
-      "pattern": "\\\\servername\\c$\\logs\\u_13264.log"
-    },
-    {
-      "title": "server 2 its",
-      "pattern": ""
-    }
-  ],
+  "liveServer.settings.multiRootWorkspaceName": "dzcode.design",
+
+  "editor.renderIndentGuides": false,
+
   "emmet.includeLanguages": {
     "blade": "html",
     "html": "html",
@@ -129,20 +121,49 @@
     "ejs": "html",
     "php": "html"
   },
+
+  "editor.showFoldingControls": "always",
+  "editor.folding": true,
+  "editor.foldingStrategy": "indentation",
+
+
+
+
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php.executablePath": "C:\\xampp\\php\\php.exe",
+  "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+
   "gitProjectManager.baseProjectsFolders": [
     "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.design"
   ],
-  "editor.renderIndentGuides": false,
-  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\git-cmd.exe",
-  //"terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
 
-  "php.executablePath": "C:\\xampp\\php\\php.exe",
-  "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
-  "jshint.config": "C:\\Users\\Hp\\jshint.json",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\git-cmd.exe",
+
+  "jshint.config": "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.design\\config\\jshint.json",
   "jshint.lintHTML": true,
-  "workbench.colorTheme": "Default Light+"
+
+  "eslint.options": {
+    "configFile": "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.design\\config\\.eslintrc.js"
+  },
+  "prettier.printWidth": 100,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all"
+  /*   "tslint.alwaysShowRuleFailuresAsWarnings": true,
+   */
+  /*   "tslint.alwaysShowStatus": true,
+   */ //  "tslint.configFile": "/home/zed/tslint.json",
+  // "tslint.autoFixOnSave": true,
+  //"terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
   // "atomKeymap.promptV3Features": true,
   //  "editor.formatOnPaste": true,
   // "terminal.integrated.rendererType": "dom",
+  /*   "logViewer.watch": [{
+        "title": "server 1 its",
+        "pattern": "\\\\servername\\c$\\logs\\u_13264.log"
+      },
+      {
+        "title": "server 2 its",
+        "pattern": ""
+      }
+    ], */
 }
