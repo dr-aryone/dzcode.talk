@@ -16,11 +16,12 @@ In PHP 7, the second parameter can be a Throwable object instead of a descriptiv
 /* php5 old testing with booloean 0 false 1 true of the first param in assert
 $num = "number";
 assert(is_numeric($num), 'no it is an error string');
- // the string output is no longer supported in php7 you must use an object
 
- //assert($num > 100, "yes it is"); // php7 makes the 2 param more dynamic the 1fst => 1 , 0 , false , true , polymorph .... , the
- // 2nd => can be an obj handler
- // it goes on the php.ini and enables the assert.exception error handling
+the string output is no longer supported in php7 you must use an object
+
+ assert($num > 100, "yes it is"); // php7 makes the 2 param more dynamic the 1fst => 1 , 0 , false , true , polymorph .... , the
+  2nd => can be an obj handler
+  it goes on the php.ini and enables the assert.exception error handling
 */
 
 ini_set('assert.exception', 1);

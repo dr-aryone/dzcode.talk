@@ -208,12 +208,38 @@ class objSerialize
     public $prop = " hello fucking world";
     private $priv = " hello fucking world privatly saying";
     private $arr = [200, 20, 15];
-}//put the object into a string
+} //put the object into a string
+
 $data = serialize(new objSerialize);
 echo $data . '<br>';
+
 //now puting the string back to an object , the new feature in php7 is the allowed classes for more security reasons
 $unserialize = unserialize($data, ["allowed_classes" => ["objSerialize","newobj"]]);
 echo $unserialize->prop.'<br>';
 
 $unserialize2 = unserialize($data, ["allowed_classes" => ["blabla"]]);
 echo var_export($unserialize2).'<br>';
+
+
+
+
+
+class constr
+{
+    public function __construct($arg1)
+    {
+        $this -> createPop = $arg1;
+    }
+
+    public static function method()
+    {
+        echo "method run!";
+    }
+}
+//php7 u need to say construct for the constructor function
+
+constr::method();
+
+$test = new constr("new style constructor");
+echo $test->createPop;
+echo "<br>";
