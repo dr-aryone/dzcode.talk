@@ -26,6 +26,9 @@ assert(is_numeric($num), 'no it is an error string');
 ini_set('assert.exception', 1);
 ini_set('zend.assertions', 1);
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 $num = 20;
 

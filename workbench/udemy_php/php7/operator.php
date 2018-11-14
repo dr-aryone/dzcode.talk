@@ -1,4 +1,9 @@
 <?php
+
+session_start();
+
+echo 'hello '.$_SESSION['name'].'<br>';
+
 /* the colecing operator ?? */
 
 echo '<pre>' . json_encode($_GET, JSON_PRETTY_PRINT)
@@ -44,3 +49,4 @@ echo json_encode(PERSON, 128) . '<br>' . json_encode(OFFICE, JSON_PRETTY_PRINT) 
 //escaping characteres
 echo "&pound;" . '<br>';  // this is the old way
 echo "\u{2200}" . '<br>'; // the unicode of html5 utf8 of ∀
+

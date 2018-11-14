@@ -120,6 +120,7 @@
   "editor.foldingStrategy": "indentation",
 
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+
   "php.executablePath": "C:\\xampp\\php\\php.exe",
   "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
 
@@ -139,7 +140,12 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
 
-  "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib"
+  "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib",
+
+  "php-cs-fixer.lastDownload": 1542124935854,
+  "liveServer.settings.useWebExt": true,
+  "phpserver.phpPath": "C:\\xampp\\php\\php.exe"
+
 
   /*   "tslint.alwaysShowRuleFailuresAsWarnings": true,
    */
