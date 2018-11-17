@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Tomorrow Night Blue",
+  "workbench.colorTheme": "Palenight Operator",
   "editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
   "editor.fontLigatures": true,
   "window.zoomLevel": 0,
@@ -60,7 +60,6 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
-  "editor.tabSize": 2,
   "files.trimTrailingWhitespace": true,
   /*   "team.showWelcomeMessage": false,
    */
@@ -144,7 +143,8 @@
 
   "php-cs-fixer.lastDownload": 1542124935854,
   "liveServer.settings.useWebExt": true,
-  "phpserver.phpPath": "C:\\xampp\\php\\php.exe"
+  "phpserver.phpPath": "C:\\xampp\\php\\php.exe",
+  "editor.tabCompletion": "on"
 
 
   /*   "tslint.alwaysShowRuleFailuresAsWarnings": true,
