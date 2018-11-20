@@ -66,7 +66,7 @@
   "vscode_custom_css.imports": [""],
   "vscode_custom_css.policy": true,
   "workbench.editor.tabSizing": "shrink",
-  "liveServer.settings.multiRootWorkspaceName": "dzcode.design",
+  "liveServer.settings.multiRootWorkspaceName": "dzcode.talk",
 
   "html.format.enable": true,
   "html.format.preserveNewLines": true,
@@ -124,22 +124,22 @@
   "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
 
   "gitProjectManager.baseProjectsFolders": [
-    "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.design"
+    "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.talk"
   ],
 
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\git-cmd.exe",
 
-  "jshint.config": "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.design\\config\\jshint.json",
+  "jshint.config": "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.talk\\config\\jshint.json",
   "jshint.lintHTML": true,
 
   "eslint.options": {
-    "configFile": "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.design\\config\\.eslintrc.js"
+    "configFile": "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.talk\\config\\.eslintrc.js"
   },
   "prettier.printWidth": 100,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
 
-  "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib",
+  // "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib",
 
   "php-cs-fixer.lastDownload": 1542124935854,
   "liveServer.settings.useWebExt": true,
