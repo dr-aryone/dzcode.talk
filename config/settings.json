@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Palenight Operator",
+  "workbench.colorTheme": "Monokai",
   "editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
   "editor.fontLigatures": true,
   "window.zoomLevel": 0,
@@ -139,13 +139,17 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
 
-  // "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib",
-
   "php-cs-fixer.lastDownload": 1542124935854,
-  "liveServer.settings.useWebExt": true,
   "phpserver.phpPath": "C:\\xampp\\php\\php.exe",
-  "editor.tabCompletion": "on"
 
+  "editor.tabCompletion": "on",
+
+  "liveServer.settings.useWebExt": true,
+  "files.autoSaveDelay": 300
+
+
+
+  // "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib",
 
   /*   "tslint.alwaysShowRuleFailuresAsWarnings": true,
    */
