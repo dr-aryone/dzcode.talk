@@ -1,6 +1,6 @@
-var form = document.getElementById('addForm');
-var itemList = document.getElementById('items');
-var filter = document.getElementById('filter');
+const form = document.getElementById('addForm');
+const itemList = document.getElementById('items');
+const filter = document.getElementById('filter');
 
 // Form submit event
 form.addEventListener('submit', addItem);
@@ -14,17 +14,17 @@ function addItem(e) {
   e.preventDefault();
 
   // Get input value
-  var newItem = document.getElementById('item').value;
+  const newItem = document.getElementById('item').value;
 
   // Create new li element
-  var li = document.createElement('li');
+  const li = document.createElement('li');
   // Add class
   li.className = 'list-group-item';
   // Add text node with input value
   li.appendChild(document.createTextNode(newItem));
 
   // Create del button element
-  var deleteBtn = document.createElement('button');
+  const deleteBtn = document.createElement('button');
 
   // Add classes to del button
   deleteBtn.className = 'btn btn-danger btn-sm float-right delete';
@@ -43,7 +43,7 @@ function addItem(e) {
 function removeItem(e) {
   if (e.target.classList.contains('delete')) {
     if (confirm('Are You Sure?')) {
-      var li = e.target.parentElement;
+      const li = e.target.parentElement;
       itemList.removeChild(li);
     }
   }
@@ -52,13 +52,13 @@ function removeItem(e) {
 // Filter Items
 function filterItems(e) {
   //   convert text to lowercase
-  var text = e.target.value.toLowerCase();
+  const text = e.target.value.toLowerCase();
   //   Get lis
-  var items = itemList.getElementsByTagName('li');
+  const items = itemList.getElementsByTagName('li');
   //   Convert to an array
-  Array.from(items).forEach(function(item) {
-    var itemName = item.firstChild.textContent;
-    if (itemName.toLowerCase().indexOf(text) != -1) {
+  Array.from(items).forEach(item => {
+    const itemName = item.firstChild.textContent;
+    if (itemName.toLowerCase().indexOf(text) !== -1) {
       item.style.display = 'block';
     } else {
       item.style.display = 'none';
