@@ -20,14 +20,10 @@
   "editor.quickSuggestions": {
     "strings": true
   },
-  "materialTheme.fixIconsRunning": false,
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#135564"
   },
   "php.validate.run": "onType",
-  "sublimeTextKeymap.promptV3Features": true,
-  "phpcs.enable": true,
-  "phpcs.standard": "PSR2",
   "editor.cursorStyle": "line",
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -93,12 +89,19 @@
   "[javascript]": {
     "editor.formatOnSave": false
   },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
   "eslint.alwaysShowStatus": true,
   "javascript.implicitProjectConfig.checkJs": true,
-  "prettier.tslintIntegration": true,
+  // "prettier.tslintIntegration": true,
   "eslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
-  "prettier.disableLanguages": ["javascript"],
+  "prettier.disableLanguages": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
   "eslint.enable": true,
   "prettier.eslintIntegration": true,
 
@@ -135,7 +138,7 @@
   "eslint.options": {
     "configFile": "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.talk\\config\\.eslintrc.js"
   },
-  "prettier.printWidth": 100,
+  "prettier.printWidth": 120,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "all",
 
@@ -145,8 +148,14 @@
   "editor.tabCompletion": "on",
 
   "liveServer.settings.useWebExt": true,
-  "files.autoSaveDelay": 300
+  "files.autoSaveDelay": 300,
+  "search.showLineNumbers": true
 
+
+  // "materialTheme.fixIconsRunning": false,
+  // "sublimeTextKeymap.promptV3Features": true,
+  // "phpcs.enable": true,
+  // "phpcs.standard": "PSR2",
 
 
   // "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib",
