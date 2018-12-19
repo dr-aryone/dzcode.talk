@@ -1,0 +1,63 @@
+/* to config globally your email and pwd */
+
+git config --global user.email "fsociety.2017@protonmail.com"
+git config --global user.email
+git config --global user.password "amine2016@   "
+git config --global user.password
+
+
+/* to make your origin follow the exact repo your working on */
+
+git remote add origin https://github.com/Zed-M/etude.git
+git remote remove etude
+
+
+/* this will make your repo to its initial state and will delete the new files u wanted to add in your desktop */
+
+git pull --rebase origin master
+
+
+/*
+this will just remove the last rebase command so if the files were deleted u can recover them by doing this
+so reflog will give you some last git branches u pick a number that suits your rebase and then checkout to do it
+
+*/
+
+git reflog
+git checkout -b after-commit HEAD@{1}
+
+/*
+git branch will give u the name of your branches and then checkout will switch to that branch and remember it will also remove or recover the files with in that branch
+*/
+
+ git branch -a
+ git checkout master
+
+
+/* this is to push out large files u need to isntall lfs and then track your large files and add .gitattributes to them */
+
+93  git lfs install
+95  git lfs track *
+96  git add .gitattributes
+
+/* and after it add commit and push like u normally do */
+
+
+/* to clone a repo and then push to it */
+
+git clone https://github.com/Zed-M/etude.git
+cd etude/
+git add .
+git commit -m "adding my files"
+git push -f origin master
+
+/* initialize a repo and then push to it */
+
+git  init
+git status
+nano .gitignore
+git add .
+git commit -m "add some new files"
+git push -f origin master
+
+
