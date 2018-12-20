@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Monokai",
+  "workbench.colorTheme": "Dracula",
   "editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
   "editor.fontLigatures": true,
   "window.zoomLevel": 0,
@@ -43,15 +43,13 @@
   "sync.forceDownload": false,
   "git.ignoreLimitWarning": true,
   "sync.gist": "f83d8a60bd3fbd460429331c7842daf5",
-  "sync.quietSync": false,
   "sync.askGistName": false,
   "sync.removeExtensions": true,
   "sync.syncExtensions": true,
   "sync.autoDownload": false,
-  "sync.autoUpload": false,
+  "sync.autoUpload": true,
   "explorer.openEditors.visible": 0,
   "extensions.showRecommendationsOnlyOnDemand": true,
-  "gitlens.historyExplorer.enabled": true,
   "[python]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 4
@@ -149,13 +147,25 @@
 
   "liveServer.settings.useWebExt": true,
   "files.autoSaveDelay": 300,
-  "search.showLineNumbers": true
+  "search.showLineNumbers": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+
+  "git.postCommitCommand": "push",
+  "auto-close-tag.SublimeText3Mode": true,
+  "better-comments.highlightPlainText": true,
+  "html-css-class-completion.enableEmmetSupport": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "highlight-matching-tag.highlightSelfClosing": true,
+  "npm-intellisense.scanDevDependencies": true,
+  "scss.showErrors": true
 
 
   // "materialTheme.fixIconsRunning": false,
   // "sublimeTextKeymap.promptV3Features": true,
   // "phpcs.enable": true,
   // "phpcs.standard": "PSR2",
+  //  "gitlens.historyExplorer.enabled": true,
 
 
   // "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib",
@@ -169,6 +179,8 @@
   // "atomKeymap.promptV3Features": true,
   //  "editor.formatOnPaste": true,
   // "terminal.integrated.rendererType": "dom",
+
+
   /*   "logViewer.watch": [{
         "title": "server 1 its",
         "pattern": "\\\\servername\\c$\\logs\\u_13264.log"
