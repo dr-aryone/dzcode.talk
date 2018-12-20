@@ -1,0 +1,27 @@
+Résumé des Formes normales
+
+
+Définition (Première forme normale) : 
+Une relation est en première forme normale si et seulement si tout 
+attribut contient une valeur atomique.
+
+
+
+Définition (Deuxième forme normale) : 
+Une relation est en deuxième forme normale si et seulement si :
+• elle est en première forme normale ;
+• tout attribut n'appartenant pas à une clé ne dépend pas que d'une partie de cette clé.
+
+
+
+Définition (Troisième forme normale) :
+ Une relation est en troisième forme normale si et seulement si : 
+• elle est en deuxième forme normale ;
+• tout attribut n'appartenant pas à une clé ne dépend pas d'un attribut non-clé.
+
+
+
+Définition (Forme normale de BOYCE-CODD) :
+ Une relation est en Forme normale de BOYCE-CODD
+(BCNF) si, et seulement si, les seules dépendances fonctionnelles élémentaires sont 
+celles dans lesquelles une clé détermine un attribut.
