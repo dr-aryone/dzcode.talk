@@ -1,7 +1,13 @@
 /*
-git push -f to force
-and -u for --set-upstream
-a*/
+to force a push
+
+git push -f origin master
+
+to set the upstream
+
+git push --set-upstream origin master
+git push -u origin master
+*/
 
 /* to config globally your email and pwd */
 
