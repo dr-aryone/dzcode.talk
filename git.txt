@@ -1,3 +1,8 @@
+/*
+git push -f to force
+and -u for --set-upstream
+a*/
+
 /* to config globally your email and pwd */
 
 git config --global user.email "fsociety.2017@protonmail.com"
@@ -49,7 +54,7 @@ git clone https://github.com/Zed-M/etude.git
 cd etude/
 git add .
 git commit -m "adding my files"
-git push -f origin master
+git push -u origin master
 
 /* initialize a repo and then push to it */
 
@@ -58,6 +63,6 @@ git status
 nano .gitignore
 git add .
 git commit -m "add some new files"
-git push -f origin master
+git push -u origin master
 
 
