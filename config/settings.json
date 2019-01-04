@@ -1,6 +1,11 @@
 {
   "workbench.colorTheme": "Dracula",
-  "editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
+  //"editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
+  "editor.fontFamily": "Fira Code, Operator Mono,Courier, Monospace",
+  "vscode_custom_css.imports": [
+    "file:///C:/xampp/htdocs/projects/project/code%20talk/dzcode.talk/config/styles.css"
+  ],
+  "vscode_custom_css.policy": true,
   "editor.fontLigatures": true,
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
@@ -57,8 +62,6 @@
   "files.trimTrailingWhitespace": true,
   /*   "team.showWelcomeMessage": false,
    */
-  "vscode_custom_css.imports": [""],
-  "vscode_custom_css.policy": true,
   "workbench.editor.tabSizing": "shrink",
   "liveServer.settings.multiRootWorkspaceName": "dzcode.talk",
 
@@ -95,11 +98,7 @@
   // "prettier.tslintIntegration": true,
   "eslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
-  "prettier.disableLanguages": [
-    "javascript",
-    "javascriptreact",
-    "vue"
-  ],
+  "prettier.disableLanguages": ["javascript", "javascriptreact", "vue"],
   "eslint.enable": true,
   "prettier.eslintIntegration": true,
 
@@ -158,15 +157,14 @@
   "emmet.showSuggestionsAsSnippets": true,
   "highlight-matching-tag.highlightSelfClosing": true,
   "npm-intellisense.scanDevDependencies": true,
-  "scss.showErrors": true
-
+  "scss.showErrors": true,
+  "todo-tree.defaultHighlight": {}
 
   // "materialTheme.fixIconsRunning": false,
   // "sublimeTextKeymap.promptV3Features": true,
   // "phpcs.enable": true,
   // "phpcs.standard": "PSR2",
   //  "gitlens.historyExplorer.enabled": true,
-
 
   // "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib",
 
@@ -179,7 +177,6 @@
   // "atomKeymap.promptV3Features": true,
   //  "editor.formatOnPaste": true,
   // "terminal.integrated.rendererType": "dom",
-
 
   /*   "logViewer.watch": [{
         "title": "server 1 its",
