@@ -1,7 +1,14 @@
 {
   "workbench.colorTheme": "Dracula",
   //"editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
-  "editor.fontFamily": "Fira Code, Operator Mono,Courier, Monospace",
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#135564",
+    "titleBar.activeForeground": "#FCFC",
+    "titleBar.activeBackground": "#187c29cc",
+    "titleBar.inactiveForeground": "#FFF",
+    "titleBar.inactiveBackground": "#FFF000CC"
+  },
+  "editor.fontFamily": "Fira Code, Operator Mono, Courier, Monospace",
   "vscode_custom_css.imports": [
     "file:///C:/xampp/htdocs/projects/project/code%20talk/dzcode.talk/config/styles.css"
   ],
@@ -24,9 +31,6 @@
   "emmet.triggerExpansionOnTab": true,
   "editor.quickSuggestions": {
     "strings": true
-  },
-  "workbench.colorCustomizations": {
-    "editor.selectionBackground": "#135564"
   },
   "php.validate.run": "onType",
   "editor.cursorStyle": "line",
@@ -80,7 +84,8 @@
     "**/*.dll.js.map": true,
     "**/usr/*": true,
     "**/coverage/*": true,
-    "**/_node-modules": true
+    "**/_node-modules": true,
+    "**/node_modules": true
     // "**/*.bundle.js": true,
     // "**/dist/*": true,
     // "**/dll/*": true,
@@ -158,9 +163,12 @@
   "highlight-matching-tag.highlightSelfClosing": true,
   "npm-intellisense.scanDevDependencies": true,
   "scss.showErrors": true,
-  "todo-tree.defaultHighlight": {}
+  "todo-tree.defaultHighlight": {},
+  "breadcrumbs.enabled": true
 
-  // "materialTheme.fixIconsRunning": false,
+
+
+  //"materialTheme.fixIconsRunning": false,
   // "sublimeTextKeymap.promptV3Features": true,
   // "phpcs.enable": true,
   // "phpcs.standard": "PSR2",
