@@ -8,7 +8,7 @@
     "titleBar.inactiveForeground": "#FFF",
     "titleBar.inactiveBackground": "#FFF000CC"
   },
-  "editor.fontFamily": "Fira Code, Operator Mono, Courier, Monospace",
+  "editor.fontFamily": "Fira Code, Operator Mono, Consolas, 'Courier New', Monospace",
   "vscode_custom_css.imports": [
     "file:///C:/xampp/htdocs/projects/project/code%20talk/dzcode.talk/config/styles.css"
   ],
