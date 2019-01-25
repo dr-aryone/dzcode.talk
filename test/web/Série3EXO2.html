@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <form name="myform">
+    <input type="text" name="t1">
+
+  </form>
+  <button id="b1">ON</button>
+  <button id="b2">OFF</button><br><br>
+  <button id="b3" onclick=" ADD();">+</button>
+  <button id="b4" onclick=" SOUS();">-</button>
+  <button id="b5" onclick=" MULT();">*</button>
+  <button id="b6" onclick=" D();">/</button><br><br>
+  <button id="b7" onclick="RESULT()">=</button>
+
+  <!--<script src="js/jquery-3.3.1_2.js"></script>
+	<script src="js/e.js" ></script>-->
+  <script type="text/javascript">
+    var a, b, op;
+
+
+    /*b2.hide();
+    b1.click(function(){
+    	d1.show();
+    	b2.show();
+    	b1.hide();
+    });
+    b2.click(function(){
+    	d1.hide();
+    	b2.hide();
+    	b1.show();
+    });*/
+    function ADD() {
+      a = document.myform.t1.value;
+      op = '+';
+      document.forms['myform'].elements['t1'].value = "";
+    }
+
+    function SOUS() {
+
+      a = document.myform.t1.value;
+      op = '-';
+      document.myform.t1.value = '';
+    }
+
+    function MULT() {
+
+      a = document.myform.t1.value;
+      op = '*';
+      document.myform.t1.value = '';
+    }
+
+    function D() {
+      a = document.myform.t1.value;
+      op = '/';
+      document.myform.t1.value = '';
+
+    }
+
+    function RESULT() {
+      b = document.myform.t1.value;
+      switch (op) {
+        case op = '+':
+          var x = Number(a);
+          var y = Number(b);
+          var r = x + y;
+          document.myform.t1.value = r;
+          break;
+        case op = '-':
+          var x = Number(a);
+          var y = Number(b);
+          var r = x - y;
+          document.myform.t1.value = r;
+          break;
+        case op = '*':
+          var x = Number(a);
+          var y = Number(b);
+          var r = x * y;
+          document.myform.t1.value = r;
+          break;
+        case op = '/':
+          var x = Number(a);
+          var y = Number(b);
+          var r = x / y;
+          document.myform.t1.value = r;
+          break;
+
+      }
+
+    }
+
+  </script>
+</body>
+
+</html>

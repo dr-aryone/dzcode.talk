@@ -1,16 +1,28 @@
 {
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Cobalt2",
   //"editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#135564",
     "titleBar.activeForeground": "#FCFC",
-    "titleBar.activeBackground": "#187c29cc",
+    "titleBar.activeBackground": "#030303cc",
     "titleBar.inactiveForeground": "#FFF",
-    "titleBar.inactiveBackground": "#FFF000CC"
+    "titleBar.inactiveBackground": "#FFF000CC",
+    "activityBar.background": "#99CC"
   },
-  "editor.fontFamily": "Fira Code, Operator Mono, Consolas, 'Courier New', Monospace",
+
+  "editor.fontFamily": "Fira Code, Operator Mono, Consolas, Menlo, Monaco, 'Courier New', Monospace, flottflott",
+  "editor.fontSize": 15,
+  "editor.lineHeight": 25,
+  "editor.letterSpacing": 0.5,
+  "files.trimTrailingWhitespace": true,
+  "editor.fontWeight": "400",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.renderWhitespace": "all",
+
   "vscode_custom_css.imports": [
-    "file:///C:/xampp/htdocs/projects/project/code%20talk/dzcode.talk/config/styles.css"
+    "file:///C:/xampp/htdocs/projects/project/code%20talk/dzcode.talk/config/vscodestyles.css"
+    //"file:///C:/Users/Hp/.vscodestyles.css"
   ],
   "vscode_custom_css.policy": true,
   "editor.fontLigatures": true,
@@ -23,17 +35,14 @@
     "suppressShowKeyBindingsNotice": true
   },
   "workbench.iconTheme": "vscode-icons",
-  "editor.fontSize": 15,
   "editor.wordWrap": "on",
   "editor.smoothScrolling": true,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.cursorWidth": 3,
   "emmet.triggerExpansionOnTab": true,
   "editor.quickSuggestions": {
     "strings": true
   },
   "php.validate.run": "onType",
-  "editor.cursorStyle": "line",
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
@@ -63,7 +72,6 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
-  "files.trimTrailingWhitespace": true,
   /*   "team.showWelcomeMessage": false,
    */
   "workbench.editor.tabSizing": "shrink",
