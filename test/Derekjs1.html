@@ -10,10 +10,55 @@
 
 <body>
     <script>
-        var escaped_chars = "\" \' \\ \t \n";
+        let escaped_chars = "\" \' \\ \t \n";
         document.write(escaped_chars + " the length is " + escaped_chars.length);
-        console.log(escaped_chars.substring(2, 4));
-</script>
+
+        let lastName = "hammou";
+        let firstName = "Amine " + lastName;
+
+        document.write('<br>' + firstName.substring(6, firstName.length));
+
+        document.write(" <br> index of " + lastName.charAt(4) + " is " + lastName.indexOf('o'));
+        // functions to use with numbers
+        /*
+        number : convert the element to a number (integer)
+        parseInt : convert the element to an integer
+        toString : change the element to a string
+        toFixed : shorten a float to a fixed integer
+        typeof : returns the datatype of the element
+        Boolean : false(0 or Nan : not a number) , true
+        */
+        /* arays */
+        let vehicules = new Array("car", "shit");
+
+        for (i in vehicules) {
+            document.write('<br>' + vehicules[i]);
+        }
+        /* conditions */
+        // conditional operator (x) ? y : z
+        // condition is x if true ? do this : else do this
+        const test = (4 < 10) ? "4 is less" : "4 is big";
+        document.write("<br>" + test + "<br>");
+        let state = "blida";
+        switch (state) {
+            case "affroun":
+                document.write("wrong <br>");
+                break;
+            default:
+                document.write("default option <br>");
+                break;
+        }
+        const num = 1;
+        while (num < 10) {
+            if (num === 4) {
+                break;
+                // break get out of the loop while completely without coming back
+            }
+            num++;
+            continue;
+            //continue get out of everything except the loop it will ignore what is down and get back from the while start
+        }
+    </script>
 
     <noscript>
         <h3>
