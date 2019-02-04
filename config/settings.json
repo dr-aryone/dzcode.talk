@@ -28,7 +28,8 @@
   "editor.fontLigatures": true,
   "window.zoomLevel": 0,
   "workbench.activityBar.visible": true,
-  "files.autoSave": "afterDelay",
+  // "files.autoSave": "afterDelay",
+  "files.autoSave": "onFocusChange",
   "liveServer.settings.donotVerifyTags": true,
   "window.menuBarVisibility": "default",
   "gitlens.advanced.messages": {
@@ -106,14 +107,13 @@
   "[javascriptreact]": {
     "editor.formatOnSave": false
   },
-  "eslint.alwaysShowStatus": true,
-  "javascript.implicitProjectConfig.checkJs": true,
-  // "prettier.tslintIntegration": true,
   "eslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
+
+  "eslint.alwaysShowStatus": true,
+  "javascript.implicitProjectConfig.checkJs": true,
   "prettier.disableLanguages": ["javascript", "javascriptreact", "vue"],
   "eslint.enable": true,
-  "prettier.eslintIntegration": true,
 
   "editor.renderIndentGuides": false,
 
@@ -136,9 +136,7 @@
   "php.executablePath": "C:\\xampp\\php\\php.exe",
   "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
 
-  "gitProjectManager.baseProjectsFolders": [
-    "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.talk"
-  ],
+  "gitProjectManager.baseProjectsFolders": ["C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.talk"],
 
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\git-cmd.exe",
 
@@ -166,15 +164,25 @@
   "git.postCommitCommand": "push",
   "auto-close-tag.SublimeText3Mode": true,
   "better-comments.highlightPlainText": true,
-  "html-css-class-completion.enableEmmetSupport": true,
   "emmet.showSuggestionsAsSnippets": true,
   "highlight-matching-tag.highlightSelfClosing": true,
   "npm-intellisense.scanDevDependencies": true,
   "scss.showErrors": true,
   "todo-tree.defaultHighlight": {},
-  "breadcrumbs.enabled": true
+  "breadcrumbs.enabled": true,
 
+  "tslint.jsEnable": false,
+  "tslint.exclude": ["**/*.js"],
+  "javascript.validate.enable": false,
+  "prettier.tslintIntegration": true,
+  "tslint.alwaysShowRuleFailuresAsWarnings": true,
+  "tslint.configFile": "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.talk\\config\\tslint.json"
 
+  // "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib",
+  //  "tslint.autoFixOnSave": true,
+  //"tslint.alwaysShowStatus": true,
+
+  //"html-css-class-completion.enableEmmetSupport": true,
 
   //"materialTheme.fixIconsRunning": false,
   // "sublimeTextKeymap.promptV3Features": true,
@@ -182,13 +190,6 @@
   // "phpcs.standard": "PSR2",
   //  "gitlens.historyExplorer.enabled": true,
 
-  // "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib",
-
-  /*   "tslint.alwaysShowRuleFailuresAsWarnings": true,
-   */
-  /*   "tslint.alwaysShowStatus": true,
-   */ //  "tslint.configFile": "/home/zed/tslint.json",
-  // "tslint.autoFixOnSave": true,
   //"terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
   // "atomKeymap.promptV3Features": true,
   //  "editor.formatOnPaste": true,

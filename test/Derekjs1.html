@@ -8,57 +8,29 @@
     <title>js course</title>
 </head>
 
-<body>
-    <script>
-        let escaped_chars = "\" \' \\ \t \n";
-        document.write(escaped_chars + " the length is " + escaped_chars.length);
+<body onresize="alert('u just resized the browser');" onload="alert('hello world');">
 
-        let lastName = "hammou";
-        let firstName = "Amine " + lastName;
+    <button ondblclick="alert('u dblc clicked');">double click</button>
 
-        document.write('<br>' + firstName.substring(6, firstName.length));
+    <h3 onmouseover="changenode();" onmouseout="changehtml();">hello world</h3>
 
-        document.write(" <br> index of " + lastName.charAt(4) + " is " + lastName.indexOf('o'));
-        // functions to use with numbers
-        /*
-        number : convert the element to a number (integer)
-        parseInt : convert the element to an integer
-        toString : change the element to a string
-        toFixed : shorten a float to a fixed integer
-        typeof : returns the datatype of the element
-        Boolean : false(0 or Nan : not a number) , true
-        */
-        /* arays */
-        let vehicules = new Array("car", "shit");
+    <p>Lorem ipsum dolor sit amet.</p>
 
-        for (i in vehicules) {
-            document.write('<br>' + vehicules[i]);
-        }
-        /* conditions */
-        // conditional operator (x) ? y : z
-        // condition is x if true ? do this : else do this
-        const test = (4 < 10) ? "4 is less" : "4 is big";
-        document.write("<br>" + test + "<br>");
-        let state = "blida";
-        switch (state) {
-            case "affroun":
-                document.write("wrong <br>");
-                break;
-            default:
-                document.write("default option <br>");
-                break;
-        }
-        const num = 1;
-        while (num < 10) {
-            if (num === 4) {
-                break;
-                // break get out of the loop while completely without coming back
-            }
-            num++;
-            continue;
-            //continue get out of everything except the loop it will ignore what is down and get back from the while start
-        }
-    </script>
+    <form name="formx">
+        <label>first paragraphe</label>
+        <input type="checkbox" onclick="showFirstPar();" name="check1">
+        <label>mouse X position</label>
+        <input type="text" name="formMouseX" placeholder="formMouseX">
+        <label>mouse Y position</label>
+        <input type="text" name="formMouseY">
+        <label>keyboard press</label>
+        <input type="text" name="formKeyboardPress">
+        <label> mouse press</label>
+        <input type="text" name="formMousePress">
+
+    </form>
+
+    <script src="derek.js"></script>
 
     <noscript>
         <h3>
