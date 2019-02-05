@@ -107,7 +107,7 @@ document.write(` <br> index of ${lastName.charAt(4)} is ${lastName.indexOf('o')}
     Boolean : false(0 or Nan : not a number) , true
     */
 /* arays */
-const vehicules = new Array('car', 'shit');
+const vehicules = ['car', 'shit'];
 let i;
 for (i in vehicules) {
   document.write(`<br>${vehicules[i]}`);
@@ -136,3 +136,72 @@ while (num < 10) {
   continue;
   // continue get out of everything except the loop it will ignore what is down and get back from the while start
 }
+// OOP
+
+// constructor
+function Animal() {
+  this.name = 'start name';
+  this.sound = 'grrr';
+  this.owner = 'start owner';
+}
+// set a method that the animal class will always use and its called a prototype
+
+Animal.prototype.setOwner = function(newOwner) {
+  // we are checking of the variable newowner if it is not undefined then we assign it to this.owner
+  // its called a setter
+  return typeof newOwner !== 'undefined'
+    ? (this.owner = newOwner)
+    : alert('please enter a valid owner');
+};
+// same thing for the getter
+Animal.prototype.getOwner = function() {
+  return this.owner;
+};
+// what encapsulation means is that to access any // attribute in the constructor u have to acces
+// them through the setters and getters
+
+const Dog = new Animal();
+Dog.setOwner('hammou');
+document.write(`${Dog.getOwner()} <br>`);
+
+// inheritance is adding subclass cat that inherit the same attrbts and methods from the superclass animal
+
+function Cat() {
+  // animal calls this of the cat to add it as a subclass
+  Animal.call(this);
+  this.mode = 'happy';
+}
+// then this is to let cat knows that the superclass is Animal
+Cat.prototype = new Animal();
+
+// then we need to create the constructor of the class cat just like this
+Cat.prototype.constructor = Cat();
+
+// after this u can add setters and getters for car
+
+const sophie = new Cat();
+const instance = sophie instanceof Cat;
+document.write(instance);
+
+// method overloading : create methods inside of methods and add 2 3 more attributs to overload it
+/*
+  Cat.prototype.setStuff = function(newName, newOwner, newMode) {
+    if (
+      typeof newName !== 'undefined' &&
+      typeof newOwner !== 'undefined' &&
+      typeof newMode !== 'undefined'
+    ) {
+      Cat.prototype.setStuff = function(newName, newOwner, newMode) {};
+    }
+  };
+*/
+
+// polymorphisme
+/*
+function DoAnimalStuff (Animal){
+  document.write(Animal.getOwner());
+}
+function DoAnimalStuff (Cat){
+  document.write(Cat.getOwner());
+}
+*/
