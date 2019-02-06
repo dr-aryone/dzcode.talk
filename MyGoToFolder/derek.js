@@ -81,8 +81,14 @@ toFixed : shorten a float to a fixed integer
 typeof : returns the datatype of the element
 Boolean : false(0 or Nan : not a number) , true
 
+min,max,charAt,indexOf, Math.random().
+
+string.replace("Omar","amin");  // changing the given string in the 1st parm by the 2cd param
+string.trim(); // delete trim spaces from the start to the end
+array.push("racha"); // insert this item at the end of the array
+
 string.split(separator, limit) : lastName.split("/",2) split the string to words with / separting
-                                  them and only take the 2 first elements only
+them and only take the 2 first elements only
 
 array.reverse(); // Returns the array reversed
 array.sort(); // Returns the array sorted
@@ -90,12 +96,13 @@ array.concat(arr2); // Join 2 arrays
 array.join(" "); // Converts array into a string and split the words with a space
 array.slice(0,2); // Returns part of an array same functionalty of substring
 
-array.splice(0,3); // remove items(splice) from the index 0 to 3
-                    and keep the rest so this will modify our array
+array.splice(startIndex, howManyItemsUwantToDelete,replacableitem1,replacableitem2...) :
+can delete & insert items in an array
 
-array.splice(0,3,9,10,11); // this will replace the elements from the index 0 to 3
-                               with the rest of the elements given after
-so basicly array.splice(startindex,endindex,replacableitem1,replacableitem2...)
+array.splice(0,3); // remove items(splice) from the index 0 the 3 next elements
+
+array.splice(0,3,9,10,11); // this will replace the 3 elements from the start
+with the rest of the elements given after
 
 */
 
@@ -227,6 +234,57 @@ function changenode() {
 // changing the inner html meaning the the html of the text inside the h3 and concatinating it with +=
 function changehtml() {
   document.querySelector('h3').innerHTML += ' and goodbye world';
+}
+/* DOM :
+innerHTML its a complete tag "<p>ccc</p>"" while textContent its the object of the tag the corp "ccc" ,
+oncontextmenu when you enter into input
+
+lets say we have this <div> <p>x<p> <br> <i>y</i> </div>
+
+parentNode : the parent element here is the div if we dont have nothing then it is the body
+firstChild : p , lastChild : i, childNodes[0 - n] : p br (which means even the spaces are counted) i ,removeChild
+nextElementSibling,previousElementSibling
+insertBefore(beforethis, insertThis), insertAfter(afterthis, insertThis)
+nodeValue,
+createElement,createTextNode => appendChild : when we create an element to make him alive in the page we append
+
+alert(img[0].src);  : quick tip alert of the value of the source
+
+lien[0].setAttribute('href', 'https://www.facebook.com'); : modify a certain attribut
+lien[0].getAttribute('href'); : to get the value of a specific attribut
+
+
+e.preventDefault() :
+
+it tells the browser that if there is a default behavior for this event on this object, then skip that default behavior.
+
+So, for example, if you had a submit button that the default
+behavior was to submit a form and you had a click handler on that button that did a preventDefault(),
+then the browser would not submit the form when the button was clicked.
+ A classic use of this might be when the form doesn't validate so you show the user an error message
+and don't want the form to be submitted to the server.
+
+Or another example. If you set up a click handler for a link and you call e.preventDefault()
+in that click handler, then the browser will not process the click on the link and will not follow the href in the link.
+
+setTimeout  : setTimeout(function(){	d.style.backgroundColor="red"; },500);
+setInterval , ClearInterval  :   setInterval : x=setInterval(fonctionx,1000);  , clearInterval(x);
+
+*/
+document.querySelector('div').addEventListener('click', nodeFunction());
+function nodeFunction() {
+  const div = document.querySelector('div');
+  const hr = document.createElement('hr');
+  const text = document.createTextNode('here is a last text added xd');
+  div.firstChild.nodeValue = 'hello world im the div itself';
+  // for some reason childnodes.value will not let
+  // you change the original value so you have to remove the original child and then use it
+  div.removeChild(div.childNodes[1]);
+  div.childNodes[1].nodeValue = ' hello world im the new bold ';
+  div.removeChild(div.childNodes[2]);
+  div.removeChild(div.lastChild);
+  div.appendChild(text);
+  div.appendChild(hr);
 }
 
 /* OOP */
