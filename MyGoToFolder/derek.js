@@ -389,7 +389,7 @@ document.formx.getcookie.addEventListener('blur', () => {
     // we verify if the cookie name does exists in allcookies
     if (allcookies[i].indexOf(cookiename) !== -1) {
       // if true then we remove the extra white spaces
-      match = allcookies[i].replace(' ', '');
+      match = allcookies[i].trim();
       // then get the cookiedate by taking a substring === cookiename from allcokies
       // +1 is to avoid the =
       cookiedata = match.substr(cookiename.length + 1);
@@ -425,7 +425,7 @@ document.formx.deletecookie.addEventListener('blur', () => {
 });
 
 console.log(document.cookie);
-document.write(`<h1> every cookie : ${document.cookie} </h1>`);
+document.write(`<h3> here is your cookies : ${document.cookie} </h3>`);
 
 /* OOP */
 
