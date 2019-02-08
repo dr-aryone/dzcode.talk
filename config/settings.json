@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Cobalt2",
+  "workbench.colorTheme": "Level Up 2 Electric Boogaloo",
   //"editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#135564",
@@ -10,7 +10,8 @@
     "activityBar.background": "#99CC"
   },
   "editor.fontFamily": "Fira Code, Operator Mono, Consolas, Menlo, Monaco, 'Courier New', Monospace, flottflott",
-  "editor.fontSize": 15,
+  "editor.fontSize": 12.5, // for the tv
+  // "editor.fontSize": 15,
   "editor.lineHeight": 25,
   "editor.letterSpacing": 0.5,
   "files.trimTrailingWhitespace": true,

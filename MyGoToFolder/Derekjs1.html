@@ -54,6 +54,30 @@ non-breaking space	&nbsp;	&#160;
 
       <label>keyboard press</label>
       <input type="text" name="formKeyboardPress" />
+      <br />
+      <label> validating email with js not recommended for security reasons </label>
+      <!-- this refers to the input -->
+      <input
+        type="text"
+        name="mail"
+        size="30"
+        id="mail"
+        onblur="validateEmail(this,document.getElementById('logError'));"
+      />
+      <span id="logError"></span>
+      <br />
+      <label>num1</label>
+      <input type="text" name="num1" />
+      <label>num2</label>
+      <input type="text" name="num2" />
+      <span id="answer"></span>
+      <br />
+      <label>first name</label>
+      <input type="text" id="firstname" name="namecookie" />
+      <label>get cookie</label>
+      <input type="text" name="getcookie" />
+      <label>delete cookie</label>
+      <input type="text" name="deletecookie" />
     </form>
     <br />
     <div>
