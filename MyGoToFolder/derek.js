@@ -159,6 +159,7 @@ document.write(`${escapedChars} the length is ${escapedChars.length}`);
 document.write(`<br>${firstName.substring(6, firstName.length)}`);
 document.write(` <br> index of ${lastName.charAt(4)} is ${lastName.indexOf('o')}`);
 document.write(`<br> testing with the conditional op ${testConditional}<br>`);
+document.write(`<br /> Random num 1 - 10 ${Math.floor(Math.random() * 10) + 1} <br />`);
 
 // switch statement
 switch (state) {
