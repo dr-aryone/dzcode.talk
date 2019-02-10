@@ -1,6 +1,6 @@
 // @ts-nocheck
 
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   //     "env": {
@@ -30,33 +30,33 @@ module.exports = {
   //     }
   // };
   //{
-  extends: ['eslint:recommended',
-    'airbnb',
-    'prettier',
-    'prettier/react',
-    'standard',
-    'plugin:prettier/recommended',
-    'plugin:flowtype/recommended',
-    'plugin:react/recommended',
-    'prettier/flowtype',
-    'prettier/standard',
-    'plugin:jsx-a11y/recommended',
-    'jest-enzyme',
-    'plugin:jest/recommended'
-    /* 'typescript',
-    'typescript/react',
-    'typescript/prettier',
-    'tslint-react',
-    'tslint-eslint-rules',
-    'tslint-config-prettier',
-    'plugin:tslint/recommended',
-    'plugin:tslint/latest'
+  extends: ["eslint:recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "standard",
+    "plugin:prettier/recommended",
+    "plugin:flowtype/recommended",
+    "plugin:react/recommended",
+    "prettier/flowtype",
+    "prettier/standard",
+    "plugin:jsx-a11y/recommended",
+    "jest-enzyme",
+    "plugin:jest/recommended"
+    /* "typescript",
+    "typescript/react",
+    "typescript/prettier",
+    "tslint-react",
+    "tslint-eslint-rules",
+    "tslint-config-prettier",
+    "plugin:tslint/recommended",
+    "plugin:tslint/latest"
     */
   ],
-  parser: 'babel-eslint',
+  parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 8,
-    sourceType: 'module',
+    sourceType: "module",
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
       impliedStrict: true,
@@ -65,9 +65,9 @@ module.exports = {
     },
   },
   // settings: {
-  // 	'import/resolver': {
+  // 	"import/resolver": {
   // 		webpack: {
-  // 			config: path.join(__dirname, 'config', 'webpack.base.config.js'),
+  // 			config: path.join(__dirname, "config", "webpack.base.config.js"),
   // 		},
   // 	},
   // },
@@ -79,112 +79,114 @@ module.exports = {
     es6: true,
   },
   rules: {
-    'no-debugger': 0,
-    'no-alert': 0,
-    'no-unused-vars': [
+    // "no-debugger": 0,
+    // "no-alert": 0,
+    "no-unused-vars": [
       1,
       {
-        argsIgnorePattern: 'res|next|^err',
+        argsIgnorePattern: "res|next|^err",
       },
     ],
-    'prefer-const': [
-      'error',
+    "prefer-const": [
+      "error",
       {
-        destructuring: 'all',
+        destructuring: "all",
       },
     ],
-    'arrow-body-style': [2, 'as-needed'],
-    'no-unused-expressions': [
+    "arrow-body-style": [2, "as-needed"],
+    "no-unused-expressions": [
       2,
       {
         allowTaggedTemplates: true,
       },
     ],
-    'no-param-reassign': [
-      2,
-      {
-        props: false,
-      },
-    ],
-    'no-console': 0,
-    'import/prefer-default-export': 0,
+    // "no-param-reassign": [
+    //   2,
+    //   {
+    //     props: false,
+    //   },
+    // ],
+    // "no-console": 0,
+    "import/prefer-default-export": 0,
     import: 0,
-    'func-names': 0,
-    'space-before-function-paren': 0,
-    'comma-dangle': 0,
-    'max-len': 0,
-    'import/extensions': 0,
-    'no-underscore-dangle': 0,
-    'consistent-return': 0,
-    'react/display-name': 1,
-    'react/no-array-index-key': 0,
-    'react/react-in-jsx-scope': 0,
-    'react/prefer-stateless-function': 0,
-    'react/forbid-prop-types': 0,
-    'react/no-unescaped-entities': 0,
-    'jsx-a11y/accessible-emoji': 0,
-    'react/jsx-filename-extension': [
-      1,
-      {
-        extensions: ['.js', '.jsx'],
-      },
-    ],
-    radix: 0,
-    'no-shadow': [
+    "func-names": 0,
+    "space-before-function-paren": 0,
+    "comma-dangle": 0,
+    // "max-len": 0,
+    "import/extensions": 0,
+    "no-underscore-dangle": 0,
+    "consistent-return": 0,
+    "react/display-name": 1,
+    "react/no-array-index-key": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/prefer-stateless-function": 0,
+    // "react/forbid-prop-types": 0,
+    "react/no-unescaped-entities": 0,
+    "jsx-a11y/accessible-emoji": 0,
+    // "react/jsx-filename-extension": [
+    //   1,
+    //   {
+    //     extensions: [".js", ".jsx"],
+    //   },
+    // ],
+    // radix: 0,
+    "no-shadow": [
       2,
       {
-        hoist: 'all',
-        allow: ['resolve', 'reject', 'done', 'next', 'err', 'error'],
+        hoist: "all",
+        allow: ["resolve", "reject", "done", "next", "err", "error"],
       },
     ],
     quotes: [
       2,
-      'single',
+      "double",
       {
         avoidEscape: true,
         allowTemplateLiterals: true,
       },
     ],
-    'prettier/prettier': [
-      'error',
+    "prettier/prettier": [
+      "warn",
       {
-        trailingComma: 'es5',
-        singleQuote: true,
-        printWidth: 100,
+        trailingComma: "es5",
+        singleQuote: false,
+        printWidth: 120,
+        bracketSpacing: true,
+        jsxBracketSameLine: false,
+        tabWidth: 2,
+        semi: true,
       },
     ],
 
-    'linebreak-style': 'off', // Don't play nicely with Windows.
+    "linebreak-style": "off", // Don"t play nicely with Windows.
 
-    'arrow-parens': 'off', // Incompatible with prettier
-    'object-curly-newline': 'off', // Incompatible with prettier
-    'no-mixed-operators': 'off', // Incompatible with prettier
-    'arrow-body-style': 'off', // Not our taste?
-    'function-paren-newline': 'off', // Incompatible with prettier
-    'no-plusplus': 'off',
-    'space-before-function-paren': 0, // Incompatible with prettier
+    "arrow-parens": "off", // Incompatible with prettier
+    "object-curly-newline": "off", // Incompatible with prettier
+    "no-mixed-operators": "off", // Incompatible with prettier
+    // "arrow-body-style": "off", // Not our taste?
+    "function-paren-newline": "off", // Incompatible with prettier
+    "no-plusplus": "off",
 
-    'max-len': ['error', 120, 2, {
+    "max-len": ["warn", 120, 2, {
       ignoreUrls: true,
     }], // airbnb is allowing some edge cases
-    'no-console': 'warn', // airbnb is using warn
-    'no-alert': 'warn', // airbnb is using warn
-
-    'no-param-reassign': 'off', // Not our taste?
+    "no-console": "warn", // airbnb is using warn
+    "no-alert": "warn", // airbnb is using warn
+    "no-param-reassign": "off", // Not our taste?
     "radix": "off", // parseInt, parseFloat radix turned off. Not my taste.
 
-    'react/require-default-props': 'off', // airbnb use error
-    'react/forbid-prop-types': 'off', // airbnb use error
-    'react/jsx-filename-extension': ['error', {
-      extensions: ['.js']
+    "react/require-default-props": "off", // airbnb use error
+    "react/forbid-prop-types": "off", // airbnb use error
+    "react/jsx-filename-extension": ["error", {
+      extensions: [".js"]
     }], // airbnb is using .jsx
 
-    'prefer-destructuring': 'off',
+    "prefer-destructuring": "off",
 
-    'react/no-find-dom-node': 'off', // I don't know
-    'react/no-did-mount-set-state': 'off',
-    'react/no-unused-prop-types': 'off', // Is still buggy
-    'react/jsx-one-expression-per-line': 'off',
+    "react/no-find-dom-node": "off", // I don"t know
+    "react/no-did-mount-set-state": "off",
+    "react/no-unused-prop-types": "off", // Is still buggy
+    "react/jsx-one-expression-per-line": "off",
 
     "jsx-a11y/anchor-is-valid": ["warn", {
       "components": ["Link"],
@@ -202,14 +204,14 @@ module.exports = {
   },
   plugins: [
     // "html",
-    'prettier',
-    'flowtype',
-    'react',
-    'standard',
-    'jsx-a11y',
-    // 'tslint',
-    // 'typescript',
-    'babel',
-    'import'
+    "prettier",
+    "flowtype",
+    "react",
+    "standard",
+    "jsx-a11y",
+    // "tslint",
+    // "typescript",
+    "babel",
+    "import"
   ],
 };
