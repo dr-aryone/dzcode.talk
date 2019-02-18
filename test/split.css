@@ -1,46 +1,126 @@
-.heart {
-  background-color: red;
-  display: inline-block;
-  height: 50px;
-  margin: 0 10px;
+:root {
+  --bg-left-color: rgba(223, 39, 39, 0.7);
+  --left-button-hover-color: rgba(161, 11, 11, 0.3);
+  --bg-right-color: rgba(60, 90, 43, 1);
+  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --split-width: 75%;
+  --rest-width: 25%;
+  --speed: 800ms;
+}
+body,
+html,
+.split {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   position: relative;
-  top: 0;
-  transform: rotate(-45deg);
-  position: absolute;
-  left: 45%;
-  top: 45%;
-  width: 50px;
-  animation: heartbeat 1s infinite;
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  color: #fee;
+  white-space: nowrap;
+  top: 25%;
+  left: 50%;
+}
+.button {
+  left: 50%;
+  top: 40%;
+  border: 1px solid #fff;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 15rem;
+  text-decoration: none;
+  color: royalblue;
+}
+.split .left .button:hover {
+  background: var(--left-button-hover-color);
+}
+.split .right .button:hover {
+  background: var(--right-button-hover-color);
 }
 
-.heart:before,
-.heart:after {
+.button,
+h1 {
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  position: relative;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.split .left:before {
+  background: var(--bg-left-color);
+}
+.split .right:before {
+  background: var(--bg-right-color);
+}
+.split .left:before,
+.split .right:before {
+  position: absolute;
   content: "";
-  background-color: red;
-  border-radius: 50%;
-  height: 50px;
-  position: absolute;
-  width: 50px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.35;
+  z-index: -5;
 }
 
-.heart:before {
-  top: -25px;
+.split .left {
   left: 0;
+  background: url("../images/america-american-flag-architecture-450597.jpg") no-repeat center center/cover;
+}
+.split .right {
+  right: 0;
+  background: url("../images/america-billboards-broadway-1112109.jpg") no-repeat center center/cover;
+}
+.split .left,
+.split .right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 1;
+  z-index: 5;
 }
 
-.heart:after {
-  left: 25px;
-  top: 0;
+.hover-left .right:before,
+.hover-right .left:before {
+  z-index: 2;
+}
+.hover-left .left,
+.hover-right .right {
+  width: var(--split-width);
+}
+.hover-left .right,
+.hover-right .left {
+  width: var(--rest-width);
 }
 
-@keyframes heartbeat {
-  0% {
-    transform: scale(1);
+.split .left,
+.split .right,
+.split .right:before,
+.split .left:before {
+  transition: var(--speed) all ease-in-out;
+  -webkit-transition: var(--speed) all ease-in-out;
+  -moz-transition: var(--speed) all ease-in-out;
+  -ms-transition: var(--speed) all ease-in-out;
+  -o-transition: var(--speed) all ease-in-out;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
   }
-  20% {
-    transform: scale(1.25) translateX(5%) translateY(5%);
+  .button {
+    width: 8rem;
   }
-  40% {
-    transform: scale(1.5) translateX(9%) translateY(10%);
+}
+@media (max-height: 700px) {
+  .button {
+    top: 70%;
   }
 }

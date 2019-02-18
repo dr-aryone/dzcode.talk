@@ -8,21 +8,20 @@
     <title>split</title>
   </head>
   <body>
-    <div class="container">
-      <div class="split left">
+    <div class="split">
+      <div class="left">
         <h1>the Front End</h1>
         <a href="#" class="button">Read More</a>
       </div>
-      <div class="split right">
+      <div class="right">
         <h1>The Back End</h1>
         <a href="#" class="button">Read More</a>
       </div>
     </div>
-    <div class="heart"></div>
     <script>
       const left = document.querySelector(".left");
       const right = document.querySelector(".right");
-      const container = document.querySelector(".container");
+      const container = document.querySelector(".split");
       left.addEventListener("mouseenter", () => {
         container.classList.add("hover-left");
       });
