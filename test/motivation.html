@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Motivation landing page</title>
+    <link rel="stylesheet" href="motivation.css" />
+  </head>
+  <body>
+    <header>
+      <div class="full-screen-video">
+        <video
+          src="https://www.videvo.net/videvo_files/converted/2014_08/preview/Fuego_de_Refineria.mp416312.webm"
+          loop="true"
+          autoplay="true"
+        ></video>
+      </div>
+      <div class="header-content">
+        <h1>Motivate Yourself</h1>
+        <blockquote>
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dicta omnis mollitia beatae sapiente
+          molestias maxime iste reiciendis delectus voluptatem quisquam nisi, perferendis eaque a adipisci! Voluptas
+          temporibus odio dolorum."
+        </blockquote>
+      </div>
+    </header>
+    <br />
+    <section>
+      <div id="content">
+        <form id="channel-form">
+          <input type="text" id="channel-input" placeholder="enter channel name" />
+          <br /><br />
+          <input type="submit" value="Get Channel Data" />
+        </form>
+      </div>
+      <div id="channel-data"></div>
+      <div id="video-container"></div>
+    </section>
+
+    <script src="motivation.js"></script>
+    <script
+      async
+      defer
+      src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()"
+    ></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Level Up 2 Electric Boogaloo",
+  "workbench.colorTheme": "One Dark Pro Vivid",
   //"editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#135564",
@@ -9,8 +9,35 @@
     "titleBar.inactiveBackground": "#FFF000CC",
     "activityBar.background": "#99CC"
   },
-  "editor.fontFamily": "Fira Code, Operator Mono, Consolas, Menlo, Monaco, 'Courier New', Monospace, flottflott",
-  "editor.fontSize": 12.5, // for the tv
+  "editor.fontFamily": "'Fira Code', 'Operator Mono', Consolas, Menlo, Monaco, 'Courier New', Monospace, flottflott",
+  "terminal.integrated.fontFamily": "'Fira Code', 'Operator Mono', Consolas, Menlo, Monaco, 'Courier New', Monospace, flottflott",
+  "editor.glyphMargin": true,
+  "explorer.confirmDragAndDrop": false,
+  // SOP's highlight matching tag setting.
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "full": {
+        "custom": {
+          "backgroundColor": "rgba(165, 153, 233, 0.1)"
+        }
+      },
+      "left": {
+        "custom": {
+          "borderWidth": "0"
+        }
+      },
+      "right": {
+        "custom": {
+          "borderWidth": "0"
+        }
+      }
+    }
+  },
+  // SOP's Import Cost Extension Settings.
+  "importCost.largePackageColor": "#EC3A37F5",
+  "importCost.mediumPackageColor": "#B362FF",
+  "importCost.smallPackageColor": "#B362FF",
+  "editor.fontSize": 14, // for the tv
   // "editor.fontSize": 15,
   "editor.lineHeight": 25,
   "editor.letterSpacing": 0.5,
@@ -70,6 +97,7 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
+  "editor.tabSize": 2,
   /*   "team.showWelcomeMessage": false,
    */
   "workbench.editor.tabSizing": "shrink",
@@ -144,8 +172,8 @@
     "configFile": "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.talk\\config\\.eslintrc.js"
   },
   "prettier.printWidth": 120,
-  "prettier.singleQuote": true,
-  "prettier.trailingComma": "all",
+  "prettier.singleQuote": false,
+  "prettier.trailingComma": "es5",
   "php-cs-fixer.lastDownload": 1542124935854,
   "phpserver.phpPath": "C:\\xampp\\php\\php.exe",
   "editor.tabCompletion": "on",

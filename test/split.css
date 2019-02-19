@@ -124,3 +124,15 @@ h1 {
     top: 70%;
   }
 }
+/*
+! so basicly here the main idea is to change the width to the hovered element to 75% when a mouseenter and the other half of it to 25% and remove that effect when mouseleave and do the same thing to the other half
+
+* to add an overlay to the image and let the text clearly shown is by using sudo element before to add a z-index of -5 and a lower opacity to 0.35 and then reastablish it in the original selector to z index of 5 and an opacity of 1
+
+when we hover an element we want the other half to overlay so we just add to it a low z-index 2
+
+also we add some transitions to make a nice good looking effect
+
+translateX is applied here to move the elements dynmaicly to the center in any cases
+
+*/
