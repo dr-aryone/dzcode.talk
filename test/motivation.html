@@ -27,24 +27,16 @@
     </header>
     <br />
     <section>
-      <div id="content">
-        <form id="channel-form">
-          <input type="text" id="channel-input" placeholder="enter channel name" />
-          <br /><br />
-          <input type="submit" value="Get Channel Data" />
-        </form>
+      <div id="grid">
+        <div id="image-content"></div>
+        <span id="image-quote"></span>
       </div>
-      <div id="channel-data"></div>
-      <div id="video-container"></div>
     </section>
+    <button id="unsplash">click to get data</button>
+    <div class="grid"></div>
+    <div class="output"></div>
 
     <script src="motivation.js"></script>
-    <script
-      async
-      defer
-      src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
 </html>

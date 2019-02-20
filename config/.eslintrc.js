@@ -138,17 +138,17 @@ module.exports = {
       },
     ],
     quotes: [
-      2,
-      "double",
+       2,
+       "double",
       {
         avoidEscape: true,
-        allowTemplateLiterals: true,
+        allowTemplateLiterals: true
       },
     ],
     "prettier/prettier": [
       "warn",
       {
-        trailingComma: "es5",
+        trailingComma: "none",
         singleQuote: false,
         printWidth: 120,
         bracketSpacing: true,
