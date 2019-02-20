@@ -1,6 +1,3 @@
-// import Unsplash from "unsplash-js";
-// const Unsplash = require("unsplash-js").default;
-
 const apiKey = "45f7a5210c9a4f2bcba7438ea1d65f3c959502f211011ab634276f7d034fe32d";
 const grid = document.getElementById("grid");
 const div = document.getElementById("unsplash");
