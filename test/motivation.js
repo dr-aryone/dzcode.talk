@@ -1,10 +1,34 @@
 const apiKey = "45f7a5210c9a4f2bcba7438ea1d65f3c959502f211011ab634276f7d034fe32d";
-const grid = document.querySelector(".grid");
-const div = document.getElementById("unsplash");
-const imageContent = document.getElementById("image-content");
-const imageQuote = document.getElementById("image-quote");
+const imageContent = document.querySelector(".image-content");
 
-/* the pormises way */
+/* the async await way : we fetch random images (max count is 30) */
+
+const getImages = async () => {
+  try {
+    // we fetch firstly the response(the url of the api with their api key) then the data
+    const response = await fetch(
+      // `https://api.unsplash.com/photos/random?count=28&client_id=${apiKey}`
+      `https://api.unsplash.com/collections/3732249?random&per_page=44&client_id=${apiKey}`
+    );
+    // the data is a json formated
+    const data = await response.json();
+    // results contain the data of images its a specific data go check console.log(data)
+    let output = "";
+    data.forEach(image => {
+      output = `<img src="${image.cover_photo.urls.regular}">`;
+      imageContent.innerHTML += output;
+    });
+  } catch (err) {
+    throw new Error(`${err}`);
+  }
+};
+
+// run the function when the window loads
+if (window) {
+  window.addEventListener("load", getImages);
+}
+
+/* the pormises way : we fetch specific search results */
 
 // if (div) {
 //   div.addEventListener("click", () => {
@@ -15,38 +39,13 @@ const imageQuote = document.getElementById("image-quote");
 //         let output = "";
 //         data.forEach(image => {
 //           if (image.width > image.height) {
-//             output = `<div class="image"><img src="${image.urls.regular}"></div>`;
-//             document.querySelector(".grid").innerHTML += output;
+//             output = `<img src="${image.urls.regular}">`;
+//             imageContent.innerHTML += output;
 //           }
 //         });
 //       })
 //        .catch(err => {
-//      console.log(err);
+//          console.error(`${err}`);
 //        })
 //   });
 // }
-
-/* the async await way */
-
-const getImages = async () => {
-  try {
-    const response = await fetch(
-      `https://api.unsplash.com/search/photos?query=chicago&per_page=50&client_id=${apiKey}`
-    );
-    const data = await response.json();
-    const dataResults = data.results;
-    let output = "";
-    dataResults.forEach(image => {
-      if (image.width > image.height) {
-        output = `<div class="image"><img src="${image.urls.regular}"></div>`;
-        grid.innerHTML += output;
-      }
-    });
-  } catch (err) {
-    throw new Error(` your data is corrupted ${err}`);
-  }
-};
-
-if (div) {
-  div.addEventListener("click", getImages);
-}

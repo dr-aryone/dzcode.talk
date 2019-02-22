@@ -1,8 +1,8 @@
 :root {
   --bg-left-color: rgba(223, 39, 39, 0.7);
   --left-button-hover-color: rgba(161, 11, 11, 0.3);
-  --bg-right-color: rgba(60, 90, 43, 1);
-  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --bg-right-color: rgb(25, 111, 160);
+  --right-button-hover-color: rgba(63, 73, 129, 0.3);
   --split-width: 75%;
   --rest-width: 25%;
   --speed: 800ms;
@@ -32,7 +32,12 @@ h1 {
   font-size: 1.2rem;
   width: 15rem;
   text-decoration: none;
-  color: royalblue;
+}
+.split .left .button {
+  color: var(--bg-left-color);
+}
+.split .right .button {
+  color: var(--bg-right-color);
 }
 .split .left .button:hover {
   background: var(--left-button-hover-color);
@@ -73,11 +78,11 @@ h1 {
 
 .split .left {
   left: 0;
-  background: url("../images/america-american-flag-architecture-450597.jpg") no-repeat center center/cover;
+  background: url("https://source.unsplash.com/collection/1127828/1600*900") no-repeat center center/cover;
 }
 .split .right {
   right: 0;
-  background: url("../images/america-billboards-broadway-1112109.jpg") no-repeat center center/cover;
+  background: url("https://source.unsplash.com/collection/1254524/1600*900") no-repeat center center/cover;
 }
 .split .left,
 .split .right {
@@ -125,7 +130,7 @@ h1 {
   }
 }
 /*
-! so basicly here the main idea is to change the width to the hovered element to 75% when a mouseenter and the other half of it to 25% and remove that effect when mouseleave and do the same thing to the other half
+! so basicly here the main idea is to change the width to the  hovered element to 75% when a mouseenter and the other half of it to 25% and    remove that effect when mouseleave and do the same thing to the other half
 
 * to add an overlay to the image and let the text clearly shown is by using sudo element before to add a z-index of -5 and a lower opacity to 0.35 and then reastablish it in the original selector to z index of 5 and an opacity of 1
 
