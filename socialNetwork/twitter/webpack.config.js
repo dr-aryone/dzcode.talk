@@ -20,7 +20,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader",
         options: {
-          presets: [["es2019", { modules: false }], "stage-0", "react"]
+          presets: [["es2015", { modules: false }], "stage-0", "react"]
         }
       },
       {

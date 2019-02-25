@@ -48,7 +48,7 @@ gulp.task("browser-sync", ["styles"], () => {
       ws: true // enables websockets
     },
     notify: false,
-    open: true,
+    open: false,
     serveStatic: [".", "./public"]
   });
 
