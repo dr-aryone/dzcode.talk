@@ -25,7 +25,11 @@
   "private": true,
   "dependencies": {
     "axios": "^0.16.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jshint": "^2.10.1",
     "mysql": "^2.16.0",
+    "prettier": "^1.16.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",
