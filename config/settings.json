@@ -99,7 +99,7 @@
   },
   "editor.tabSize": 2,
   /*   "team.showWelcomeMessage": false,
-	 */
+   */
   "workbench.editor.tabSizing": "shrink",
   "liveServer.settings.multiRootWorkspaceName": "dzcode.talk",
   "html.format.enable": true,
@@ -124,30 +124,24 @@
     // "**/dll/*": true,
     // "**/compiled/*": true,
   },
-  "editor.rulers": [
-    80,
-    100,
-    120
-  ],
+  "editor.rulers": [80, 100, 120],
   "[javascript]": {
     "editor.formatOnSave": false
   },
   "[javascriptreact]": {
     "editor.formatOnSave": false
   },
+
   "eslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
   "files.autoSave": "afterDelay",
   "eslint.alwaysShowStatus": true,
   "javascript.implicitProjectConfig.checkJs": true,
-  "prettier.disableLanguages": [
-    "javascript",
-    "javascriptreact",
-    "vue"
-  ],
+  "prettier.disableLanguages": ["javascript", "javascriptreact", "vue"],
   "eslint.enable": true,
   "editor.renderIndentGuides": false,
   "emmet.includeLanguages": {
+    "edge": "html",
     "blade": "html",
     "html": "html",
     "erb": "erb",
@@ -178,6 +172,7 @@
   "prettier.jsxBracketSameLine": false,
   "prettier.tabWidth": 2,
   "prettier.semi": true,
+
   "php-cs-fixer.lastDownload": 1542124935854,
   "phpserver.phpPath": "C:\\xampp\\php\\php.exe",
   "editor.tabCompletion": "on",
@@ -195,9 +190,7 @@
   "todo-tree.defaultHighlight": {},
   "breadcrumbs.enabled": true,
   "tslint.jsEnable": false,
-  "tslint.exclude": [
-    "**/*.js"
-  ],
+  "tslint.exclude": ["**/*.js"],
   "javascript.validate.enable": false,
   "prettier.tslintIntegration": true,
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
