@@ -99,7 +99,7 @@
   },
   "editor.tabSize": 2,
   /*   "team.showWelcomeMessage": false,
-   */
+	 */
   "workbench.editor.tabSizing": "shrink",
   "liveServer.settings.multiRootWorkspaceName": "dzcode.talk",
   "html.format.enable": true,
@@ -171,7 +171,7 @@
   "eslint.options": {
     "configFile": "C:\\xampp\\htdocs\\projects\\project\\code talk\\dzcode.talk\\config\\.eslintrc.js"
   },
-  "prettier.printWidth": 120,
+  "prettier.printWidth": 80,
   "prettier.singleQuote": false,
   "prettier.trailingComma": "none",
   "prettier.bracketSpacing": true,

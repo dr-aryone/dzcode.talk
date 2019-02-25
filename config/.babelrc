@@ -1,7 +1,10 @@
 {
   "presets": [
     "@babel/preset-env",
-    "@babel/preset-react"
+    "@babel/preset-react",
+    "es2019",
+    // "react",
+    // "stage-0"
   ],
   "plugins": [
     "@babel/plugin-syntax-dynamic-import",

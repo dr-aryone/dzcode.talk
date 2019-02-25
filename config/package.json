@@ -6,17 +6,18 @@
   "homepage": "https://Zed-M.github.io/hammou_portfolio",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zed-M/dzcode.design/"
+    "url": "https://github.com/Zed-M/dzcode.talk/"
   },
   "author": "Amine Hammou",
   "license": "ISC",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "sass2": "gulp styles",
     "deploy": "gh-pages -d dist",
     "start-server": "nodemon starter.js",
+    "start-node": "node starter.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "start-node": "node starter.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "start-webpack": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback --env.PLATFORM=local --env.VERSION=stag",
     "prebuild": "webpack --mode production --config config/webpack.prod.config.js --env.PLATFORM=production --env.VERSION=stag --progress",
@@ -24,9 +25,16 @@
     "lint": "eslint --debug src/",
     "lint:write": "eslint --debug src/ --fix",
     "test": "jest",
+    "test2": "node ace test",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors",
-    "prettier": "prettier --write src/**/*.js"
+    "prettier": "prettier --write src/**/*.js",
+    "bundle": "./node_modules/.bin/webpack",
+    "production": "./node_modules/.bin/webpack -p",
+    "watch": "gulp",
+    "server-adonis": "adonis serve",
+    "server-watch-adonis": "adonis serve --dev",
+    "js": "gulp webpack"
   },
   "husky": {
     "hooks": {
@@ -70,10 +78,22 @@
     "socket.io-adapter": "^1.1.1",
     "socket.io-client": "^2.1.1",
     "socket.io-parser": "^3.3.0",
-    "styled-components": "^4.0.3"
-  },
+    "styled-components": "^4.0.3",
+    "flatted": "^2.0.0",
+    "@adonisjs/ace": "^5.0.8",
+    "@adonisjs/auth": "^3.0.7",
+    "@adonisjs/bodyparser": "^2.0.5",
+    "@adonisjs/cors": "^1.0.7",
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/framework": "^5.0.9",
+    "@adonisjs/ignitor": "^2.0.8",
+    "@adonisjs/lucid": "^6.1.3",
+    "@adonisjs/session": "^1.0.27",
+    "@adonisjs/shield": "^1.0.8",
+    "composer": "^4.1.0"
+    },
   "bugs": {
-    "url": "https://github.com/Zed-M/dzcode.design/issues"
+    "url": "https://github.com/Zed-M/dzcode.talk/issues"
   },
   "keywords": [],
   "devDependencies": {
@@ -91,6 +111,8 @@
     "babel-loader": "^8.0.4",
     "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^1.0.1",
+    "mysql": "^2.16.0",
+    "uglify-js": "^3.4.9",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^5.9.0",
@@ -162,5 +184,9 @@
     "webpack-dev-server": "^3.1.10",
     "webpack-merge": "^4.1.4",
     "webpack-visualizer-plugin": "^0.1.11"
+
+  },
+  "autoload": {
+    "App": "./app"
   }
 }

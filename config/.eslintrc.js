@@ -150,11 +150,11 @@ module.exports = {
       {
         trailingComma: "none",
         singleQuote: false,
-        printWidth: 120,
+        printWidth: 80,
         bracketSpacing: true,
         jsxBracketSameLine: false,
         tabWidth: 2,
-        semi: true,
+        semi: true
       },
     ],
 
@@ -167,7 +167,7 @@ module.exports = {
     "function-paren-newline": "off", // Incompatible with prettier
     "no-plusplus": "off",
 
-    "max-len": ["warn", 120, 2, {
+    "max-len": ["warn", 80, 2, {
       ignoreUrls: true,
     }], // airbnb is allowing some edge cases
     "no-console": "warn", // airbnb is using warn

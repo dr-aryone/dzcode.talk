@@ -1,64 +1,89 @@
-const gulp = require('gulp')
-const browserSync = require('browser-sync').create()
-const sass = require('gulp-sass')
-const uglifycss = require('gulp-uglifycss')
+// gulp version ^4.0.0
+const gulp = require("gulp");
+const browserSync = require("browser-sync").create();
+const sass = require("gulp-sass");
+const uglifycss = require("gulp-uglifycss");
 
-gulp.task('compile-sass', function () {
-
-  return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'workbench/bootstrap workspace/1st udemy/src/scss/*.scss'])
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('workbench/bootstrap workspace/1st udemy/src/css'))
+gulp.task("compile-sass", () =>
+  gulp
+    .src([
+      "node_modules/bootstrap/scss/bootstrap.scss",
+      "workbench/bootstrap workspace/1st udemy/src/scss/*.scss"
+    ])
+    .pipe(sass().on("error", sass.logError))
+    .pipe(gulp.dest("workbench/bootstrap workspace/1st udemy/src/css"))
     .pipe(browserSync.stream())
-})
+);
 
-gulp.task('minify-css', function () {
-  gulp.src('workbench/bootstrap workspace/1st udemy/src/css/*.css')
-    .pipe(uglifycss({
-      "uglyComments": true
-    }))
-    .pipe(gulp.dest('workbench/bootstrap workspace/1st udemy/src/minify/'))
-})
+gulp.task("minify-css", () => {
+  gulp
+    .src("workbench/bootstrap workspace/1st udemy/src/css/*.css")
+    .pipe(
+      uglifycss({
+        uglyComments: true
+      })
+    )
+    .pipe(gulp.dest("workbench/bootstrap workspace/1st udemy/src/minify/"));
+});
 
-gulp.task('move-js', function () {
-  return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/popper.js/dist/popper.min.js'])
-    .pipe(gulp.dest('workbench/bootstrap workspace/1st udemy/src/js'))
+gulp.task("move-js", () =>
+  gulp
+    .src([
+      "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "node_modules/jquery/dist/jquery.min.js",
+      "node_modules/popper.js/dist/popper.min.js"
+    ])
+    .pipe(gulp.dest("workbench/bootstrap workspace/1st udemy/src/js"))
     .pipe(browserSync.stream())
-})
+);
 
-gulp.task('move-fonts', function () {
-  return gulp.src(['node_modules/font-awesome/fonts/*'])
-    .pipe(gulp.dest('../fonts'))
+gulp.task("move-fonts", () =>
+  gulp
+    .src(["node_modules/font-awesome/fonts/*"])
+    .pipe(gulp.dest("../fonts"))
     .pipe(browserSync.stream())
-})
+);
 
-gulp.task('move-css-fonts', function () {
-  return gulp.src(['node_modules/font-awesome/css/font-awesome.min.css'])
-    .pipe(gulp.dest('../workbench/bootstrap workspace/1st udemy/src/css'))
+gulp.task("move-css-fonts", () =>
+  gulp
+    .src(["node_modules/font-awesome/css/font-awesome.min.css"])
+    .pipe(gulp.dest("../workbench/bootstrap workspace/1st udemy/src/css"))
     .pipe(browserSync.stream())
-})
+);
 
 // run sass when serve runs
 // run server
 // watch for any changes in src/scss folder and reload the browser
 // also watch for sass changes
 // watch for html changes
-gulp.task('launch-server', ['compile-sass'], function () {
+gulp.task("launch-server", ["compile-sass"], () => {
   browserSync.init({
-    server: './workbench/bootstrap workspace/1st udemy/src'
+    server: "./workbench/bootstrap workspace/1st udemy/src"
     // proxy: 'http://localhost/project/code%20design/dzcode.design/bootstrap%20workspace/1st%20udemy/src'
-  })
-  gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss',
-    'node_modules/font-awesome/scss/font-awesome.scss',
-    'workbench/bootstrap workspace/1st udemy/src/scss/*.scss'
-  ], ['compile-sass'])
-  gulp.watch('workbench/bootstrap workspace/1st udemy/src/*.html').on('change', browserSync.reload)
-})
+  });
+  gulp.watch(
+    [
+      "node_modules/bootstrap/scss/bootstrap.scss",
+      "node_modules/font-awesome/scss/font-awesome.scss",
+      "workbench/bootstrap workspace/1st udemy/src/scss/*.scss"
+    ],
+    ["compile-sass"]
+  );
+  gulp
+    .watch("workbench/bootstrap workspace/1st udemy/src/*.html")
+    .on("change", browserSync.reload);
+});
 
 // run gulp
 // launch server and browser
 // execute js task
-gulp.task('default', ['minify-css', 'move-js', 'move-fonts', 'move-css-fonts', 'launch-server'])
-
+gulp.task("default", [
+  "minify-css",
+  "move-js",
+  "move-fonts",
+  "move-css-fonts",
+  "launch-server"
+]);
 
 /*
 
