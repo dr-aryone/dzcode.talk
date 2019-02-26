@@ -1,6 +1,6 @@
 {
   "name": "facebook",
-  "version": "4.1.0",
+  "version": "1.0",
   "adonis-version": "4.1.0",
   "homepage": "http://facebook.com/994569554043507/",
   "description": "The fullstack social network build with nodejs & Adonisjs",
