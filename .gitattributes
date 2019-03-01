@@ -1,28 +1,39 @@
-company filter=lfs diff=lfs merge=lfs -text
+config filter=lfs diff=lfs merge=lfs -text
 images filter=lfs diff=lfs merge=lfs -text
-test2 filter=lfs diff=lfs merge=lfs -text
-bundle filter=lfs diff=lfs merge=lfs -text
-index.html filter=lfs diff=lfs merge=lfs -text
-index.nginx-debian.html filter=lfs diff=lfs merge=lfs -text
-project filter=lfs diff=lfs merge=lfs -text
 test filter=lfs diff=lfs merge=lfs -text
-tp1dev filter=lfs diff=lfs merge=lfs -text
-tp2 filter=lfs diff=lfs merge=lfs -text
-fac filter=lfs diff=lfs merge=lfs -text
-programming-spaces filter=lfs diff=lfs merge=lfs -text
-test3 filter=lfs diff=lfs merge=lfs -text
-index.lighttpd.html filter=lfs diff=lfs merge=lfs -text
-cprojet filter=lfs diff=lfs merge=lfs -text
-netbpr filter=lfs diff=lfs merge=lfs -text
-autre-html-css-js-php-telecom filter=lfs diff=lfs merge=lfs -text
 README.md filter=lfs diff=lfs merge=lfs -text
-resum[[:space:]]bd[[:space:]]L2 filter=lfs diff=lfs merge=lfs -text
+the[[:space:]]best[[:space:]]sources.md filter=lfs diff=lfs merge=lfs -text
+c[[:space:]]projects filter=lfs diff=lfs merge=lfs -text
+webdev[[:space:]]projects filter=lfs diff=lfs merge=lfs -text
+webdev[[:space:]]learning filter=lfs diff=lfs merge=lfs -text
+webdev[[:space:]]cheat-sheet filter=lfs diff=lfs merge=lfs -text
+java[[:space:]]projects filter=lfs diff=lfs merge=lfs -text
 fonts filter=lfs diff=lfs merge=lfs -text
 js filter=lfs diff=lfs merge=lfs -text
-resum[[:space:]]bd[[:space:]]L2 filter=lfs diff=lfs merge=lfs -text
-workbench filter=lfs diff=lfs merge=lfs -text
-config filter=lfs diff=lfs merge=lfs -text
 css filter=lfs diff=lfs merge=lfs -text
 git.txt filter=lfs diff=lfs merge=lfs -text
-shoot.mp3 filter=lfs diff=lfs merge=lfs -text
 videos filter=lfs diff=lfs merge=lfs -text
+sounds filter=lfs diff=lfs merge=lfs -text
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Custom for Visual Studio
+*.cs     diff=csharp
+*.sln    merge=union
+*.csproj merge=union
+*.vbproj merge=union
+*.fsproj merge=union
+*.dbproj merge=union
+
+# Standard to msysgit
+*.doc	 diff=astextplain
+*.DOC	 diff=astextplain
+*.docx diff=astextplain
+*.DOCX diff=astextplain
+*.dot  diff=astextplain
+*.DOT  diff=astextplain
+*.pdf  diff=astextplain
+*.PDF	 diff=astextplain
+*.rtf	 diff=astextplain
+*.RTF	 diff=astextplain

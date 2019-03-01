@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<title> just for fun </title>
+
+<style>
+
+
+legend{ color:red; font-size:50px; padding-top:40px; }
+font{
+font-weight:bold;
+}
+body{
+background-repeat:no-repeat;
+background-size: cover;
+}
+
+form{
+ box-shadow: 0px 0px 20px ;
+ width:80%; height:auto;
+ padding-top:20px;
+ padding-bottom:20px; 
+ float:left;
+ padding-left:9px;
+ margin-left:120px;
+ margin-top:50px; 
+}
+
+form input{
+ border: 2px solid black;
+ background:none; /*float:left;*/
+ border-radius:25px;
+ width:220px; height:30px;
+ padding-left:12px;
+ margin-left:10px; font-size:18px
+}
+
+form button{
+ float: left;
+ font-size: 25px;
+ border-radius:25px;
+ padding: 10px 40px 10px 40px;
+ margin-left: 15px;
+ border:none;
+ box-shadow: 0px 0px 10px black;
+ background-color:#616161;
+ cursor:pointer;
+ color:white;
+}
+
+
+</style>
+
+</head>
+
+<body background="../images/img.jpg">
+
+<center style="border:solid 2px blue; height:300px; margin-top:100px;">
+
+<img src="../images/img2.jpg" alt="" height="300px" width="250px" align="right">
+<img src="../images/yup.jpg" alt="" height="300px" width="250px" align="left">
+
+<legend> welcome to hell  </legend>
+
+<font face="italique" color="lightGreen"> 
+
+<h2>
+	Université de dz
+</h2>
+
+<h4 style="color:blue;">	Made by amine hammou >< copy right
+<h5 style="color:white;" style="padding-bottom:100px;"> <b> FSOCIETY </b> </h5>
+</h4>
+
+</center>
+
+<form action="fun.html" method="post" style="border:solid 1px red; padding-top:50px;" >
+
+<table>
+
+<tr>
+	<td>NOM</td>
+	<td><input type="text" name="nom" placeholder="saisir votre nom"></td>
+</tr>
+
+<tr>
+	<td>PRRENOM</td>
+	<td><input type="text" name="prenom" placeholder="saisir votre prnom"></td>
+</tr>
+
+
+<tr><td>DATE NAISSANCE</td><td><input type="date" name="d"</td></tr>
+
+
+<tr><td>EMAIL</td><td><input type="email" name="e" placeholder="saisir votre email"></td></tr>
+
+
+<tr><td>Photo</td><td><input type="file" accept="jpg,jpeg,png" value="Choisir un fichier"> &nbsp Aucun fichier choisi</td></tr>
+
+
+<tr><td>PAYS</td>
+	<td>
+<select name="pays">
+	<option>algerie</option>
+	<option>france</option>
+	<option>tunis</option>
+	<option>allmagne</option>
+	<option>Canada</option>
+</select>
+	</td>
+
+</tr><br><br>
+
+<tr> <td> les langauges maitrisés </td>
+	 
+	 <td>
+	<select name="lang" multiple>
+		<option> java </option>
+		<option> C++ </option>
+		<option> C </option>
+		<option> PHP </option>
+		<option> Python </option>
+</select>
+	  (Pour faire plusieurs choix maintenir la touche CTRL enfoncé) </td>
+
+</tr> <br>
+
+
+<tr> <td>Votre niveaux en HTML</td>
+	
+	<td>
+		<input type="range" name="html">
+	</td>
+</tr>
+
+
+<tr> <td>Votre niveaux en php</td>
+<td> <input type="range" name="php"> </td>	
+</tr>
+
+
+<tr> <td> Spécialité préférée : </td> 
+
+<td>
+	<img src="../images/img2.jpg" alt="" height="300px" width="250px" align="right" style="margin-left:25px;">
+	<img src="../images/yup.jpg" alt="" height="300px" width="250px" align="left" style="margin-right:25px;">
+<a href="https://www.facebook.com/selnadj" title="Rymino">	<img src="../images/her.jpg" alt="" height="300px" width="250px" style="margin-left:25px;" align="right"></a>
+	<img src="../images/simon.jpg" alt="" height="300px" width="250px" align="left" style="margin-right:25px;">
+
+</td>
+
+</tr>
+
+<tr> <td> 
+<input type="checkbox" name="1" checked="checked"> 1.IL
+ </td> </tr>
+
+<tr> <td> 
+<input type="checkbox" name="2"> 2.SIR
+ </td> </tr>
+
+<tr> <td> 
+<input type="checkbox" name="3"> 3.SSI
+ </td> </tr>
+
+<tr> <td> Site web </td>
+
+<td> <input type="url" name="http" placeholder="http://"> </td>
+
+</tr>
+
+<tr>
+	<td>Test psychologique : quelle est votre couleur préfere </td>
+<td> <input type="color" value="#fad345" name="color" style="width:80px;"></td>
+</tr>
+
+<tr>
+<td>
+	<input type="submit" name="btn1" value="Envoyer">
+	<input type="reset" name="btn2" value="Annuler">
+	<input type="submit" name="btn3" value="revenir au debut" style="float:right;"><a href="#up"></a>
+
+</td>
+
+</tr>
+
+</center>
+
+</table>
+
+</font> 
+
+</form>
+
+
+</body>
+</html>

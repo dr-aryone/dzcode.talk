@@ -1,0 +1,143 @@
+.page{
+ width:100%;
+ height:157%;
+ background: -webkit-radial-gradient(blue , white);
+position:absolute;
+top:0px;
+
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+
+.p{
+	color:white;
+	position:absolute;
+	top:16px;
+	left:25%;
+}
+.entrer{
+height:870px;
+width:950px;
+background-color:white;
+margin:70px;
+margin-left:200px;
+border-radius: 28px 28px 28px 28px;
+}
+
+.logo{
+width:100%;
+height:65px;
+background-color: #D3E2E9;
+ }
+#catgr{
+	background-color:teal;
+	width:100%;
+	height:30px;
+}
+.catgr{
+	color:white;
+	font-size:13px;
+    font-weight:bold;
+    padding:25px;
+}
+.arabe{
+	position:absolute;
+	right:200px;
+
+}
+.table{
+
+	width:95%;
+	height:30px;
+	border:1px black solid;
+
+}
+.quatre {
+	display:flex;
+	flex-direction:row;
+	border:1px solid #eeeeee;
+	background-color: #eeeeee;
+	height:250px;
+}
+.abcd{
+	display:flex;
+	flex-direction:column;
+
+}
+.a2{
+color:red;
+}
+.a1{
+
+position:absolute;
+top:23.5%;
+right:240px;
+
+	}
+
+.b{
+
+position:absolute;
+top:30.5%;
+right:270px;
+	}
+
+.c{
+
+position:absolute;
+top:38%;
+right:280px;
+	}
+
+.d{
+
+	position:absolute;
+top:44.5%;
+right:330px;
+	}
+
+.prem {
+	display:flex;
+	flex-direction:row;
+}
+.deus {
+	display:flex;
+	flex-direction:row;
+}.trois {
+	display:flex;
+	flex-direction:row;
+}
+
+.alg{
+	font-size:13px;
+	color:gray;
+	position:absolute;
+	left:62%;
+	top:90%;
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

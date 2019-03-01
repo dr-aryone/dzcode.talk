@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="UTF-8">
+<title> tp4 </title>
+
+</head>
+
+<body>
+
+
+<from action="tp4.php" method="post">
+
+<legend>  Formulaire dinscription "Master Informatique </legend>
+<br>
+
+<table>
+<tr>
+<td> 
+  <label> Nom </label> 
+</td>
+<td>
+<input type="text" autofocus placeholder ="saisir votre nom">
+</td>
+</tr>
+</table>
+<br>
+<label> PreNom </label>
+<input type="text" autofocus placeholder ="saisir votre prenom"><br>
+<label> Date Naissance </label>
+<input type="Date"><br>
+<label> Email </label>
+<input type="email"><br>
+<label> Sexe </label>
+<label> Masculin </label>
+<input type="radio" name="groupe" value="men">
+<label> Feminin </label>
+<input type="radio" name="groupe" value="women"><br>
+<label> Photo </label>
+<input type="file" accepted="/Image/JPEG , /Image/JPG"><br>
+
+<label>pays</label>
+<select name="Pays">
+	<option value="Algerie">algerie</option>
+	<option value="Bouinan">Bouinan</option>
+	<option value="boufarik">Boufarik</option>
+	<option value="souma">Souma</option>
+</select><br><br><br>
+
+<label> les languages maitrisés </label><br>
+<input type ="checkbox" name ="java" value ="jv">
+<label> java </label><br>
+<input type ="checkbox" name ="c" value ="c">
+<label> C </label><br>
+<input type ="checkbox" name ="c++" value ="c++">
+<label> C++ </label><br>
+
+<select name="lang">
+	<option value="php">php</option>
+	<option value="js">js</option>
+	<option value="html">html</option>
+
+</select> <label> (Pour faire plusieurs choix maintenir ctrl enfoncée ) </label> <br> 
+
+<label> votre niveau en html </label>
+
+input type = "range"
+
+<label> votre niveau en php </label>
+
+<select name="niv2">
+	<option value="pro">pro</option>
+	<option value="intermed">intermed</option>
+	<option value="debutant">debutant</option>
+
+</select><br>
+
+<label> spécialité préféré </label> <br>
+
+<input type="radio" name="groupe2" value="il">
+<label> il </label> <br>
+<input type="radio" name="groupe2" value="sir">
+<label> sir </label> <br>
+<input type="radio" name="groupe2" value="ssi">
+<label> ssi </label> <br>
+
+<label> Site web </label><br>
+<input type="url" name="http://" placeholder = "http://"><br>
+
+<label> Test psychologique quelle est votre couleur </label>
+<input type ="color">
+<br>
+<input type ="submit" value="Envoyer">
+<input type ="submit" value="Annuler">
+
+
+
+
+</form>
+
+</body>
+</html>

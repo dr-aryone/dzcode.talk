@@ -1,0 +1,38 @@
+body {  
+background-image:url(florida.jpg);
+background-size:cover;
+background-repeat:no-repeat;
+}
+
+form{
+ box-shadow: 0px 0px 20px ;
+ width: 1040px ;height:auto;
+ padding-top:20px;
+ padding-bottom:20px;
+ float:left;
+ padding-left:9px;
+ margin-left:200px;
+ margin-top:200px;
+}
+
+form input{
+ border: 2px solid black;
+ background: none;	 float:left;
+ border-radius:25px;
+ width:266px; height:40px;
+ padding-left:12px;
+ margin-left:10px; font-size:18px
+}
+
+form button{
+ float:center;
+ font-size: 22px;
+ border-radius:25px;
+ padding: 10px 40px 10px 40px;
+ margin-left: 35px;
+ border:none;
+ box-shadow: 0px 0px 10px black;
+ background-color:#616161;
+ cursor:pointer;
+ color:white;
+}

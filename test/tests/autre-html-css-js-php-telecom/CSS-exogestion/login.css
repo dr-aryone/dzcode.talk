@@ -1,0 +1,31 @@
+
+h2 {
+	text-align: center;
+}
+.login {
+	width: 370px;
+	height: 350px;
+	border: 2px solid #000000;
+	position: relative;
+	left: 500px;
+	background: -webkit-linear-gradient(left top, red, yellow);
+	padding-top: 35px;
+}
+.utilisateur {
+	margin-left: 50px;
+	font-weight: bold;
+	font-size: 1.2em;
+	border-radius: 15px;
+}
+.utilisateur1 {
+	font-weight: bold;
+	font-size: 1.2em;
+	border-radius: 15px;
+}
+#btn{
+	background-color: orange;
+	color: #ffffff;
+	position: relative;
+	left: 50px;
+}
+

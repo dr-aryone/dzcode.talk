@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<FORM METHOD="GET" ACTION="nom_de_votre_page.html">
+<FIELDSET STYLE="background: #FFFFDD ;">
+<LEGEND STYLE="background: #FFFF88 ;"><B>Client</B></LEGEND>
+<CENTER><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="5" WIDTH="95%">
+<TR>
+<TD WIDTH="20%"><B>Civilité</B>
+<TD WIDTH="70%">
+<INPUT TYPE=RADIO NAME=civilite VALUE="Mademoiselle">Mademoiselle
+<INPUT TYPE=RADIO NAME=civilite VALUE="Madame" CHECKED>Madame
+<INPUT TYPE=RADIO NAME=civilite VALUE="Monsieur">Monsieur
+<TR>
+<TD><B>Nom / Prénom</B>
+<TD> <INPUT TYPE=TEXT NAME=nom SIZE=50 MAXLENGTH=80>
+<TR>
+<TD><B>Adresse</B>
+<TD> <TEXTAREA NAME=adresse COLS=50 ROWS=2 WRAP=PHYSICAL>Rue No
+Boîte postale</TEXTAREA>
+<TR>
+<TD><B>No postal / Localité</B>
+<TD> <INPUT TYPE=TEXT NAME=no_postal Size=5 MAXLENGTH=4>
+<INPUT TYPE=TEXT NAME=localite SIZE=20 MAXLENGTH=80
+VALUE="Lausanne">
+<TR>
+<TD><B>Pays</B>
+<TD> <SELECT NAME=pays>
+<OPTION>France
+<OPTION>Italie
+<OPTION SELECTED>Suisse
+</SELECT>
+<TR>
+<TD><B>Plateforme(s)</B>
+<TD> <INPUT TYPE=CHECKBOX NAME=materiel VALUE="Windows" CHECKED>Windows
+<INPUT TYPE=CHECKBOX NAME=materiel VALUE="Mac" CHECKED>Macintosh
+<INPUT TYPE=CHECKBOX NAME=materiel VALUE="Unix">Unix
+<TR>
+<TD><B>Applications(s)</B>
+<TD> <SELECT NAME=applications SIZE=5 MULTIPLE>
+<OPTION SELECTED>Bureautique
+<OPTION>DAO
+<OPTION>Statistiques
+<OPTION>SGBD
+<OPTION SELECTED>Internet</SELECT>
+</TABLE></CENTER>
+</FIELDSET>
+<CENTER><TABLE BORDER="0" CELLSPACING="0" CELLPADDING="10" WIDTH="95%">
+<TR><TH>
+<INPUT TYPE=SUBMIT VALUE=" Soumettre formulaire ">
+<INPUT TYPE=RESET
+VALUE=" Effacer ">
+</TABLE></CENTER>
+</FORM>
+
+</body>
+</html>

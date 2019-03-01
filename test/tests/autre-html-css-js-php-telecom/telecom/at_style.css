@@ -1,0 +1,786 @@
+@import url("pages_internes.css");
+
+
+
+
+/*-------------------------------------------------style de la faq--------------------------------------------------*/
+.tableau{background:#fff; padding:1px; border:1px solid #5A759B;}
+.tableau td{color:#fff; font-size:11px; padding:5px 6px;}
+
+#container-faq{width:100%; padding:5px; margin:20px 0 0 -10px;}
+
+.titre-faq-01, .titre-faq-02, .titre-faq-03, .titre-faq-04, .titre-faq-05, .titre-faq-06, .titre-faq-07, .titre-faq-08, .titre-faq-09, .titre-faq-10, .titre-faq-11,
+.titre-faq-12, .titre-faq-13, .titre-faq-14, .titre-faq-15, .titre-faq-16, .titre-faq-17, .titre-faq-18, .titre-faq-19, .titre-faq-20, .titre-faq-21, .titre-faq-22, .titre-faq-23, .titre-faq-24, .titre-faq-25, .titre-faq-26, .titre-faq-27, .titre-faq-28{width:100%; background:#8AA8C6; cursor:pointer; color:#fff; font-size:13px; font-weight:normal; padding:4px 11px; border-radius:4px 4px 0 0; margin:1px auto 0 auto;
+ transition:all 0.2s ease-in-out;}
+
+.fleche-faq{float:right; margin:6px 0 0 0; transition:all 0.2s ease-in-out;}
+
+h4:hover{background:#297AB3; transition:all 0s ease-in-out;}
+.hoverstate{background:#328540; margin-top:10px; transition:all 0.2s ease-in-out;}
+
+#container-faq ul{margin-left:-27px;}
+#container-faq ul li{color:#048266 !important;}
+.titre-rouge{color:#C52629;}
+
+.faq-01, .faq-02, .faq-03, .faq-04, .faq-05, .faq-06, .faq-07, .faq-08, .faq-09, .faq-10, .faq-11, .faq-12, .faq-13, .faq-14, .faq-15, .faq-16, .faq-17, .faq-18, .faq-19, .faq-20, .faq-21, .faq-22, .faq-23, .faq-24, .faq-25, .faq-26, .faq-27, .faq-28
+{width:100%; max-height:0; overflow:hidden; background:#fff; font-size:12px; padding:0 10px; border:1px solid #358AD0; border-top:none; margin:0 auto; opacity:0;
+transition:all 0.2s ease-in-out;}
+
+.faq-01.open, .faq-02.open, .faq-03.open, .faq-04.open, .faq-05.open, .faq-06.open, .faq-07.open, .faq-08.open, .faq-09.open, .faq-10.open, .faq-11.open, .faq-12.open, .faq-13.open, .faq-14.open, .faq-15.open, .faq-16.open, .faq-17.open, .faq-18.open, .faq-19.open, .faq-20.open, .faq-21.open, .faq-22.open, .faq-23.open, .faq-24.open, .faq-25.open, .faq-26.open, .faq-27.open, .faq-28.open
+{padding:10px; max-height:1000px; opacity:1; border:1px solid #328540; border-top:none; margin-bottom:10px; transition:all 0.2s ease-in-out;}
+
+.hoverstate .fleche-faq{transform:rotate(180deg); transition:all 0.2s ease-in-out;}
+
+#questions-01, #questions-02, #questions-03, #questions-04, #questions-05, #questions-06, #questions-07, #questions-08, #questions-09, #questions-10, #questions-11, #questions-12
+{display:none;}
+
+#questions-01:target, #questions-02:target, #questions-03:target, #questions-04:target, #questions-05:target, #questions-06:target, #questions-07:target, #questions-08:target, #questions-09:target, #questions-10:target, #questions-11:target, #questions-12:target{display:block;}
+
+
+#form-faq{width:360px; background:rgba(195,229,243,0.2); padding:20px; border-radius:6px; margin:0 auto;}
+#form-faq input[name="nom"]{width:190px; margin-left:40px;}
+#form-faq input[name="prenom"]{width:190px; margin-left:20px;}
+#form-faq input[name="tel"]{width:190px; margin-left:2px;}
+#form-faq input[name="email"]{width:190px; margin-left:30px;}
+#form-faq textarea[name="contenu"]{height:100px; margin-left:20px !important;}
+
+#form-faq input[name="send"] {width:95px; height:30px; cursor:pointer;}
+#form-faq input[name="delet"]{width:95px; height:30px; cursor:pointer;}
+
+/*-------------------------------------------------fin style de la faq--------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+#container-offre-idoom{width:100%; display:flex; margin:10px auto 10px auto;}
+.item-01{width:60%; color:#fff; background:#208c6a /*url(../images/fond-offre-idoom.png) no-repeat right top*/; padding:5px 10px; border-right:1px solid #fff;
+border-radius:6px 0 0 6px;}
+.item-02{width:40%; color:#fff; background:#344679; padding:5px 10px; border-radius:0 6px 6px 0;}
+
+.item-01 h1{color:#fff; font-size:18px; margin:4px 0 6px 0;}
+.item-01 h2{color:#f5b507; margin:0 0 0 0;}
+.item-01 ul{margin-left: 10px;}
+
+.item-02 h1{margin:0 0 0 20px;}
+.item-02 p{padding:0 10px 0 0; margin-left:20px;}
+.item-02 input[type="text"]{display:block; width:190px; height:20px; cursor:pointer; font-size:13px; margin:0 auto;}
+.item-02 input[type="submit"]{display:block; width:200px; height:32px; cursor:pointer; color:#344679; margin:5px auto;}
+
+.titre-rouge{color:#C52629;}
+
+
+
+
+
+
+
+
+
+
+
+
+#bouton_redirection{width:404px; margin:100px auto;}
+#bouton_redirection .link_tawassol{display:block; width:407px; height:226px; background:url(../images/btn_link_tawassol.png) no-repeat; outline:none;
+transition:0.2s ease-out;}
+#bouton_redirection .link_at{display:block; width:407px; height:167px; background:url(../images/btn_link_at.png) no-repeat; margin-top:-22px; outline:none;
+transition:0.2s ease-out;}
+#bouton_redirection .link_tawassol:hover{opacity:0.9;}
+#bouton_redirection .link_at:hover{opacity:0.9;}
+
+
+
+
+
+.bouton-mostaqbali{width:200px; height:60px;}
+
+/*ZONE STREAMING : la page streaming ----------------------------------------------------------*/
+#page-streaming p{color:#036; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:16px; padding:5px;}
+#page-streaming strong{color:#C33; font-size:20px;}
+#zone-left{float:left; text-align:center; width:360px; background-color:#ecf4f6; border:1px solid #cddde2; border-radius:6px; padding-bottom:5px; margin-left:100px;}
+#zone-right{float:left; text-align:center; width:360px; background-color:#ecf4f6; border:1px solid #cddde2; border-radius:6px; padding-bottom:5px; margin-left:10px;}
+
+#zone-left a{display:block; width:120px; text-decoration:none; color:#06C; background-color:#bfe2df; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:18px; padding:8px; border-radius:6px; margin:0 auto;}
+#zone-left a:hover{background-color:#acdfdb; text-decoration:none;}
+#zone-right a{display:block; width:120px; text-decoration:none; color:#06C; background-color:#bfe2df; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:18px; padding:8px; border-radius:6px; margin:0 auto;}
+#zone-right a:hover{background-color:#acdfdb; text-decoration:none;}
+
+#clear{clear:both;}
+.titre-gros-rouge{color:#C33; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:22px}
+/*ZONE STREAMING : la page streaming ----------------------------------------------------------*/
+
+
+
+
+body{
+	background: #D3E2E9 url(../images/arr_plan_page.jpg) repeat-x;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding:0;
+}
+
+a img{ border:0px;	}
+
+#container{
+margin: 0 auto;
+padding:0px;
+width:930px;
+/*overflow:hidden;*/
+color:#000;
+text-align:left;
+position:relative;
+/* hack pour gerer la hauteur dans IE6 */
+
+}
+
+#fond_haut{
+
+/*background: url(../images/fond_etoiles2.jpg) repeat-x;*/
+/*height:173px;*/
+position:relative;
+}
+
+/* ---- MENU ACCUEIL (le petit menu qui est en haut a droite)------- */
+/* ----------------------------------------------------------------- */
+
+#menu_accueil{
+	margin: 0 auto;
+	padding: 5px 0 15px 0;
+	width:930px;
+	height:20px;
+	text-align:right;
+	color:#FFFFFF;
+		}
+
+#menu_accueil ul{
+list-style-type:none;
+float:right;
+}
+
+#menu_accueil li{
+display:inline;
+padding: 0 5px 0 7px;
+border-left:1px #FFFFFF dotted;
+}
+#menu_accueil li:first-child{
+border-left:none;
+}
+#menu_accueil li.first{
+border-left:none;
+}
+
+#menu_accueil li a{
+color:#FFFFFF;
+text-decoration:none;
+}
+#menu_accueil li a:hover{
+color:#FF9900;
+}
+
+
+
+#social {
+float:right;
+margin-top:3px;
+margin-left:10px;
+margin-right:10px;
+	}
+/* -------------------------*/
+
+
+/* ------- HEADER ----------*/
+#header{
+width:930px;
+height:65px;
+border-radius:0 8px 0 0;
+/*BACKGROUND:url(../images/saha_remdan.jpg) no-repeat right,url(../images/header_bg.jpg) repeat-x;*/
+background:url(../images/header_bg.jpg) repeat-x;
+position:relative; top:5px;
+}
+
+#header a.logo {
+	DISPLAY: block; BACKGROUND:url(../images/logo_at.jpg) no-repeat;
+	width:134px;
+	height:65px;
+	text-indent:-9999px;
+	float:left;
+	position:absolute;
+}
+#header .bonchoix {
+	/*DISPLAY: block;
+	BACKGROUND:url(../images/saha_remdan.jpg) no-repeat right;
+	width:596px;
+	height:65px;
+	float:right;*/
+position:absolute;
+margin:30px 0 0 690px;
+}
+/* -------------------------*/
+#menu a.lien_arabe  {
+margin:0;
+float:right;
+
+}
+
+
+
+/*--- TOP MENU (les principales rubriques du site)-------*/
+
+#menu {
+padding:0 0 0 0;
+margin:0;
+BACKGROUND:url(../images/top_menu_bg.jpg) repeat-x;
+POSITION: relative;top:6px;
+HEIGHT: 30px;
+}
+
+#menu ul{
+LIST-STYLE-TYPE: none;
+display:inline;
+}
+#menu li{
+padding: 0 1px 0 1px;
+display:block;
+BACKGROUND:url(../images/trai_menu.gif) no-repeat left top;
+HEIGHT: 30px;
+float:left;
+}
+#menu li:first-child{
+BACKGROUND:none;
+}
+
+#menu li.first{
+BACKGROUND:none;
+}
+
+
+#menu li A {
+padding:2px 10px 0 15px;
+text-decoration:none;
+HEIGHT: 30px;
+float:left;
+}
+#menu LI A img{
+padding: 10px 0 0 0;
+}
+
+#menu LI A:hover {
+	BACKGROUND: url(../images/menu-hover.jpg) repeat-x ;
+}
+#menu LI:hover A {
+	BACKGROUND: url(../images/menu-hover.jpg) repeat-x;
+}
+
+/*#menu LI.selected {
+	BACKGROUND: url(../images/menu-hover.jpg) repeat-x;
+
+
+#menu LI.selected A {
+	BACKGROUND: url(../images/menu-hover.jpg) repeat-x;
+}
+#menu LI a:active{
+	BACKGROUND: url(../images/menu-hover.jpg) repeat-x;
+}
+}*/
+#menu a.current {
+BACKGROUND: url(../images/menu-hover.jpg) repeat-x;}
+
+
+/*-----------------------------------*/
+
+
+/* ------ LE CONTENU DE LA PAGE D'ACCUEIL -------- */
+
+#contenu{
+float:left;
+padding:15px 8px 32px 0;
+width:930px;
+background: url(../images/fond_contenu.gif) repeat-y ;
+
+/* hack pour gerer la hauteur dans IE6 */
+min-height:auto;
+
+}
+
+page-djamal-wlayati #contenu{min-height:710px;}
+#news-container
+{
+	width: 850px;
+	height:30px;
+	padding-top:6px;
+	background: url(../images/flashinfo.jpg) no-repeat;
+	padding-left:30px;
+	padding-right:30px;
+	margin-bottom:10px;
+	margin-top:4px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#9A7300;
+	font-size:12px;
+}
+
+/*#news-container ul {
+	list-style-type:none;
+	}
+
+#news-container ul li div
+{
+	height:15px;
+	padding:3px;
+	margin-top:4px;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#A50000;
+	font-size:12px;
+	display:inline;
+
+}*/
+
+/*#news-container {
+	width:910px;
+	height:30px !important;
+	background: url(../images/flashinfo.jpg) no-repeat;
+	margin-bottom:10px;
+	}
+#news-container ul li
+{
+	height:30px !important;
+	padding:7px 10px 10px 25px !important;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#A50000;
+}
+*/
+
+
+#pub_flash{
+width:910px;
+height:260px;
+float:left;
+}
+
+
+/*-- la partie ou il ya les images comme "Consultez votre facture", Veille Tech ... */
+#services_accueil{
+padding-left:12px;
+padding-top:6px;
+width:240px;
+height:260px;
+background: url(../images/services_acceuil_bg.gif) repeat-x;
+float:left;
+}
+#services_accueil .arrondi{
+position:absolute;
+top:108px;
+right:7px;
+}
+
+
+#services_accueil img{
+padding-top:2px;
+padding-bottom:2px;
+}
+
+
+/*-- Service Espace Client ... */
+#services_ec{
+padding:55px 10px 10px 10px;
+margin-left:7px;
+width:225px;
+height:195px;
+background: url(../images/login_espace_client.gif) no-repeat;
+float:left;
+}
+
+#services_ec input{
+width:210px;
+height:30px;
+border:none;
+background:url(../images/login_espace_client_input_bg.gif) no-repeat;
+padding-left:10px;
+margin-left:5px;
+margin-bottom:3px;
+}
+
+#services_ec .valider{
+width:90px;
+height:30px;
+border:none;
+background:url(../images/login_espace_client_valider.gif) no-repeat;
+padding-left:10px;
+float:right;
+margin-right:10px;
+font-weight:bold;
+}
+
+#espace_client_inscription {
+	margin-top:35px;
+	height:90px;
+	line-height:18px;
+	}
+
+#espace_client_inscription a{
+color:#385978;
+text-decoration:none;
+	}
+
+#espace_client_inscription a:hover{
+color:#FEA901;
+	}
+
+
+/* --------- */
+.formulaireadsl{
+margin-bottom:10px;
+}
+
+
+#services_accueil img{
+padding-top:2px;
+padding-bottom:2px;
+}
+
+/* ------ LES 3 COLONNES DE LA PAGE D'ACCUEIL "NEWS" "ACCES RAPIDE" "OFFRES" -------- */
+
+/*----- colone NEWS ----*/
+
+#news_acceuil{
+padding:0px;
+margin-top:20px;
+width:295px;
+height:206px;
+background-color:#FFF;
+overflow:hidden;
+float:left;
+background:url(../images/news_accueil_bg.gif) no-repeat;
+}
+
+#news_acceuil ul{
+list-style-type:none;
+margin:0;
+padding:7px 0 0 20px;
+margin-top:20px;
+width:250px;
+line-height:14px;
+}
+
+#news_acceuil li {
+margin:0;
+height:56px;
+padding:4px 0 10px 0;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+font-weight:normal;
+color:#587C9E;
+text-decoration:none;
+border-bottom: 1px #9F7700 dotted ;
+overflow:hidden;
+}
+
+#news_acceuil li:last-child {
+	border-bottom:none;
+	}
+
+#news_acceuil .img_miniature {
+	padding-left:5px;
+	float:right;
+	}
+
+#news_acceuil li a{
+text-decoration:none;
+color:#444444;
+
+}
+#news_acceuil li a:hover{
+color: #415B76;
+}
+
+#news_acceuil .toutenews {
+display:block;
+height:27px;
+margin-top:2px;
+color:#664D00;
+text-align:right;
+padding-top:10px;
+padding-right:10px;
+text-decoration:none;
+ }
+
+/*----- colone Acces rapide ----*/
+
+#acces_rapide .titre_colone {
+margin-top:-20px;position:absolute;
+}
+#acces_rapide{
+margin-left:11px;
+padding:0;
+margin-top:40px;
+width:295px;
+height:185px;
+
+border: 1px solid #D3E0EB;
+overflow:hidden;
+float:left;
+}
+
+#acces_rapide ul{
+list-style-type:none;
+margin:0px;
+padding:0px 0 0 0px ;
+}
+#acces_rapide li a{
+height:21px;
+margin-top:3px;
+padding-top:7px;
+text-indent:30px;
+background:#F8F9FA url(../images/fleche1.gif) no-repeat 12px 10px;
+display:block;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:normal;
+color:#365773;
+text-decoration:none;
+}
+#acces_rapide li a:hover{
+color:#fff;
+background-color:#A4BED5;}
+
+/*----- colone Sondage ----*/
+#sondage_accueil .titre_colone {
+margin-top:-20px;position:absolute;
+}
+#sondage_accueil{
+margin-left:12px;
+padding: 0 ;
+margin-top:40px;
+width:295px;
+height:185px;
+background-color:#F8F9FA;
+border: 1px solid #D3E0EB;
+overflow:hidden;
+float:left;
+}
+
+#sondage_accueil form {
+margin:10px;
+width:270px;
+color:#365773;
+
+}
+#sondage_accueil form .question{
+font-weight:bold;
+line-height:16px;
+}
+#sondage_accueil form .btnvote{
+width:89px;
+height:20px;
+background-image:url(../images/btn_vote.gif);
+background-repeat:no-repeat;
+cursor:hand;
+border:none;
+color:#41698C;
+}
+
+/*---- colone moustakbali + fiamane ----- */
+#acces_moustakbali{
+margin-left:3px;
+padding:0;
+margin-top:20px;
+width:295px;
+height:185px;
+float:left;
+}
+
+/*---- colone djaweb + espace client ----- */
+#ec_accueil{
+margin-left:12px;
+padding: 0;
+margin-top:20px;
+width:295px;
+height:185px;
+float:left;
+
+}
+
+
+/*----- colone Espace Client ----
+#ec_accueil .titre_colone {
+margin-top:-20px;position:absolute;
+}
+#ec_accueil{
+margin-left:12px;
+padding: 0;
+margin-top:40px;
+width:295px;
+height:185px;
+background:#F8F9FA;
+border: 1px solid #1A6600;
+overflow:hidden;
+float:left;
+color:#355772;
+}
+*/
+
+/*----- colone Trouvez votre agence ----*/
+#agence_accueil .titre_colone {
+margin-top:-20px;position:absolute;
+}
+#agence_accueil{
+margin-left:12px;
+padding: 0;
+margin-top:40px;
+width:295px;
+height:185px;
+background:#F8F9FA url(../images/logo_anis.gif) no-repeat 10px 10px ;
+border: 1px solid #D3E0EB;
+overflow:hidden;
+float:left;
+color:#355772;
+}
+
+#agence_accueil .resume{
+	padding-left:100px;
+margin-top:20px;
+	text-align:left;
+	display:block;
+	width:200px;
+	}
+
+#agence_accueil fieldset.search {
+	border: none;
+	margin:35px 0 0 0;
+	width:255px;
+    background:url(../images/bg_recherche_agence.gif)   repeat-x;
+	position:absolute;
+	}
+
+#agence_accueil .search input.box {
+	margin:0;
+	padding:0;
+	border:none;
+	color: #fff;
+	font-size: 1em;
+	width: 161px;
+	height: 30px;
+	background: #fff url(../images/search_bg.gif) no-repeat;
+	text-indent:10px;
+	color:#666;
+	float:left;
+
+}
+
+#agence_accueil .search input.btn {
+margin:0;
+	padding:0;
+
+border:none;
+	width: 89px;
+	height: 38px;
+	cursor: pointer;
+	background: url(../images/btn_recherche_bg.gif) no-repeat top right;
+	float:left;
+}
+#agence_accueil.search input.btn:hover {
+	background: #fbc900 url(search_bg.gif) no-repeat bottom right;
+}
+
+/**********************/
+.search input.box1 {
+	margin:0;
+	padding:0;
+	border:none;
+	color: #fff;
+	font-size: 1em;
+	width: 161px;
+	height: 30px;
+	background: #fff url(../images/search_bg.gif) no-repeat;
+	text-indent:10px;
+	color:#666;
+	float:left;
+
+}
+ .search input.btn1 {
+margin:0;
+	padding:0;
+
+border:none;
+	width: 89px;
+	height: 38px;
+	cursor: pointer;
+	background: url(../images/btn_recherche_bg.gif) no-repeat top right;
+	float:left;
+}
+
+#page-accueil #contenu{min-height:300px;}
+
+/***********************/
+/*---- FOOTER -------*/
+#footer{
+margin:0 auto;
+width:958px;
+height:100px;
+background:url(../images/footer.png) no-repeat;
+position:relative;
+}
+/*---------------------*/
+
+.lien_flottant{position:absolute; color:#003366; text-decoration:none; margin:95px 0 0 5px;}
+.lien_flottant:visited{color:#003366; text-decoration:none;}
+.lien_flottant:focus{color:#003366; text-decoration:none;}
+.lien_flottant:hover{color:#FFFFFF;}
+
+
+/* liScroll styles */
+
+.tickercontainer { /* the outer div with the black border */
+	width: 850px;
+	height:30px;
+	padding-top:0px;
+	background: url(../images/flashinfo.jpg) no-repeat;
+	padding-left:30px;
+	padding-right:30px;
+	margin-bottom:10px;
+	margin-top:4px;
+	color:#A50000;
+	overflow: hidden;
+
+}
+.tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+position: relative;
+left: 10px;
+top: 8px;
+width: 850px;
+overflow: hidden;
+
+}
+ul.newsticker { /* that's your list */
+position: relative;
+left: 750px;
+font: bold 10px Verdana;
+list-style-type: none;
+margin: 0;
+padding: 0;
+font-size:11px;
+
+}
+ul.newsticker li {
+float: left; /* important: display inline gives incorrect results when you check for elem's width */
+margin: 0;
+padding: 0;
+
+}
+ul.newsticker a {
+white-space: nowrap;
+padding: 0;
+color: #ff0000;
+font: bold 10px Verdana;
+margin: 0 50px 0 0;
+}
+ul.newsticker span {
+margin: 0 10px 0 0;
+}
