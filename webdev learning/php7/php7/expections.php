@@ -4,10 +4,14 @@
 Using string as the assertion is DEPRECATED as of PHP 7.2.
 
 description
-An optional description that will be included in the failure message if the assertion fails.
+An optional description that will be included in the failure message if the assertion
+fails.
 
 exception
-In PHP 7, the second parameter can be a Throwable object instead of a descriptive string, in which case this is the object that will be thrown if the assertion fails and the assert.exception configuration directive is enabled.
+In PHP 7, the second parameter can be a Throwable object instead of a descriptive
+string, in which case this is
+the object that will be thrown if the assertion
+fails and the assert.exception configuration directive is enabled.
 
 */
 
@@ -19,7 +23,8 @@ assert(is_numeric($num), 'no it is an error string');
 
 the string output is no longer supported in php7 you must use an object
 
- assert($num > 100, "yes it is"); // php7 makes the 2 param more dynamic the 1fst => 1 , 0 , false , true , polymorph .... , the
+ assert($num > 100, "yes it is"); // php7 makes the 2 param more dynamic
+ the 1fst => 1 , 0 , false , true , polymorph .... , the
   2nd => can be an obj handler
   it goes on the php.ini and enables the assert.exception error handling
 */

@@ -27,7 +27,10 @@ array(
 )
 );
 
-// $ 2 chars for the type of encrypting by default is crypt() the second $ param of 2 or 3 chars is the cost of the encryption the higher the better but the payload will make the page slower and then a $ 10 chars for the random salt and the last $ is the password
+// $ 2 chars for the type of encrypting by default is crypt()
+// the second $ param of 2 or 3 chars is the cost of the encryption
+/// the higher the better but the payload will make the page slower
+// and then a $ 10 chars for the random salt and the last $ is the password
 
 
 //password_verify();

@@ -10,9 +10,12 @@ error_reporting(E_ALL);
 primitive type declarations only in php7
  */
 
-// ... => you could have a lot of parameters and we will put them in an array and shock them in $int array
+// ... => you could have a lot of parameters and we will put them
+// in an array and shock them in $int array
 
-// to do the poly and coer we use the type of parm before it and then it we be auto converted
+// to do the poly and coer we use the type of parm before it and then
+// it we be auto converted
+
 function parse(int ...$int)
 //function parse(int $int, string $str , bool $boolean)
 {
@@ -21,12 +24,13 @@ function parse(int ...$int)
 }
 parse(20, "222", 22.12, true);
 
-// we would have a problem if we do some math op of string and int etc...
+// we would have a problem if we do some math op of string and int etc..
 // so the solution is -> polymorphism & coercion
 
 //coercion => fit a certain data type => integer coercion
 
-//for our example we will try to make all the 4 par to integer ( "222" => 222 , 22.22 => 22 , true => 1)
+//for our example we will try to make all
+// the 4 par to integer ( "222" => 222 , 22.22 => 22 , true => 1)
 
 echo "<br>";
 
@@ -45,7 +49,8 @@ $arr = array("key" => "value", "color" => "red");
 parse2($arr);
 
 
-//function are first class citizens so we consider them as an object so we can put functions inside of functions and inside a variable <etc class=""></etc>
+//function are first class citizens so we consider them as an object
+// so we can put functions inside of functions and inside a variable <etc class=""></etc>
 
 //callable calls only a function cause function are like we said objects
 function parse3(callable $callback)
@@ -82,7 +87,7 @@ echo '<br>';
 
 class potato
 {
-    //self refers to her class mother which is potato and it can only be used in classes !
+//self refers to her class mother which is potato and it can only be used in classes !
     public function icing(self $thisPotato)
     {
         echo 'potato to ice <br>';
@@ -109,7 +114,7 @@ which means we can control what data type the return function is
 // function dataReturn():int
 function dataReturn() : array
 {
-    // return "20"; // it also apply on it the polymorphism from a string to an integer
+// return "20"; // it also apply on it the polymorphism from a string to an integer
     return array("key" => "value");
 }
 
@@ -161,8 +166,8 @@ interface b
 }
 //an annonymous has no name it is good fo security reasons and for like uing it once
 $framework = new class("read only param") extends a implements b {
-    //the parameter of the constructor is declared inside of the class object param
-    //if a function isnt declared private or pubic then it is left empty means it is public
+//the parameter of the constructor is declared inside of the class object param
+//if a function isnt declared private or pubic then it is left empty means it is public
 
     private $readonly;
 
@@ -201,7 +206,8 @@ $context->call(new newOBJ2);
 
 
 /* unserialize filtering */
-// taking an object and turn it into a string => cause maybe you wanna take that string and send it into another php script and then unserialize that string
+// taking an object and turn it into a string => cause maybe you wanna take that
+//string and send it into another php script and then unserialize that string
 
 class objSerialize
 {
@@ -213,7 +219,9 @@ class objSerialize
 $data = serialize(new objSerialize);
 echo $data . '<br>';
 
-//now puting the string back to an object , the new feature in php7 is the allowed classes for more security reasons
+//now puting the string back to an object , the new feature in php7 is
+// the allowed classes for more security reasons
+
 $unserialize = unserialize($data, ["allowed_classes" => ["objSerialize","newobj"]]);
 echo $unserialize->prop.'<br>';
 

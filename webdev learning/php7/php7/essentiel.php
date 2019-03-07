@@ -1,3 +1,4 @@
+<?php
 /* some good stuff */
 
 //if there isnt a value name then an alternative is token whick iss john else the global then loz
@@ -12,7 +13,8 @@ echo '<br><br>' . json_encode($something, JSON_PRETTY_PRINT);
 /* unserialize filtering */
 
 
-// taking an object and turn it into a string => cause maybe you wanna take that string and send it into another php script and then unserialize that string
+// taking an object and turn it into a string => cause maybe you wanna take that string
+// and send it into another php script and then unserialize that string
 
 class objSerialize
 {
@@ -24,7 +26,8 @@ class objSerialize
 $data = serialize(new objSerialize);
 echo $data . '<br>';
 
-//now puting the string back to an object , the new feature in php7 is the allowed classes for more security reasons
+//now puting the string back to an object , the new feature in php7
+// is the allowed classes for more security reasons
 $unserialize = unserialize($data, ["allowed_classes" => ["objSerialize","newobj"]]);
 echo $unserialize->prop.'<br>';
 
@@ -66,6 +69,7 @@ $_SESSION['name'] = "amine";
 ?>
  <a href="operator.php">log in here</a>
 
+<?php
 /* encryption */
 
 //random sault
@@ -81,7 +85,10 @@ array(
 )
 );
 
-// $ 2 chars for the type of encrypting by default is crypt() the second $ param of 2 or 3 chars is the cost of the encryption the higher the better but the payload will make the page slower and then a $ 10 chars for the random salt and the last $ is the password
+// $ 2 chars for the type of encrypting by default is crypt() the second $ p
+// aram of 2 or 3 chars is the cost of the encryption the higher the better but
+// the payload will make the page slower and then a $ 10 chars for
+// the random salt and the last $ is the password
 
 
 //password_verify();
@@ -110,10 +117,10 @@ $name,
 $numOfMatches
 );
 
-// -1 means no limitation and 1 or more means only certain limitation to check for match
+// -1 means no limitation and 1 or more means only certain limitation to check
+// for match
 
 echo 'num of matches are '. $numOfMatches . '<br>';
-
 
 
 
@@ -121,7 +128,11 @@ echo 'num of matches are '. $numOfMatches . '<br>';
 /* meta data get informations */
 
 $fp = fopen('http://www.exxample.com', 'r');
-$meta = stream_get_meta_data($fp); // now its only a one param in php7 it will fetch the file http or https and will give back so nice informations about  the http request and much more usefull informations
+$meta = stream_get_meta_data($fp);
+// now its only a one param in php7 it will fetch the
+// file http or https and will give back so nice informations about
+// the http request and much more usefull informations
+
 echo '<pre>'. json_encode($meta, JSON_PRETTY_PRINT) .'</pre>';
 fclose($fp);
 

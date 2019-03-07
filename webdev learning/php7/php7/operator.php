@@ -1,8 +1,5 @@
 <?php
 
-
-
-
 /* the colecing operator ?? */
 
 echo '<pre>' . json_encode($_GET, JSON_PRETTY_PRINT)
