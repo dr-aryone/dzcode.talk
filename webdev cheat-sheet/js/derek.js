@@ -157,9 +157,13 @@ document.onmousedown = mouseClicked;
 
 document.write(`${escapedChars} the length is ${escapedChars.length}`);
 document.write(`<br>${firstName.substring(6, firstName.length)}`);
-document.write(` <br> index of ${lastName.charAt(4)} is ${lastName.indexOf("o")}`);
+document.write(
+  `<br> index of ${lastName.charAt(4)} is ${lastName.indexOf("o")}`
+);
 document.write(`<br> testing with the conditional op ${testConditional}<br>`);
-document.write(`<br /> Random num 1 - 10 ${Math.floor(Math.random() * 10) + 1} <br />`);
+document.write(
+  `<br /> Random num 1 - 10 ${Math.floor(Math.random() * 10) + 1} <br />`
+);
 
 // switch statement
 switch (state) {
@@ -182,9 +186,13 @@ while (num < 10) {
 }
 
 // it will sort the array from 1 2 3 4 5 6 and then it will log out the elements that were deleted
-console.log(`we deleted these ${arr.sort().splice(0, 3)} the new array is ${arr}`);
+console.log(
+  `we deleted these ${arr.sort().splice(0, 3)} the new array is ${arr}`
+);
 // so now we will work with the new arary 4 5 6 and then we will log out the items we wanna replace
-console.log(`we will replace these ${arr.splice(0, 3, 9, 10, 11)} the new array is ${arr}`);
+console.log(
+  `we will replace these ${arr.splice(0, 3, 9, 10, 11)} the new array is ${arr}`
+);
 
 /* for in & for of */
 document.write("<br> for in loop down here <br>");
@@ -196,7 +204,9 @@ for (const i in vehicules) {
 document.write("<br> second exemple for in <br>");
 // for in iterates the key or the indice of the element not the value so i here represents 0,1,2 etc...
 for (const i in arr) {
-  document.write(`<br> the index of the array ${i} & its real value ${arr[i]} <br>`);
+  document.write(
+    `<br> the index of the array ${i} & its real value ${arr[i]} <br>`
+  );
 }
 
 document.write("<br> for of loop down here <br>");
@@ -276,7 +286,9 @@ function mouseClicked(e) {
 // is hidding or visible conditonaly through checking the checkbox
 // if its checked or not with the conditional operator
 function showFirstPar() {
-  document.querySelector("p").style.visibility = document.formx.check1.checked ? "visible" : "hidden";
+  document.querySelector("p").style.visibility = document.formx.check1.checked
+    ? "visible"
+    : "hidden";
 }
 // change the text of h3 by using the firstchild
 // and the only child of h3 is the text and the text itself is the nodevalue
@@ -359,7 +371,8 @@ function dividingByZero() {
     if (!num1 || !num2) throw new Error("please put values");
     else if (num2 === 0) throw new Error("you cant devide on zero");
     // isNan : boolean function that verifs if it is a number
-    else if (isNaN(num1) || isNaN(num2)) throw new Error("please enter a real number");
+    else if (isNaN(num1) || isNaN(num2))
+      throw new Error("please enter a real number");
     // like before we delete anything in the spanid
     emptySpan(spanID);
     // then if everything is correct we echo out the correct answer
@@ -426,6 +439,21 @@ document.formx.deletecookie.addEventListener("blur", () => {
 console.log(document.cookie);
 document.write(`<h3> here is your cookies : ${document.cookie} </h3>`);
 
+/* AJAX
+   we get the http request then if its ready (meaning the readystate === 4 )
+     and the satuts is 200 (http refers to ok) we do what we want
+     then we send the request to our URL by opening the url
+     and telling it what http method to use
+     xmlhttp = new XMLHttpRequest()
+     xmlhtp.onreadystatechange = () => {
+             if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+                your code
+             }
+     }
+      xmlHttp.open( "GET", `URL`,true);
+      xmlHttp.send();
+*/
+
 /* OOP */
 
 // constructor
@@ -436,13 +464,15 @@ function Animal() {
 }
 // set a method that the animal class will always use and its called a prototype
 
-Animal.prototype.setOwner = function(newOwner) {
+Animal.prototype.setOwner = function (newOwner) {
   // we are checking of the variable newowner if it is not undefined then we assign it to this.owner
   // its called a setter
-  return typeof newOwner !== "undefined" ? (this.owner = newOwner) : alert("please enter a valid owner");
+  return typeof newOwner !== "undefined"
+    ? (this.owner = newOwner)
+    : alert("please enter a valid owner");
 };
 // same thing for the getter
-Animal.prototype.getOwner = function() {
+Animal.prototype.getOwner = function () {
   return this.owner;
 };
 // what encapsulation means is that to access any // attribute in the constructor u have to acces

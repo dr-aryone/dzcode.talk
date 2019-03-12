@@ -7,7 +7,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// OOP PHP
+/* we will do this in OOP PHP */
 
 // $db = mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
 $db = new mysqli("localhost", "root", "", "messenger");
