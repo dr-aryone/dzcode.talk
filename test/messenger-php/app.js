@@ -53,7 +53,7 @@ function sendmsg() {
 
     xmlHttp.onreadystatechange = () => {
       if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-        msgarea.innerHTML = `<div class="msgc" style="margin-bottom: 30px;">
+        msgarea.innerHTML += `<div class="msgc" style="margin-bottom: 30px;">
         <div class="msg msgfrom">${message}</div>
         <div class="msgarr msgarrfrom"></div>
         <div class="msgsentby msgsentbyfrom">Sent by ${username}</div>
