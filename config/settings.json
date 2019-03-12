@@ -230,10 +230,23 @@
     "configFile": "C:\\xampp\\htdocs\\projects\\code talk\\dzcode.talk\\config\\.eslintrc.js"
   },
   "tslint.configFile": "C:\\xampp\\htdocs\\projects\\code talk\\dzcode.talk\\config\\tslint.json",
+  "spellright.language": [
+    "ar",
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "javascript",
+    "jsonc"
+  ],
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
   "php.executablePath": "C:\\xampp\\php\\php.exe",
   "php-cs-fixer.lastDownload": 1542124935854,
-  "phpserver.phpPath": "C:\\xampp\\php\\php.exe"
+  "phpserver.phpPath": "C:\\xampp\\php\\php.exe",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
   // "todo-tree.defaultHighlight": {},
   // "sublimeTextKeymap.promptV3Features": true,
   // "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib",
