@@ -42,20 +42,20 @@ module.exports = {
     "prettier/standard",
     "plugin:jsx-a11y/recommended",
     "jest-enzyme",
-    "plugin:jest/recommended"
-    /* "typescript",
+    "plugin:jest/recommended",
+    "typescript",
     "typescript/react",
     "typescript/prettier",
-    "tslint-react",
-    "tslint-eslint-rules",
-    "tslint-config-prettier",
-    "plugin:tslint/recommended",
-    "plugin:tslint/latest"
-    */
+    // "tslint-react",
+    // "tslint-eslint-rules",
+    // "tslint-config-prettier",
+    // "plugin:tslint/recommended",
+    // "plugin:tslint/latest"
   ],
   parser: "babel-eslint",
   parserOptions: {
-    ecmaVersion: 8,
+    // ecmaVersion: 8,
+    ecmaVersion: 10,
     sourceType: "module",
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
@@ -138,8 +138,8 @@ module.exports = {
       },
     ],
     quotes: [
-       2,
-       "double",
+      2,
+      "single",
       {
         avoidEscape: true,
         allowTemplateLiterals: true
@@ -149,7 +149,7 @@ module.exports = {
       "warn",
       {
         trailingComma: "none",
-        singleQuote: false,
+        singleQuote: true,
         printWidth: 80,
         bracketSpacing: true,
         jsxBracketSameLine: false,
@@ -210,7 +210,7 @@ module.exports = {
     "standard",
     "jsx-a11y",
     // "tslint",
-    // "typescript",
+    "typescript",
     "babel",
     "import"
   ],

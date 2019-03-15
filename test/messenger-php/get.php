@@ -10,3 +10,15 @@ $db = new mysqli("localhost", "root", "", "messenger");
 if ($db->connect_error) {
     die("couldnt connect to db");
 }
+$username = stripslashes(htmlspecialchars($_GET['username']));
+$results = $db->prepare("SELECT * FROM user");
+$results->execute();
+$results = $results->get_result();
+
+while ($r = $results->fetch_row()) {
+    echo $r[1] . "\\" . $r[2] ."\n";
+}
+
+// foreach ($results as $r) {
+//     echo json_encode($r,JSON_PRETTY_PRINT) . "<br>";
+// }
