@@ -39,6 +39,7 @@ function getCookie(cname) {
      xmlhttp = new XMLHttpRequest()
      xmlhtp.onreadystatechange = () => {
              if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+               const response = xmlHttp.responseText;
                 your code
              }
      }
@@ -50,7 +51,6 @@ function sendmsg() {
   if (message !== '') {
     const username = getCookie('messengerUname');
     const xmlHttp = new XMLHttpRequest();
-
     xmlHttp.onreadystatechange = () => {
       if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
         msgarea.innerHTML += `<div class="msgc" style="margin-bottom: 30px;">
@@ -80,24 +80,27 @@ function update() {
       const response = xmlHttp.responseText.split('\n');
       for (let i = 0; i < response.length; i++) {
         item = response[i].split('\\');
-        if (item[1] !== undefined) {
-          if (item[0] === username) {
-            output += `<div class="msgc" style="margin-bottom: 30px;">
-              <div class="msg msgfrom">${item[1]}</div>
-              <div class="msgarr msgarrfrom"></div>
-              <div class="msgsentby msgsentbyfrom">Sent by ${item[0]}</div>
-              </div>`;
-          } else {
-            output += `<div class="msgc"> <div class="msg">${item[1]}</div>
-              <div class="msgarr"></div>
-              <div class="msgsentby">Sent by ${item[0]}</div> </div>`;
-          }
+        if (item[1] === undefined) {
+          return;
+        }
+        if (item[0] === username) {
+          output += `<div class="msgc" style="margin-bottom: 30px;">
+            <div class="msg msgfrom">${item[1]}</div>
+            <div class="msgarr msgarrfrom"></div>
+            <div class="msgsentby msgsentbyfrom">Sent by ${item[0]}</div>
+            </div>`;
+        } else {
+          output += `<div class="msgc"> <div class="msg">${item[1]}</div>
+            <div class="msgarr"></div>
+            <div class="msgsentby">Sent by ${item[0]}</div> </div>`;
         }
       }
       msgarea.innerHTML = output;
+      msginput.value = '';
       msgarea.scrollTop = msgarea.scrollHeight;
     }
   };
   xmlHttp.open('GET', `get.php?username=${username}`, true);
   xmlHttp.send();
 }
+setInterval(update(), 2500);
