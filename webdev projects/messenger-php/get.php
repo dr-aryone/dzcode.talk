@@ -14,7 +14,7 @@ $username = stripslashes(htmlspecialchars($_GET['username']));
 $results = $db->prepare("SELECT * FROM user");
 $results->execute();
 $results = $results->get_result();
-
+// we are spliting the usernames & the message by // and a cookie by a new line \n
 while ($r = $results->fetch_row()) {
     echo $r[1] . "\\" . $r[2] ."\n";
 }

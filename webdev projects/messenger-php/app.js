@@ -71,36 +71,48 @@ function sendmsg() {
 }
 
 function update() {
-  let output = '';
   let item = '';
   const username = getCookie('messengerUname');
   const xmlHttp = new XMLHttpRequest();
   xmlHttp.onreadystatechange = () => {
     if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+      // we get every cookie by its own by spliting with the /n
       const response = xmlHttp.responseText.split('\n');
       for (let i = 0; i < response.length; i++) {
+        // and then we get the username and message by spliting with \\
+        // so basicly item[0] is the username and item[1] is the msg
         item = response[i].split('\\');
-        if (item[1] === undefined) {
-          return;
-        }
-        if (item[0] === username) {
-          output += `<div class="msgc" style="margin-bottom: 30px;">
+        // an extra check if ta msg exisits in the database then show it
+        if (item[1] !== undefined) {
+          // we check if the cookie is the main username we have so that we show our blue msg
+          // else its anothers username so we show the gray msg
+          if (item[0] === username) {
+            msgarea.innerHTML += `<div class="msgc" style="margin-bottom: 30px;">
             <div class="msg msgfrom">${item[1]}</div>
             <div class="msgarr msgarrfrom"></div>
             <div class="msgsentby msgsentbyfrom">Sent by ${item[0]}</div>
             </div>`;
-        } else {
-          output += `<div class="msgc"> <div class="msg">${item[1]}</div>
+          } else {
+            msgarea.innerHTML += `<div class="msgc"> <div class="msg">${
+              item[1]
+            }</div>
             <div class="msgarr"></div>
             <div class="msgsentby">Sent by ${item[0]}</div> </div>`;
+          }
         }
       }
-      msgarea.innerHTML = output;
-      msginput.value = '';
+      // we fix the scrolling
       msgarea.scrollTop = msgarea.scrollHeight;
     }
   };
+  /*
+   the param username in here is to get the same username from our database
+   so we send an ajax to the php file whick he verifs the user in the database
+   and then spliting it in 2 items one which contains the user n msg n the other contains the cookie
+   so that our javascript can compare and use the username from that trick we made
+  */
   xmlHttp.open('GET', `get.php?username=${username}`, true);
   xmlHttp.send();
 }
-setInterval(update(), 2500);
+// to update the screen after 2 seconds so that when we use 2 browsers to send msgs it shows in paralell
+setInterval(() => update(), 2500);
