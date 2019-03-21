@@ -69,11 +69,12 @@ form[input='text']::before {
   top: 0;
   position: absolute;
 } */
-nav.menu {
-  position: relative;
+
+li {
   display: inline-block;
 }
-ul.header-item-list > li {
-  list-style: none;
+nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
   color: #fff;
 }
