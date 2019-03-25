@@ -49,36 +49,58 @@ if ($submit) {
         echo " <br> please fill all the inputs <br> ";
     }
 }
+if (isset($_POST['user_login']) && isset($_POST['pass_login'])) {
+    $user_login = preg_replace('#[^A-Za-z0-9]#i', '', $_POST['user_login']);
+    $pass_login = preg_replace('#[^A-Za-z0-9]#i', '', $_POST['pass_login']);
+    $pass_login = md5($pass_login);
+    $sql = mysqli_query($db, "SELECT id FROM utilisateur WHERE username='$user_login' AND password='$pass_login' LIMIT 1");
+    $usercount = mysqli_num_rows($sql);
+    if ($usercount == 1) {
+        // while ($row = mysqli_fetch_array($sql)) {
+        //     $id = $row[$id];
+        // }
+        $_SESSION['user_login'] = $user_login;
+        header("location: home.php");
+        exit();
+    } else {
+        echo "the information is incorrect, try again";
+        exit();
+    }
+}
+
 ?>
 <section>
   <table>
     <tr>
-      <td width="60%" valign="top">
+      <td width="60%" valign="top" class="container-sign-in">
+        <h2>Sign in</h2>
+        <form action="index.php" method="POST">
+          <input type="text" name="user_login" size="25" placeholder="username" />
+          <br>
+          <input type="password" name="pass_login" size="25" placeholder="type your password" />
+          <br>
+          <input type="submit" name="login" value="Sign in" />
+        </form>
+      </td>
+
+      <td width="60%" valign="top" class="container-sign-up">
         <h2>Sign Up bellow</h2>
-        <form action="#" method="POST">
+        <form action="index.php" method="POST">
           <input type="text" name="fname" size="25" placeholder="first name" />
-          <br />
           <br />
           <input type="text" name="lname" size="25" placeholder="last name" />
           <br />
-          <br />
           <input type="text" name="username" size="25" placeholder="username" />
-          <br />
           <br />
           <input type="email" name="email" size="25" placeholder="email" />
           <br />
-          <br />
           <input type="email" name="verifemail" size="25" placeholder="type your email again" />
-          <br />
           <br />
           <input type="password" name="password" size="25" placeholder="type your password" />
           <br />
-          <br />
           <input type="password" name="verifpwd" size="25" placeholder="verify your password" />
           <br />
-          <br />
-          <input type="submit" name="submit" value="Sign Up!" /> <br />
-          <br />
+          <input type="submit" name="submit" value="Sign Up!" />
         </form>
       </td>
     </tr>
