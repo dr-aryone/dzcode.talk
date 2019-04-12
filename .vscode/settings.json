@@ -5,5 +5,12 @@
   "spellright.documentTypes": [
     "markdown",
     "latex"
-  ]
+  ],
+  "dimmer.enabled": true,
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#135564",
+    "titleBar.activeForeground": "#ffcc",
+    "titleBar.inactiveForeground": "#FFF",
+    "titleBar.inactiveBackground": "#FFF000CC"
+  }
 }

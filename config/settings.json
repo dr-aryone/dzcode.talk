@@ -18,7 +18,7 @@
     "opening": {
       "full": {
         "custom": {
-          "backgroundColor": "rgba(165, 153, 233, 0.1)"
+          "backgroundColor": "rgba(90, 90, 300, 20)"
         }
       },
       "left": {
@@ -36,7 +36,7 @@
   // SOP's Import Cost Extension Settings.
   "importCost.largePackageColor": "#EC3A37F5",
   "importCost.mediumPackageColor": "#B362FF",
-  "importCost.smallPackageColor": "#B362FF",
+  "importCost.smallPackageColor": "#99ccffcc",
   "editor.fontSize": 14, // for the tv
   // "editor.fontSize": 15,
   "editor.lineHeight": 25,
@@ -55,7 +55,6 @@
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
-  "workbench.iconTheme": "vscode-icons",
   "editor.wordWrap": "on",
   "editor.smoothScrolling": true,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -138,7 +137,8 @@
   "jshint.lintHTML": true,
   "prettier.printWidth": 80,
   "prettier.singleQuote": true,
-  "prettier.trailingComma": "none",
+  "prettier.jsxsingleQuote": true,
+  "prettier.trailingComma": "es5",
   "prettier.bracketSpacing": true,
   "prettier.jsxBracketSameLine": false,
   "prettier.tabWidth": 2,
@@ -224,24 +224,49 @@
   "eslint.options": {
     "configFile": "C:\\xampp\\htdocs\\projects\\code talk\\dzcode.talk\\config\\.eslintrc.js"
   },
-  "spellright.language": [
-    "ar",
-    "en"
-  ],
-  "spellright.documentTypes": [
-    "markdown",
-    "latex",
-    "plaintext",
-    "javascript",
-    "jsonc"
-  ],
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
   "php.executablePath": "C:\\xampp\\php\\php.exe",
   "php-cs-fixer.lastDownload": 1542124935854,
   "phpserver.phpPath": "C:\\xampp\\php\\php.exe",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
-
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "php.suggest.basic": false,
+  "[php]": {
+    "editor.defaultFormatter": "felixfbecker.php-intellisense"
+    // "editor.defaultFormatter": "vscode.php-language-features"
+    //"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "explorer.confirmDelete": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/dist/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "css.remoteStyleSheets": [
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  ],
+  "turboConsoleLog.logMessagePrefix": "Logged Output"
+  // "spellright.language": ["ar", "en"],
+  // "spellright.documentTypes": [
+  //   "markdown",
+  //   "latex",
+  //   "plaintext",
+  //   "javascript",
+  //   "jsonc"
+  // ],
   // "typescript.tsdk": "C:\\Program Files (x86)\\Microsoft VS Code\\resources\\app\\extensions\\typescript\\server\\typescript\\lib"
   // "phpcs.enable": true,
   // "phpcs.standard": "PSR2",
