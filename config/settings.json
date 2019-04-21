@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Shades of Purple",
+  "workbench.colorTheme": "An Old Hope Classic",
   //"editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#135564",
@@ -104,7 +104,8 @@
     120
   ],
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "mgmcdermott.vscode-language-babel"
   },
   "[javascriptreact]": {
     "editor.formatOnSave": false
@@ -137,12 +138,12 @@
   "jshint.lintHTML": true,
   "prettier.printWidth": 80,
   "prettier.singleQuote": true,
-  "prettier.jsxsingleQuote": true,
+  "prettier.jsxSingleQuote": true,
   "prettier.trailingComma": "es5",
   "prettier.bracketSpacing": true,
   "prettier.jsxBracketSameLine": false,
   "prettier.tabWidth": 2,
-  "prettier.semi": true,
+  "prettier.semi": false,
   "editor.tabCompletion": "on",
   "liveServer.settings.useWebExt": true,
   "search.showLineNumbers": true,
@@ -157,7 +158,6 @@
   "scss.showErrors": true,
   "breadcrumbs.enabled": true,
   "javascript.validate.enable": false,
-  "prettier.tslintIntegration": true,
   "editor.formatOnPaste": true,
   "workbench.editor.highlightModifiedTabs": true,
   "explorer.sortOrder": "type",
@@ -258,7 +258,15 @@
   "css.remoteStyleSheets": [
     "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
   ],
-  "turboConsoleLog.logMessagePrefix": "Logged Output"
+  "turboConsoleLog.logMessagePrefix": "Logged Output",
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex"
+  ],
+  "dimmer.enabled": false,
   // "spellright.language": ["ar", "en"],
   // "spellright.documentTypes": [
   //   "markdown",

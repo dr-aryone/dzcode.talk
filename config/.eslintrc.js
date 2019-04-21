@@ -6,10 +6,10 @@ module.exports = {
   ],
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 2019,
     // Can I remove these now?
     "ecmaFeatures": {
-      "impliedStrict": true,
+      // "impliedStrict": true,
       "classes": true
     }
   },
@@ -118,6 +118,11 @@ module.exports = {
         "trailingComma": "es5",
         "singleQuote": true,
         "printWidth": 80,
+        "jsxSingleQuote": true,
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "tabWidth": 2,
+        "semi": false
       }
     ],
     "jsx-a11y/href-no-hash": "off",

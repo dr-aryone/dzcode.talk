@@ -6,7 +6,7 @@
     "markdown",
     "latex"
   ],
-  "dimmer.enabled": true,
+  "dimmer.enabled": false,
   "workbench.colorCustomizations": {
     "editor.selectionBackground": "#135564",
     "titleBar.activeForeground": "#ffcc",
