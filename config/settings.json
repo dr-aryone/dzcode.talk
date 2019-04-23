@@ -58,7 +58,6 @@
   "editor.wordWrap": "on",
   "editor.smoothScrolling": true,
   "editor.multiCursorModifier": "ctrlCmd",
-  "emmet.triggerExpansionOnTab": true,
   "editor.quickSuggestions": {
     "strings": true
   },
@@ -103,35 +102,57 @@
     100,
     120
   ],
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.wordBasedSuggestions": true,
+  "editor.tabCompletion": "on",
+  "emmet.showSuggestionsAsSnippets": true,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.showUnused": false,
+  "javascript.validate.enable": false,
+  "javascript.autoClosingTags": true,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "tslint.jsEnable": false,
+  "tslint.configFile": "C:\\xampp\\htdocs\\projects\\code talk\\dzcode.talk\\config\\tslint.json",
+  "tslint.exclude": [
+    "**/*.js"
+  ],
   "[javascript]": {
     "editor.formatOnSave": false,
     "editor.defaultFormatter": "mgmcdermott.vscode-language-babel"
   },
   "[javascriptreact]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "mgmcdermott.vscode-language-babel"
   },
-  "eslint.autoFixOnSave": true,
-  "editor.formatOnSave": true,
-  "files.autoSave": "afterDelay",
-  "eslint.alwaysShowStatus": true,
-  "javascript.implicitProjectConfig.checkJs": true,
   "prettier.disableLanguages": [
     "javascript",
     "javascriptreact",
+    "babel",
     "vue"
   ],
-  "eslint.enable": true,
-  "editor.renderIndentGuides": false,
   "emmet.includeLanguages": {
     "edge": "html",
     "blade": "html",
     "html": "html",
     "erb": "erb",
     "javascript": "javascriptreact",
-    "vue": "html",
+    "vue-html": "html",
+    "plaintext": "jade",
     "ejs": "html",
     "php": "html"
   },
+  "html.autoClosingTags": true,
+  "emmet.excludeLanguages": [
+    "markdown"
+  ],
+  "eslint.enable": true,
+  "editor.renderIndentGuides": false,
   "editor.showFoldingControls": "always",
   "editor.folding": true,
   "editor.foldingStrategy": "indentation",
@@ -144,7 +165,6 @@
   "prettier.jsxBracketSameLine": false,
   "prettier.tabWidth": 2,
   "prettier.semi": false,
-  "editor.tabCompletion": "on",
   "liveServer.settings.useWebExt": true,
   "search.showLineNumbers": true,
   "gitlens.views.fileHistory.enabled": true,
@@ -152,16 +172,13 @@
   "git.postCommitCommand": "push",
   "auto-close-tag.SublimeText3Mode": true,
   "better-comments.highlightPlainText": true,
-  "emmet.showSuggestionsAsSnippets": true,
   "highlight-matching-tag.highlightSelfClosing": true,
   "npm-intellisense.scanDevDependencies": true,
   "scss.showErrors": true,
   "breadcrumbs.enabled": true,
-  "javascript.validate.enable": false,
   "editor.formatOnPaste": true,
   "workbench.editor.highlightModifiedTabs": true,
   "explorer.sortOrder": "type",
-  "editor.acceptSuggestionOnEnter": "smart",
   "files.maxMemoryForLargeFilesMB": 8192,
   "files.watcherExclude": {
     "**/.git/objects/**": true,
@@ -215,7 +232,6 @@
     //"file:///C:/Users/Hp/.vscodestyles.css"
   ],
   "liveServer.settings.multiRootWorkspaceName": "dzcode.talk",
-  "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
   "gitProjectManager.baseProjectsFolders": [
     "C:\\xampp\\htdocs\\projects\\code talk\\dzcode.talk"
   ],
@@ -225,19 +241,15 @@
     "configFile": "C:\\xampp\\htdocs\\projects\\code talk\\dzcode.talk\\config\\.eslintrc.js"
   },
   "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-  "php.executablePath": "C:\\xampp\\php\\php.exe",
   "php-cs-fixer.lastDownload": 1542124935854,
-  "phpserver.phpPath": "C:\\xampp\\php\\php.exe",
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "php.suggest.basic": false,
   "[php]": {
-    "editor.defaultFormatter": "felixfbecker.php-intellisense"
+    // "editor.defaultFormatter": "felixfbecker.php-intellisense"
     // "editor.defaultFormatter": "vscode.php-language-features"
-    //"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -266,7 +278,14 @@
     "markdown",
     "latex"
   ],
-  "dimmer.enabled": false,
+  "dimmer.enabled": false
+  // "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+  // "php.executablePath": "C:\\xampp\\php\\php.exe",
+  // "phpserver.phpPath": "C:\\xampp\\php\\php.exe",
+  // "javascript.suggestionActions.enabled": false,
+  // "typescript.validate.enable": false,
+  // "typescript.format.enable": false,
+  // "typescript.suggestionActions.enabled": false,
   // "spellright.language": ["ar", "en"],
   // "spellright.documentTypes": [
   //   "markdown",
@@ -279,10 +298,7 @@
   // "phpcs.enable": true,
   // "phpcs.standard": "PSR2",
   //"terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
-  // "tslint.jsEnable": false,
-  // "tslint.exclude": [
-  // "**/*.js"
-  // ],
+  // "html-css-class-completion.enableEmmetSupport": true,
   //"tslint.alwaysShowRuleFailuresAsWarnings": true,
   //  "tslint.autoFixOnSave": true,
   //"tslint.alwaysShowStatus": true,

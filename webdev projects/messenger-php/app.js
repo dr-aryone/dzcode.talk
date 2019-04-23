@@ -1,6 +1,5 @@
 const msginput = document.getElementById('msginput');
 const msgarea = document.getElementById('msg-area');
-
 function checkcookie() {
   if (document.cookie.indexOf('messengerUname') === -1) {
     document.getElementById('whitebg').style.display = 'inline-block';
@@ -95,7 +94,7 @@ function update() {
           } else {
             msgarea.innerHTML += `<div class="msgc"> <div class="msg">${
               item[1]
-            }</div>
+              }</div>
             <div class="msgarr"></div>
             <div class="msgsentby">Sent by ${item[0]}</div> </div>`;
           }

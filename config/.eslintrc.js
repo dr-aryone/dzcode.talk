@@ -7,9 +7,12 @@ module.exports = {
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaVersion": 2019,
+     "sourceType": "module",
     // Can I remove these now?
     "ecmaFeatures": {
-      // "impliedStrict": true,
+      experimentalObjectRestSpread: true,
+      jsx: true,
+      "impliedStrict": true,
       "classes": true
     }
   },
@@ -17,7 +20,8 @@ module.exports = {
     "browser": true,
     "node": true,
     "jquery": true,
-    "jest": true
+    "jest": true,
+    "es6":true
   },
   "rules": {
     "no-debugger": 0,
@@ -29,7 +33,7 @@ module.exports = {
     ],
     "no-restricted-syntax": [
       2,
-      "ForInStatement",
+      //"ForInStatement",
       "LabeledStatement",
       "WithStatement"
     ],
@@ -125,6 +129,7 @@ module.exports = {
         "semi": false
       }
     ],
+    "no-plusplus":"off",
     "jsx-a11y/href-no-hash": "off",
     "jsx-a11y/anchor-is-valid": [
       "warn",
