@@ -10,8 +10,8 @@ module.exports = {
      "sourceType": "module",
     // Can I remove these now?
     "ecmaFeatures": {
-      experimentalObjectRestSpread: true,
-      jsx: true,
+      "experimentalObjectRestSpread": true,
+      "jsx": true,
       "impliedStrict": true,
       "classes": true
     }
@@ -19,6 +19,7 @@ module.exports = {
   "env": {
     "browser": true,
     "node": true,
+    "commonjs": true,
     "jquery": true,
     "jest": true,
     "es6":true
@@ -119,7 +120,7 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        "trailingComma": "es5",
+        "trailingComma": "none",
         "singleQuote": true,
         "printWidth": 80,
         "jsxSingleQuote": true,

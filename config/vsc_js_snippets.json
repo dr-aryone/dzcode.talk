@@ -1,4 +1,4 @@
-{
+  // cl , nfn , fn , arfn , ifc , ifelsec , arrmth , axreq , fetchreq , asfetchreq , ndrq , expsrv , exprt , expmw
   // Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and
   // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
   // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
@@ -7,14 +7,15 @@
   // "Print to console": {
   // 	"prefix": "log",
   // 	"body": [
-  // 		"console.log('$1');",
+  // 		"console.log('$1')",
   // 		"$2"
   // 	],
   // 	"description": "Log output to console"
   // }
+{
   "Console Log": {
     "prefix": "cl",
-    "body": "console.log($1);",
+    "body": "console.log($1)",
     "description": "Console Log"
   },
   "Named Function": {
@@ -78,7 +79,7 @@
     "body": [
       "axios.${1|get,post,put,delete|}('${2:url}')",
       "  .then(res => console.log(res.data))",
-      "  .catch(err => console.log(err));"
+      "  .catch(err => console.log(err))"
     ],
     "description": "Axios Request"
   },
@@ -87,51 +88,51 @@
     "body": [
       "fetch('${1:url}')",
       "  .then(res => res.json())",
-      "  .then(data => console.log(data));"
+      "  .then(data => console.log(data))"
     ],
     "description": "Fetch Request"
   },
-  "asfetchreq": {
-    "prefix": "Async Await Fetch",
+  "Async Await Fetch": {
+    "prefix": "asfetchreq",
     "body": [
       "const request = async ($1) => {",
-      "    const response = await fetch('${2:url}');",
-      "    const data = await response.json();",
-      "    console.log(data);",
+      "    const response = await fetch('${2:url}')",
+      "    const data = await response.json()",
+      "    console.log(data)",
       "}"
     ],
     "description": "Fetch Async/Await"
   },
   "Node Require": {
     "prefix": "ndrq",
-    "body": "const ${1:import} = require('${module}');",
+    "body": "const ${1:import} = require('${module}')",
     "description": "Require a Node.js module"
   },
   "Express Server": {
     "prefix": "expsrv",
     "body": [
-      "const express = require('express');",
+      "const express = require('express')",
       "",
-      "const app = express();",
+      "const app = express()",
       "",
       "app.${1|get,post,put,delete|}('${2:route}', (req, res) => {",
       "  $3",
-      "});",
+      "})",
       "",
-      "const PORT = process.env.PORT || ${4|3000,5000,8000,8080|};",
+      "const PORT = process.env.PORT || ${4|3000,5000,8000,8080|}",
       "",
-      "app.listen(PORT, () => console.log(`Server Running On Port ${PORT}`));"
+      "app.listen(PORT, () => console.log(`Server Running On Port ${PORT}`))"
     ],
     "description": "Express Server"
   },
   "Express Route": {
     "prefix": "exprt",
-    "body": "app.${1|get,post,put,delete|}('${3:/}', (req, res) => {});",
+    "body": "app.${1|get,post,put,delete|}('${3:/}', (req, res) => {})",
     "description": "Express Route"
   },
   "Express Init Middleware": {
-    "prefix": "exmw",
-    "body": "app.use(${1:middleware});",
+    "prefix": "expmw",
+    "body": "app.use(${1:middleware})",
     "description": "Express Middleware"
   }
 }
