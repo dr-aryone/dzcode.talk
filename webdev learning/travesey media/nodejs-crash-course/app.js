@@ -1,6 +1,22 @@
 // __filename, __dirname built in
 
-const path = require('path')
+import url from 'url'
+
+// const URL = require('url').URL;
+/* NOTE: if you are using v6 (LTS), line 1 gives errors,
+ *   if you get an error saying, TypeError: URL is not a constructor,
+ *  comment line 1, and uncomment line 2 */
+
+// commonjs syntax import from is a new feature in nodev12 (experimental so use esm for now )it was a require based syntax
+// const path = require('path')
+import path from 'path'
+import os from 'os'
+import fs from 'fs'
+import event from 'events'
+import http from 'http'
+import uuid from 'uuid'
+
+import Person from './basic/person'
 
 // output the directory path of the file
 console.log(path.dirname(__filename))
@@ -14,8 +30,6 @@ console.log(path.parse(__filename))
 console.log(path.format(path.parse(__filename)))
 // output the delimiter / \ ; etc...
 console.log(path.delimiter)
-
-const os = require('os')
 // Home dir
 console.log(os.homedir())
 // Platform
@@ -31,12 +45,6 @@ console.log(os.totalmem())
 // Uptime
 console.log(os.uptime())
 
-const url = require('url')
-// const URL = require('url').URL;
-/* NOTE: if you are using v6 (LTS), line 1 gives errors,
- *   if you get an error saying, TypeError: URL is not a constructor,
- *  comment line 1, and uncomment line 2 */
-
 const site = new URL('https://www.codetalk.com:8000?id=100&statut=active')
 // output the full link (both of em)
 console.log(site.href == site.toString())
@@ -51,14 +59,13 @@ console.log(site.search)
 // search param query object
 console.log(site.searchParams)
 // adding params query to the url
-const newParam = site.searchParams.append('name', 'code')
+site.searchParams.append('name', 'code')
 console.log(site.searchParams)
 // looping through them with foreach
 site.searchParams.forEach((value, key) => {
   console.log(`${value} : ${key}`)
 })
 
-const fs = require('fs')
 // create a folder with mkdir it takes the directory path of the new folder + an object + callback
 /*
 fs.mkdir(path.join(__dirname, '/fsfolder'), {}, err => {
@@ -66,10 +73,17 @@ fs.mkdir(path.join(__dirname, '/fsfolder'), {}, err => {
   console.log('folder created...')
 })
 */
-// create and write to a file path to the file + text + callback
+// create and write to a file path to the
+// pathfile (pathjoin(dirname,folder,namefile) ) + text + callback
+
+/* another example with json data
+  path.join(__dirname, '/fsfolder2', 'name.json'),
+  JSON.stringify(users),
+*/
+
 /*
 fs.writeFile(
-  path.join(__dirname, '/fsfolder/fsfile.txt'),
+  path.join(__dirname, '/fsfolder','fsfile.txt'),
   'hello world!',
   err => {
     if (err) throw err
@@ -119,6 +133,7 @@ const users = [
 ]
 
 // create folder
+/*
 fs.mkdir(path.join(__dirname, '/fsfolder2'), {}, err => {
   if (err) throw err
 
@@ -172,15 +187,15 @@ fs.rmdir(path.join(__dirname, '/fsempty'), err => {
 
   console.log('Folder deleted ...')
 })
+*/
 
-const event = require('events')
-const http = require('http')
-const uuid = require('uuid')
 // nodejs has module.export function that helps on getting code from other js files like
 // for expl we have a class person in person.js w can send it anywhere by module.export
 // and retrieve it by a require
 
-const Person = require('./basic/person')
-
 const person = new Person('amine hammou', 26)
 // console.log(person.getName())
+
+// const array = [4, 5, 6, 7, 9, 2, 1]
+// const check = number => array.find((value, index) => array[index] === number)
+// console.log(check(11))
