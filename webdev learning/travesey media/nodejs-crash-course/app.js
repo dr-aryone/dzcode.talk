@@ -12,7 +12,7 @@ import url from 'url'
 import path from 'path'
 import os from 'os'
 import fs from 'fs'
-import event from 'events'
+import event, { EventEmitter } from 'events'
 import http from 'http'
 import uuid from 'uuid'
 
@@ -200,3 +200,28 @@ const person = new Person('amine hammou', 26)
 // const check = number => array.find((value, index) => array[index] === number)
 // console.log(check(11))
 
+// an eventemitter helps creating a custom event
+// class something extends eventEmitter
+// add to it custom methods then initial an emitter (this.emit => string + callback ) with a custom name for your event
+// initial an instance of it and use 'on' to start the event listening and after just use yourCustomMethod
+class MyEmitterLogger extends EventEmitter {
+  log(msg) {
+    // init event
+    this.emit('myEvent', { id: uuid.v4(), msg })
+    // msg without a value in object is the same as msg:msg
+  }
+}
+
+const ee = new MyEmitterLogger()
+
+// trigger event listenner
+ee.on('myEvent', data => console.log('called listnener', data))
+
+// trigger event custom methods
+
+ee.log('hello world')
+ee.log('this is a logger')
+ee.log('somewhere somehow')
+
+// u can also use it directly from the emit built in function
+// ee.emit('myEvent')
