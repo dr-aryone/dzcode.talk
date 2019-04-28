@@ -199,3 +199,4 @@ const person = new Person('amine hammou', 26)
 // const array = [4, 5, 6, 7, 9, 2, 1]
 // const check = number => array.find((value, index) => array[index] === number)
 // console.log(check(11))
+
