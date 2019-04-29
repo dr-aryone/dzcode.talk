@@ -18,7 +18,7 @@
     "opening": {
       "full": {
         "custom": {
-          "backgroundColor": "rgba(90, 90, 300, 20)"
+          "backgroundColor": "rgba(43, 89, 132, 0.3)"
         }
       },
       "left": {
@@ -147,6 +147,9 @@
     "ejs": "html",
     "php": "html"
   },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
   "html.autoClosingTags": true,
   "emmet.excludeLanguages": [
     "markdown"
@@ -160,7 +163,7 @@
   "prettier.printWidth": 80,
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
-  "prettier.trailingComma": "es5",
+  "prettier.trailingComma": "none",
   "prettier.bracketSpacing": true,
   "prettier.jsxBracketSameLine": false,
   "prettier.tabWidth": 2,
@@ -235,7 +238,7 @@
   "gitProjectManager.baseProjectsFolders": [
     "C:\\xampp\\htdocs\\projects\\code talk\\dzcode.talk"
   ],
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\git-cmd.exe",
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "jshint.config": "C:\\xampp\\htdocs\\projects\\code talk\\dzcode.talk\\config\\.jshintrc",
   "eslint.options": {
     "configFile": "C:\\xampp\\htdocs\\projects\\code talk\\dzcode.talk\\config\\.eslintrc.js"
@@ -278,7 +281,9 @@
     "markdown",
     "latex"
   ],
-  "dimmer.enabled": false
+  "dimmer.enabled": false,
+  "editor.gotoLocation.multiple": "goto",
+  "autoimport.useSemiColon": false
   // "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
   // "php.executablePath": "C:\\xampp\\php\\php.exe",
   // "phpserver.phpPath": "C:\\xampp\\php\\php.exe",

@@ -130,155 +130,155 @@ setInterval , ClearInterval  :   setInterval : x=setInterval(fonctionx,1000);  ,
 // You can’t access other websites cookies
 // Cookies contain a name, value, expiration, directory that can access it and the domain that can access it
 
-const escapedChars = "\" ' \\ \t \n";
-const lastName = 'hammou';
-const firstName = `Amine ${lastName}`;
-let vehicules = { amine: 'cat', hammou: 'dog', kacem: 'mouse' };
-const arr = [3, 4, 6, 2, 1, 5];
+const escapedChars = '" \' \\ \t \n'
+const lastName = 'hammou'
+const firstName = `Amine ${lastName}`
+let vehicules = { amine: 'cat', hammou: 'dog', kacem: 'mouse' }
+const arr = [3, 4, 6, 2, 1, 5]
 // const multiArray = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]];
-const state = 'blida';
+const state = 'blida'
 // conditional operator (x) ? y : z
 // condition is x if true ? do this : else do this
-const testConditional = 4 < 10 ? '4 is less' : '4 is big';
+const testConditional = 4 < 10 ? '4 is less' : '4 is big'
 
-const regex = /[A-Za-z0-9.-_]+@[A-Za-z]+\.[A-Za-z]{2,3}/;
+const regex = /[A-Za-z0-9.-_]+@[A-Za-z]+\.[A-Za-z]{2,3}/
 // /regex/g that g means iterates all the regex founded
-const email = 'amine.kacem98@gmail.com';
-const divide = document.formx.num2;
+const email = 'amine.kacem98@gmail.com'
+const divide = document.formx.num2
 
-let keyClicked = 0;
-let mouseX = 0;
-let mouseY = 0;
+let keyClicked = 0
+let mouseX = 0
+let mouseY = 0
 // we did a funcrion down there that logs all the mouvement of the mouse and keys so we will change
 // the default attitude of these special functions to reasign them those collected values
-document.onkeypress = keyPressed;
-document.onmousemove = mousePos;
-document.onmousedown = mouseClicked;
+document.onkeypress = keyPressed
+document.onmousemove = mousePos
+document.onmousedown = mouseClicked
 
-document.write(`${escapedChars} the length is ${escapedChars.length}`);
-document.write(`<br>${firstName.substring(6, firstName.length)}`);
+document.write(`${escapedChars} the length is ${escapedChars.length}`)
+document.write(`<br>${firstName.substring(6, firstName.length)}`)
 document.write(
   `<br> index of ${lastName.charAt(4)} is ${lastName.indexOf('o')}`
-);
-document.write(`<br> testing with the conditional op ${testConditional}<br>`);
+)
+document.write(`<br> testing with the conditional op ${testConditional}<br>`)
 document.write(
   `<br /> Random num 1 - 10 ${Math.floor(Math.random() * 10) + 1} <br />`
-);
+)
 
 // switch statement
 switch (state) {
   case 'affroun':
-    document.write('wrong <br>');
-    break;
+    document.write('wrong <br>')
+    break
   default:
-    document.write('default option <br>');
-    break;
+    document.write('default option <br>')
+    break
 }
-let num = 1;
+let num = 1
 while (num < 10) {
   if (num === 4) {
-    break;
+    break
     // break get out of the loop while completely without coming back
   }
-  num++;
-  continue;
+  num++
+  continue
   // continue get out of everything except the loop it will ignore what is down and get back from the while start
 }
 
 // it will sort the array from 1 2 3 4 5 6 and then it will log out the elements that were deleted
 console.log(
   `we deleted these ${arr.sort().splice(0, 3)} the new array is ${arr}`
-);
+)
 // so now we will work with the new arary 4 5 6 and then we will log out the items we wanna replace
 console.log(
   `we will replace these ${arr.splice(0, 3, 9, 10, 11)} the new array is ${arr}`
-);
+)
 
 /* for in & for of */
-document.write('<br> for in loop down here <br>');
+document.write('<br> for in loop down here <br>')
 
 // for in iterates the key or the indice of the element not the value so i here represents amine , hammou , kacem
 for (const i in vehicules) {
-  document.write(`<br> the key is ${i} & the value is ${vehicules[i]} <br>`);
+  document.write(`<br> the key is ${i} & the value is ${vehicules[i]} <br>`)
 }
-document.write('<br> second exemple for in <br>');
+document.write('<br> second exemple for in <br>')
 // for in iterates the key or the indice of the element not the value so i here represents 0,1,2 etc...
 for (const i in arr) {
   document.write(
     `<br> the index of the array ${i} & its real value ${arr[i]} <br>`
-  );
+  )
 }
 
-document.write('<br> for of loop down here <br>');
+document.write('<br> for of loop down here <br>')
 
 // for of iterates the value of the element so i here represents the real value of arr not the indice
 for (const i of arr) {
-  document.write(`<br> th value of a simple array ${i} <br>`);
+  document.write(`<br> th value of a simple array ${i} <br>`)
 }
 
-document.write('<br> second exemple for of <br>');
+document.write('<br> second exemple for of <br>')
 // there is a trick in a for of of an array of key value is that of you iterate it just like the 1st expl
 // it wont work so in this case you need a heigher order function (es6) called map to create a key value array
 // that for of can iterate and here is how to do that
 
-vehicules = new Map([['1', 'foo'], ['2', 'shoot']]);
+vehicules = new Map([['1', 'foo'], ['2', 'shoot']])
 // with this for of will give you the key and the value both
 for (const i of vehicules) {
-  document.write(`<br> the key with the value is ${i} <br> `);
+  document.write(`<br> the key with the value is ${i} <br> `)
 }
 // if we want to get deeper with it so that we wanna precise the key alone or the value alone we do this
 for (const [key, value] of vehicules) {
-  document.write(`<br> the key is ${key} & the value is ${value} <br> `);
+  document.write(`<br> the key is ${key} & the value is ${value} <br> `)
 }
 
 /* mouse keyboard position and clicked value trick */
 
 // here we are testing if the browser is internet explorer
-const mie = navigator.appName === 'Microsoft Internet Explorer';
+const mie = navigator.appName === 'Microsoft Internet Explorer'
 if (!mie) {
   // Specifies that you want all mouse movement events passed to the document
-  document.captureEvents(Event.MOUSEMOVE);
-  document.captureEvents(Event.MOUSEDOWN);
+  document.captureEvents(Event.MOUSEMOVE)
+  document.captureEvents(Event.MOUSEDOWN)
 }
 
 function mousePos(e) {
   if (!mie) {
     // here we assing the x,y mouvement of the mouse in the page we are in
-    mouseX = e.pageX;
-    mouseY = e.pageY;
+    mouseX = e.pageX
+    mouseY = e.pageY
   }
   // and then we target the form with its name and then the input of the mouse and modify its value
-  document.formx.formMouseX.value = mouseX;
-  document.formx.formMouseY.value = mouseY;
-  return true;
+  document.formx.formMouseX.value = mouseX
+  document.formx.formMouseY.value = mouseY
+  return true
 }
 // event.which returns 1 2 for the clicked mouse event (left ,right)
 // event.charCode returns the charCode of the keyboard so we need to convert it to a real letter
 function keyPressed(e) {
   if (!mie) {
-    keyClicked = String.fromCharCode(e.charCode); // Converts char code to character
+    keyClicked = String.fromCharCode(e.charCode) // Converts char code to character
   }
   if (keyClicked) {
-    document.formx.formKeyboardPress.value = keyClicked;
-    return true;
+    document.formx.formKeyboardPress.value = keyClicked
+    return true
   }
-  return false;
+  return false
 }
 
 function mouseClicked(e) {
   if (!mie) {
     switch (e.which) {
       case 1:
-        document.formx.formMousePress.value = 'Left';
-        break;
+        document.formx.formMousePress.value = 'Left'
+        break
       case 2:
-        document.formx.formMousePress.value = 'Middle';
-        break;
+        document.formx.formMousePress.value = 'Middle'
+        break
       default:
-        document.formx.formMousePress.value = 'Right';
-        break;
+        document.formx.formMousePress.value = 'Right'
+        break
     }
-    return true;
+    return true
   }
 }
 
@@ -288,42 +288,42 @@ function mouseClicked(e) {
 function showFirstPar() {
   document.querySelector('p').style.visibility = document.formx.check1.checked
     ? 'visible'
-    : 'hidden';
+    : 'hidden'
 }
 // change the text of h3 by using the firstchild
 // and the only child of h3 is the text and the text itself is the nodevalue
 function changenode() {
-  document.querySelector('h3').firstChild.nodeValue = 'you are over me';
+  document.querySelector('h3').firstChild.nodeValue = 'you are over me'
 }
 // changing the inner html meaning the the html of the text inside the h3 and concatinating it with +=
 function changehtml() {
-  document.querySelector('h3').innerHTML += ' and goodbye world';
+  document.querySelector('h3').innerHTML += ' and goodbye world'
 }
 
 // lets play a litle bit with node elements
 
-document.querySelector('div').addEventListener('click', nodeFunction);
+document.querySelector('div').addEventListener('click', nodeFunction)
 function nodeFunction() {
-  const div = document.querySelector('div');
-  const hr = document.createElement('hr');
-  const text = document.createTextNode('here is a last text added xd');
-  div.firstChild.nodeValue = 'hello world im the div itself';
+  const div = document.querySelector('div')
+  const hr = document.createElement('hr')
+  const text = document.createTextNode('here is a last text added xd')
+  div.firstChild.nodeValue = 'hello world im the div itself'
   // for some reason childnodes.value will not let
   // you change the original value so you have to remove the original child and then use it
-  div.removeChild(div.childNodes[1]);
-  div.childNodes[1].nodeValue = ' hello world im the new bold ';
-  div.removeChild(div.childNodes[2]);
-  div.removeChild(div.lastChild);
-  div.appendChild(text);
-  div.appendChild(hr);
+  div.removeChild(div.childNodes[1])
+  div.childNodes[1].nodeValue = ' hello world im the new bold '
+  div.removeChild(div.childNodes[2])
+  div.removeChild(div.lastChild)
+  div.appendChild(text)
+  div.appendChild(hr)
 }
 
 /* Regex its basicly like every other lang just the methods are different */
 
-document.write(`${email.match(regex)} <br>`); // it will give you the index of the match
-document.write(`${email.search(regex)} <br>`); // boolean search
-document.write(`${email.replace(regex, 'amine.kacem2015@gmail.io')} <br>`);
-document.write(`${regex.test(email)} <br>`); // test if the email is aquirent to the regex
+document.write(`${email.match(regex)} <br>`) // it will give you the index of the match
+document.write(`${email.search(regex)} <br>`) // boolean search
+document.write(`${email.replace(regex, 'amine.kacem2015@gmail.io')} <br>`)
+document.write(`${regex.test(email)} <br>`) // test if the email is aquirent to the regex
 
 /* validation of an email through an input and a span to log */
 
@@ -331,7 +331,7 @@ document.write(`${regex.test(email)} <br>`); // test if the email is aquirent to
 function emptySpan(spanId) {
   if (spanId != null)
     // while there is an element(child) delete it
-    while (spanId.firstChild) spanId.removeChild(spanId.firstChild);
+    while (spanId.firstChild) spanId.removeChild(spanId.firstChild)
 }
 // this is the main function that do all the work it checks the regex of the input (email)
 // & it logs out the error text into the span.
@@ -340,48 +340,48 @@ function nodeTextLog(regEXP, input, spanId, text) {
   if (!regEXP.test(input)) {
     // if there is value in the span then we delete it
     // then we log the error message
-    emptySpan(spanId);
-    spanId.appendChild(document.createTextNode(text));
-    return false;
+    emptySpan(spanId)
+    spanId.appendChild(document.createTextNode(text))
+    return false
   }
   // there is no error so we just
   // delete the span without loging the error
-  emptySpan(spanId);
-  return true;
+  emptySpan(spanId)
+  return true
 }
 // then we simply call that function with our error msg we can also
 // use it with validating number or idk we just change the regex and the msg lol
 function validateEmail(input, spanId) {
-  return nodeTextLog(regex, input.value, spanId, 'your email is wrong');
+  return nodeTextLog(regex, input.value, spanId, 'your email is wrong')
 }
 
 /* error handling */
 
-divide.addEventListener('blur', dividingByZero);
+divide.addEventListener('blur', dividingByZero)
 
 /* so this function basicly do the division and handles the error that comes from it
 and we gonna use the span to either launch an error message or just show the divison result */
 
 function dividingByZero() {
-  const spanID = document.getElementById('answer');
-  const num1 = document.formx.num1.value;
-  const num2 = document.formx.num2.value;
+  const spanID = document.getElementById('answer')
+  const num1 = document.formx.num1.value
+  const num2 = document.formx.num2.value
   // we use try to do our code and catch to handle the error
   try {
-    if (!num1 || !num2) throw new Error('please put values');
-    else if (num2 === 0) throw new Error('you cant devide on zero');
+    if (!num1 || !num2) throw new Error('please put values')
+    else if (num2 === 0) throw new Error('you cant devide on zero')
     // isNan : boolean function that verifs if it is a number
     else if (isNaN(num1) || isNaN(num2))
-      throw new Error('please enter a real number');
+      throw new Error('please enter a real number')
     // like before we delete anything in the spanid
-    emptySpan(spanID);
+    emptySpan(spanID)
     // then if everything is correct we echo out the correct answer
-    spanID.appendChild(document.createTextNode(num1 / num2));
+    spanID.appendChild(document.createTextNode(num1 / num2))
   } catch (errorMsg) {
     // like before we delete anything in the spanid just in case
-    emptySpan(spanID);
+    emptySpan(spanID)
     // then we just echo the error msg
-    spanID.appendChild(document.createTextNode(errorMsg));
+    spanID.appendChild(document.createTextNode(errorMsg))
   }
 }
 // cookies
@@ -391,53 +391,53 @@ function dividingByZero() {
 // then grab the cookie of the input name.
 document.formx.getcookie.addEventListener('blur', () => {
   // the cookie name we want to look for
-  const cookiename = document.formx.getcookie.value;
+  const cookiename = document.formx.getcookie.value
   // all the cookies saved in the dom
   // we split them to get a better look on a defined array of cookies
-  const allcookies = document.cookie.split(';');
-  let match = '';
-  let cookiedata = '';
+  const allcookies = document.cookie.split(';')
+  let match = ''
+  let cookiedata = ''
   for (let i = 0; i < allcookies.length; i++) {
     // we verify if the cookie name does exists in allcookies
     if (allcookies[i].indexOf(cookiename) !== -1) {
       // if true then we remove the extra white spaces
-      match = allcookies[i].trim();
+      match = allcookies[i].trim()
       // then get the cookiedate by taking a substring === cookiename from allcokies
       // +1 is to avoid the =
-      cookiedata = match.substr(cookiename.length + 1);
-      alert(`${cookiename} ${cookiedata}`);
+      cookiedata = match.substr(cookiename.length + 1)
+      alert(`${cookiename} ${cookiedata}`)
     }
   }
-});
+})
 
-document.formx.namecookie.addEventListener('blur', createcookie);
+document.formx.namecookie.addEventListener('blur', createcookie)
 
 // remember a cookie contain : name ,value , expirationdate,
 // path(if it starts with a dot . means the subfolders/files are included to the cookie), domain
 // expl : cookiename=firstname;path=./var/lib;expires=12 JAN 2019;
 // so this function will get the cookievalue and create a date and assing it to document.cookie simple as that
 function createcookie(cookiename) {
-  const cookievalue = document.formx.namecookie.value;
-  cookiename = 'firstname';
+  const cookievalue = document.formx.namecookie.value
+  cookiename = 'firstname'
   // cookiename = document.formx.namecookie;
   // we get the current date then we set the month value to 1 month ahead
   // then convert it to a GMTstring (localtime writing cookie default GMT)
-  const expirationDate = new Date();
-  expirationDate.setMonth(expirationDate.getMonth() + 1);
-  document.cookie = `${cookiename}=${cookievalue};path=/;expires=${expirationDate};`;
+  const expirationDate = new Date()
+  expirationDate.setMonth(expirationDate.getMonth() + 1)
+  document.cookie = `${cookiename}=${cookievalue};path=/;expires=${expirationDate};`
 }
 
 // function delete cookie : this function locate the cookie with the name remve the value and expires the date
 document.formx.deletecookie.addEventListener('blur', () => {
-  const cookiename = document.formx.deletecookie.value;
+  const cookiename = document.formx.deletecookie.value
   // a trick to delete a cookie we call the create cookie function
   // the first param is the new name to delete , the second we empty up the cookievalue ,
   // the third we changeback the date to expire it
-  return createcookie(cookiename, '', -1);
-});
+  return createcookie(cookiename, '', -1)
+})
 
-console.log(document.cookie);
-document.write(`<h3> here is your cookies : ${document.cookie} </h3>`);
+console.log(document.cookie)
+document.write(`<h3> here is your cookies : ${document.cookie} </h3>`)
 
 /* AJAX
    we get the http request then if its ready (meaning the readystate === 4 )
@@ -458,48 +458,48 @@ document.write(`<h3> here is your cookies : ${document.cookie} </h3>`);
 
 // constructor
 function Animal() {
-  this.name = 'start name';
-  this.sound = 'grrr';
-  this.owner = 'start owner';
+  this.name = 'start name'
+  this.sound = 'grrr'
+  this.owner = 'start owner'
 }
 // set a method that the animal class will always use and its called a prototype
 
-Animal.prototype.setOwner = function (newOwner) {
+Animal.prototype.setOwner = function(newOwner) {
   // we are checking of the variable newowner if it is not undefined then we assign it to this.owner
   // its called a setter
   return typeof newOwner !== 'undefined'
     ? (this.owner = newOwner)
-    : alert('please enter a valid owner');
-};
+    : alert('please enter a valid owner')
+}
 // same thing for the getter
-Animal.prototype.getOwner = function () {
-  return this.owner;
-};
+Animal.prototype.getOwner = function() {
+  return this.owner
+}
 // what encapsulation means is that to access any // attribute in the constructor u have to acces
 // them through the setters and getters
 
-const Dog = new Animal();
-Dog.setOwner('hammou');
-document.write(`${Dog.getOwner()} <br>`);
+const Dog = new Animal()
+Dog.setOwner('hammou')
+document.write(`${Dog.getOwner()} <br>`)
 
 // inheritance is adding subclass cat that inherit the same attrbts and methods from the superclass animal
 
 function Cat() {
   // animal calls this of the cat to add it as a subclass
-  Animal.call(this);
-  this.mode = 'happy';
+  Animal.call(this)
+  this.mode = 'happy'
 }
 // then this is to let cat knows that the superclass is Animal
-Cat.prototype = new Animal();
+Cat.prototype = new Animal()
 
 // then we need to create the constructor of the class cat just like this
-Cat.prototype.constructor = Cat();
+Cat.prototype.constructor = Cat()
 
 // after this u can add setters and getters for car
 
-const sophie = new Cat();
-const instance = sophie instanceof Cat;
-document.write(instance);
+const sophie = new Cat()
+const instance = sophie instanceof Cat
+document.write(instance)
 
 // method overloading : create methods inside of methods and add 2 3 more attributs to overload it
 /*

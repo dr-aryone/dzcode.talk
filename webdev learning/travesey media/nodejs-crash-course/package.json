@@ -2,13 +2,13 @@
   "name": "nodejs-crash-course",
   "version": "1.0.0",
   "description": "These files go with the Node crash course on YouTube.",
-  "main": "app.js",
+  "main": "nodejs.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app",
-    "dev": "nodemon app",
-    "esmstart": "node -r esm app",
-    "esmdev": "nodemon -r esm app"
+    "start": "node nodejs",
+    "dev": "nodemon nodejs",
+    "esmstart": "node -r esm nodejs",
+    "esmdev": "nodemon -r esm nodejs"
   },
   "keywords": [],
   "author": "Brad Traversy",

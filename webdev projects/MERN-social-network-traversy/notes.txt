@@ -1,0 +1,6 @@
+ctrl + ! => integrated terminal (keyboard shortcuts)
+npm i -g prettier-eslint
+npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjs validator
+npm i -D nodemon 
+
+// cl , nfn , fn , arfn , ifc , ifelsec , arrmth , axreq , fetchreq , asfetchreq , ndrq , expsrv , exprt , expmw

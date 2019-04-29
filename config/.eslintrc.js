@@ -68,6 +68,8 @@ module.exports = {
       }
     ],
     "no-console": 0,
+    "no-continue":0,
+    "no-restricted-globals":0,
     "import/prefer-default-export": 0,
     "import": 0,
     "func-names": 0,
