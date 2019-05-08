@@ -1,0 +1,18 @@
+<div class="projectbar">
+  <div class="project-list">
+    <img src="assets/moddoc.svg" class="logo">
+    <div class="project-head">
+      <p>Projects </p>
+    </div>
+    <div id="project-names">
+      <div class="project" *ngFor="let project of projects;  let last = last"
+        (click)="setCurrentProject(project,$event)">
+        <p id="{{project.name}}">{{project.name}}</p>
+        <span *ngIf="last || clicked === null">{{highlightProject()}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="add-project">
+    <h1 (click)="addProject($event)">+</h1>
+  </div>
+</div>

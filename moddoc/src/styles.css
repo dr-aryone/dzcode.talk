@@ -1,0 +1,193 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+}
+
+.main {
+  height: 100vh;
+}
+
+.menubar {
+  width: 100%;
+  height: 6vh;
+  background: #182231;
+  border-bottom: 1px solid rgb(23, 21, 35);
+}
+modulebar{
+  background-image: linear-gradient(-120deg, #d87f58, #bb4949);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  user-select: none;
+}
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  user-select: none;
+}
+
+.projectbar {
+  background-color: #182231;
+  border-right: 1px solid rgb(23, 21, 35);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.project {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  transition: background 1s;
+  width: 100%;
+  height: 50px;
+  padding: 0px 0px;
+  border-bottom: 1px solid rgb(23, 21, 35);
+  cursor: pointer;
+}
+.project:hover {
+  background: #2d3846;
+}
+.active-project{
+  background: #2d3846;
+}
+.project-head {
+  text-transform: uppercase;
+  color: white;
+  font-family: sans-serif;
+}
+.project-head p {
+  padding: 10px 5px;
+  border-bottom: 1px solid rgb(23, 21, 35);
+  margin: 0;
+  color: #f1ad49;
+  font-size: 12px;
+  font-weight: bolder;
+}
+.project p {
+  margin: 0px;
+  padding: 15px 10px;
+  text-transform: capitalize;
+}
+.add-project {
+  text-align: center;
+  color: #e9ad55;
+  cursor: pointer;
+}
+
+.module-head {
+  font-family: sans-serif;
+  color: #111419;
+  font-weight: 700;
+  font-size: 14px;
+  border-top: 1px solid #111419;
+  border-bottom: 1px solid #111419;
+  cursor: pointer;
+}
+.module-head p {
+  margin: 0;
+  padding: 10px 10px;
+}
+
+.package-list {
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  color: white;
+  padding: 10px 10px;
+}
+.project-list {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.down-arrow img {
+  width: 10px;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+.package p {
+  margin: 0px 25px 5px 25px;
+  text-transform: capitalize;
+}
+.package span {
+  font-size: 9px;
+  color: #111419;
+}
+.package {
+  cursor: pointer;
+}
+.logo {
+  width: 40px;
+  padding: 5px 15px;
+}
+.module-banner h1 {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #111419;
+}
+.module-banner {
+  padding: 10px;
+}
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+}
+.browser-body {
+  display: none;
+}
+webview {
+  border: none;
+  width: 100%;
+  height: -webkit-fill-available;
+}
+#clipper {
+  width: 100%;
+  text-align: right;
+  margin: -5px 8px;
+  font-size: 10px;
+}
+#clipper span {
+  cursor: pointer;
+  background: white;
+  padding: 4px;
+  user-select: none;
+}
+.markdown-body-frame {
+  max-width: 0px;
+  margin-top: 50px;
+}
+.browser {
+  font-family: sans-serif;
+  padding: 10px;
+  font-weight: lighter;
+  color: #dc3545;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .markdown-body {
+    padding: 15px;
+  }
+}
+.view-window {
+  margin-left: 300px;
+}
+.inactive-tab {
+  border-bottom: none;
+}
+.inactive-tab .down-arrow img,
+.inactive-dev-tab .down-arrow img {
+  transform: rotateZ(-90deg);
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}

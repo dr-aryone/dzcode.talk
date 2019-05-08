@@ -179,7 +179,7 @@
     "ngrok": "^3.1.1",
     "node-gyp": "^4.0.0",
     "node-libs-browser": "^2.2.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.12.0",
     "npm": "^6.9.0",
     "npm-collect": "^1.0.5",
     "npm-run-all": "^4.1.5",

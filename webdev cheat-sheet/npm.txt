@@ -20,3 +20,40 @@ npm shrinkwrap (google it)
 npm i -g eslint-config-airbnb eslint-config-airbnb-base eslint-config-jest-enzyme eslint-config-prettier eslint-config-standard eslint-config-standard-jsx eslint-plugin-babel eslint-plugin-flowtype eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise eslint-plugin-react eslint-plugin-standard prettier-eslint prettier-eslint-cli prettier-stylelint @typescript-eslint/eslint-plugin babel-eslint babel-core babel-loader babel-jest @typescript-eslint/parser typescript jshint eslint webpack babel eslint-plugin-typescript 
 
 You can do a trick for this. Create a simple js file, create an array for global packages. If this file is called, it will run the command to install all the listed packages in the array, but user need to do for example, npm install then npm run global. The global script you'll reference to the js file. – Lucas May 29 '18 at 13:15
+
+npm install -g npm-collect
+
+Useful when
+updating/developing several npm modules in parallel (especially using npm link)
+creating an package.json file after installing modules
+
+$ npm-collect --help
+Usage: npm-collect <options>
+Options:
+  --devDependencies    process dev-dependencies instead of dependencies
+  --new                include modules which are not found in package.json, but are installed
+  --save               write changes to package.json
+  -v <number>          verboselevel (0=silent,1=normal,2=debug)
+Examples
+Just see differences without writing to package.json
+
+$ npm-collect
+querystring@0.1.9 -> 0.2.0
+modulefoo@0.2.9 -> 0.3.0
+update your package.json
+
+$ npm-collect --save
+querystring@0.1.9 -> 0.2.0
+modulefoo@0.2.9 -> 0.3.0
+update package.json with newly discovered modules in node_modules
+
+$ npm-collect --new --save
+querystring@(unsaved) -> 0.2.0
+ohmypgrah@(unsaved)   -> 0.2.0
+******
+
+npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjs validator gravatar
+npm i -D nodemon 
+npm run electron-tsc ( moddoc for nodejs modules )
+
+****

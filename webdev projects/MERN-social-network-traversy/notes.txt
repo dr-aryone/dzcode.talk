@@ -1,6 +1,25 @@
 ctrl + ! => integrated terminal (keyboard shortcuts)
-npm i -g prettier-eslint
-npm i express mongoose passport passport-jwt jsonwebtoken body-parser bcryptjs validator
-npm i -D nodemon 
 
 // cl , nfn , fn , arfn , ifc , ifelsec , arrmth , axreq , fetchreq , asfetchreq , ndrq , expsrv , exprt , expmw
+
+shift + alt + arrowkeydown => copy down
+
+ctrl + d => select multiple item names its so handy
+
+
+send this to brad : the tostring method dosent work on comment.user so i used map to convert it into a string
+1/
+ const commentString = comment.map(item => item.user).toString()
+
+  if (commentString !== req.user.id)
+    return res.status(401).json({ msg: 'user not authorized' })
+
+2/ errorhandler middleware instead of try and catch
+
+
+git log and git checkout for collaboration
+
+
+postman nodejs mongodb atlas (mongodb:/localhost/devconnect)
+npm i
+git bash ( npm run server ) 

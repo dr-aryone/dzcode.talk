@@ -523,3 +523,64 @@ function DoAnimalStuff (Cat){
   document.write(Cat.getOwner());
 }
 */
+
+/****  ERROR HANDLING WITH WES BOS ASYNC AWAIT *****/
+
+// using catch out side the function
+ go().catch(e => console.error(e));
+
+// create a custom function to check for errors without a try and catch block
+
+// make a function to handle that error
+function handleError(fn) {
+  return function (...params) {
+    return fn(...params).catch(function (err) {
+       // do something with the error!
+      console.error(`Oops!`, err);
+    });
+  }
+}
+
+// Wrap it in a HOC
+
+const handleError = fn => (...params) => fn(...params).catch(console.error)
+const safeVerif = handleError(passportVerif)
+// module.exports = safeVerif
+safeYolo();
+
+  // Start with a regular Route where an error could happen
+    const getOrders = async (req, res, next) => {
+      const orders = Orders.find({ email: req.user.email });
+      // Something Goes Wrong
+      if (!orders.length) throw Error('No Orders Found');
+    }
+    const getOrders = async (req, res, next) => {
+      const orders = Orders.find({ email: req.user.email });
+      // Something Goes Wrong
+      if (!orders.length) throw Error('No Orders Found');
+    }
+    next('No Orders Found!');
+    // passes this along to the next middleware function
+    // Since this unhandled, this route would case the app to quit
+    router.get('/orders', catchErrors(getOrders));
+    const displayErrors = async (error, req, res, next) => {
+      res.status(err.status || 500);
+      res.render('error', { error });
+    }
+    // any time we call next('Something Happened') displayErrors will kick in
+    app.use(displayErrors);
+    const catchErrors = (fn) => {
+      return function (req, res, next) {
+        return fn(req, res, next).catch(next);
+      };
+    };
+    // or Hot Shot
+    const catchErrors = (fn) =>
+      (req, res, next) => fn(req, res, next).catch(next)
+    async function loadData() {
+      const wes = await axios.get('...');
+    }
+    loadData.catch(dealWithErrors);
+    process.on('unhandledRejection', error => {
+      console.log('unhandledRejection', error);
+    });

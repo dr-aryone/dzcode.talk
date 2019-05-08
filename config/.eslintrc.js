@@ -70,6 +70,8 @@ module.exports = {
     "no-console": 0,
     "no-continue":0,
     "no-restricted-globals":0,
+    "no-multi-assign":0,
+    "no-undef":0,
     "import/prefer-default-export": 0,
     "import": 0,
     "func-names": 0,
@@ -97,20 +99,23 @@ module.exports = {
       }
     ],
     "radix": 0,
-    "no-shadow": [
-      2,
-      {
-        "hoist": "all",
-        "allow": [
-          "resolve",
-          "reject",
-          "done",
-          "next",
-          "err",
-          "error"
-        ]
-      }
-    ],
+    "no-shadow": 0,
+
+    // "no-shadow": [
+    //   2,
+    // 0 allow , 1 dont allow , 2 allow with conditions
+    //   {
+    //     "hoist": "all",
+    //     "allow": [
+    //       "resolve",
+    //       "reject",
+    //       "done",
+    //       "next",
+    //       "err",
+    //       "error"
+    //     ]
+    //   }
+    // ],
     "quotes": [
       2,
       "single",

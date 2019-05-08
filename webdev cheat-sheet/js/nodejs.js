@@ -145,11 +145,11 @@ const server = http.createServer((req, res) => {
     if (err) {
       // if the path is not found error then we redirect to our html error page
       if (err.code === 'ENOENT') {
-        fs.readFile(filePathError, (error, content) => {
+        fs.readFile(filePathError, (err, data) => {
           // we make 200 http status to server an error html page that exists
           // write the headers (post request) => http code + contenttype object
           res.writeHead(200, { 'Content-Type': contentType })
-          res.end(content, encoding)
+          res.end(data, encoding)
         })
       } else {
         // 500 error in the server
@@ -251,6 +251,7 @@ fs.mkdir(path.join(__dirname, '/fsfolder2'), {}, err => {
 // delete a folder
 // NOTE : you must create a folder named "myFolderToDelete".
 // NOTE : myFolderToDelete must be an empty folder.
+
 fs.rmdir(path.join(__dirname, '/fsempty'), err => {
   if (err) throw err
 

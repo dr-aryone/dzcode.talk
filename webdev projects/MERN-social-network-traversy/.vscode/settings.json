@@ -1,9 +1,9 @@
 {
   "workbench.colorCustomizations": {
-    "editor.selectionBackground": "#135564",
-    "titleBar.activeForeground": "#ffcc",
-    "titleBar.inactiveForeground": "#FFF",
     "titleBar.inactiveBackground": "#FFF000CC",
+    "titleBar.inactiveForeground": "#FFF",
+    "editor.selectionBackground": "#135564",
     "tab.unfocusedActiveBorder": "#fff0"
-  }
+  },
+  "mocha.subdirectory": "..\\..\\..\\..\\..\\..\\..\\c:\\xampp\\htdocs\\projects\\code talk\\dzcode.talk\\webdev projects\\MERN-social-network-traversy\\midlleware"
 }

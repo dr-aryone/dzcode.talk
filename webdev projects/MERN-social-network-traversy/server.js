@@ -1,23 +1,36 @@
 const express = require('express')
-const mongoose = require('mongoose')
+const path = require('path')
+const bodyParser = require('body-parser')
+const ConnectDB = require('./config/db')
+const errorHandler = require('./middleware/errorhandler')
 
 const app = express()
 
-// DB config
-const db = require('./config/keys').mongoURI
+app.use(errorHandler.displayErrors)
 
-// Connect to MongoDB
-mongoose
-  .connect(db)
-  .then(() => console.log('mongoDB Connected'))
-  .catch(err => console.log(err))
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
-// mongoose.connect(db, err => {
-//   if (err) console.log(err)
-//   console.log('mongoDB Connected')
-// })
+// connect db
+ConnectDB()
 
-app.get('/', (req, res) => res.send('Hello world'))
+// use routes
+app.use('/api/users', require('./routes/api/users'))
+app.use('/api/posts', require('./routes/api/posts'))
+app.use('/api/profile', require('./routes/api/profile'))
+app.use('/api/auth', require('./routes/api/auth'))
+
+// Serve static assets in production
+if (process.env.NODE_ENV === 'production') {
+  // Set static folder
+  app.use(express.static('client/build'))
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  })
+}
+
+errorHandler.unhandleRejection()
 
 const port = process.env.PORT || 5000
 
