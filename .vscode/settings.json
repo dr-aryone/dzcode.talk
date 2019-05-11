@@ -8,10 +8,9 @@
   ],
   "dimmer.enabled": false,
   "workbench.colorCustomizations": {
-    "editor.selectionBackground": "#135564",
-    "titleBar.activeForeground": "#ffcc",
-    "titleBar.inactiveForeground": "#FFF",
     "titleBar.inactiveBackground": "#FFF000CC",
+    "titleBar.inactiveForeground": "#FFF",
+    "editor.selectionBackground": "#135564",
     "tab.unfocusedActiveBorder": "#fff0"
   }
 }

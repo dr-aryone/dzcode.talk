@@ -6,6 +6,10 @@ shift + alt + arrowkeydown => copy down
 
 ctrl + d => select multiple item names its so handy
 
+create-react-app client 
+
+rfc => functional component ,
+rcc => class based comp
 
 send this to brad : the tostring method dosent work on comment.user so i used map to convert it into a string
 1/
@@ -16,10 +20,4 @@ send this to brad : the tostring method dosent work on comment.user so i used ma
 
 2/ errorhandler middleware instead of try and catch
 
-
-git log and git checkout for collaboration
-
-
-postman nodejs mongodb atlas (mongodb:/localhost/devconnect)
-npm i
-git bash ( npm run server ) 
+Moddoc for a quick nice docs for node modules

@@ -1,15 +1,18 @@
 {
-  "workbench.colorTheme": "An Old Hope Classic",
+  "workbench.colorTheme": "Atom One Dark",
   //"editor.fontFamily": "Operator Mono, Fira Code, Consolas, 'Courier New', monospace, Inconsolata, Architects Daughter, Monofur, Monaco2, Menlo, Roboto Mono",
   "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#b52e31",
+    "titleBar.inactiveBackground": "#b52e3199",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveForeground": "#e7e7e799",
     "editor.selectionBackground": "#135564",
-    "titleBar.activeForeground": "#ffcc",
-    "titleBar.activeBackground": "#030303cc",
-    "titleBar.inactiveForeground": "#FFF",
-    "titleBar.inactiveBackground": "#FFF000CC",
+    // "titleBar.activeForeground": "#ffcc",
+    // "titleBar.activeBackground": "#030303cc",
+    // "titleBar.inactiveForeground": "#FFF",
+    // "titleBar.inactiveBackground": "#FFF000CC",
     "activityBar.background": "#123456"
   },
-  "editor.fontFamily": "'Fira Code', 'Operator Mono', Consolas, Menlo, Monaco, 'Courier New', Monospace, flottflott",
   "terminal.integrated.fontFamily": "'Fira Code', 'Operator Mono', Consolas, Menlo, Monaco, 'Courier New', Monospace, flottflott",
   "editor.glyphMargin": true,
   "explorer.confirmDragAndDrop": false,
@@ -39,25 +42,14 @@
   "importCost.smallPackageColor": "#99ccffcc",
   "editor.fontSize": 14, // for the tv
   // "editor.fontSize": 15,
-  "editor.lineHeight": 25,
-  "editor.letterSpacing": 0.5,
-  "files.trimTrailingWhitespace": true,
-  "editor.fontWeight": "400",
-  "editor.cursorStyle": "line",
-  "editor.cursorWidth": 3,
-  "editor.renderWhitespace": "all",
   "vscode_custom_css.policy": true,
   "editor.fontLigatures": true,
-  "window.zoomLevel": 0,
-  "workbench.activityBar.visible": true,
   "liveServer.settings.donotVerifyTags": true,
   "window.menuBarVisibility": "default",
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
-  "editor.wordWrap": "on",
   "editor.smoothScrolling": true,
-  "editor.multiCursorModifier": "ctrlCmd",
   "editor.quickSuggestions": {
     "strings": true
   },
@@ -67,7 +59,6 @@
   "git.enableSmartCommit": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "files.autoGuessEncoding": true,
-  "files.insertFinalNewline": true,
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
@@ -91,21 +82,7 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
-  "editor.tabSize": 2,
-  /*   "team.showWelcomeMessage": false,
-   */
-  "workbench.editor.tabSizing": "shrink",
-  "html.format.enable": true,
-  "html.format.preserveNewLines": true,
-  "editor.rulers": [
-    80,
-    100,
-    120
-  ],
-  "editor.formatOnSave": true,
-  "files.autoSave": "afterDelay",
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true,
   "emmet.triggerExpansionOnTab": true,
   "editor.wordBasedSuggestions": true,
   "editor.tabCompletion": "on",
@@ -122,31 +99,24 @@
   "tslint.exclude": [
     "**/*.js"
   ],
+  "sublimeTextKeymap.promptV3Features": "true",
+  "files.autoSave": "onFocusChange",
+  "prettier.eslintIntegration": true,
+  "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
   "[javascript]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "mgmcdermott.vscode-language-babel"
+    // "editor.defaultFormatter": "mgmcdermott.vscode-language-babel"
   },
   "[javascriptreact]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "mgmcdermott.vscode-language-babel"
+    // "editor.defaultFormatter": "mgmcdermott.vscode-language-babel"
   },
   "prettier.disableLanguages": [
     "javascript",
     "javascriptreact",
-    "babel",
     "vue"
   ],
-  "emmet.includeLanguages": {
-    "edge": "html",
-    "blade": "html",
-    "html": "html",
-    "erb": "erb",
-    "javascript": "javascriptreact",
-    "vue-html": "html",
-    "plaintext": "jade",
-    "ejs": "html",
-    "php": "html"
-  },
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
@@ -156,7 +126,6 @@
   ],
   "eslint.enable": true,
   "editor.renderIndentGuides": false,
-  "editor.showFoldingControls": "always",
   "editor.folding": true,
   "editor.foldingStrategy": "indentation",
   "jshint.lintHTML": true,
@@ -205,35 +174,8 @@
     // "**/dll/*": true,
     // "**/compiled/*": true,
   },
-  "files.exclude": {
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/node_modules/*/**": true,
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/.next": true,
-    "**/*.ngfactory.ts": true,
-    "**/*.ngsummary.json": true,
-    "**/*.dll.js": true,
-    "**/*.dll.js.map": true,
-    "**/usr/*": true,
-    "**/coverage/*": true,
-    "**/_node-modules": true,
-    "**/node_modules": true
-    // "**/*.bundle.js": true,
-    // "**/dist/*": true,
-    // "**/dll/*": true,
-    // "**/compiled/*": true,
-  },
   "quokka.showOutputOnStart": false,
   "terminal.integrated.rendererType": "dom",
-  "vscode_custom_css.imports": [
-    "file:///C:/xampp/htdocs/projects/code%20talk/dzcode.talk/config/vscodestyles.css"
-    //"file:///C:/Users/Hp/.vscodestyles.css"
-  ],
   "liveServer.settings.multiRootWorkspaceName": "dzcode.talk",
   "gitProjectManager.baseProjectsFolders": [
     "C:\\xampp\\htdocs\\projects\\code talk\\dzcode.talk"
@@ -283,7 +225,102 @@
   ],
   "dimmer.enabled": false,
   "editor.gotoLocation.multiple": "goto",
-  "autoimport.useSemiColon": false
+  "autoimport.useSemiColon": false,
+  "vsicons.projectDetection.disableDetect": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "Operator Mono, Fira Code, Menlo, Monaco, 'Courier New', Monospace, Consolas, flottflott",
+  "window.zoomLevel": 0,
+  "editor.rulers": [
+    80,
+    100,
+    120
+  ],
+  "emmet.includeLanguages": {
+    "edge": "html",
+    "blade": "html",
+    "html": "html",
+    "erb": "erb",
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "plaintext": "jade",
+    "ejs": "html",
+    "php": "html"
+  },
+  "files.exclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.next": true,
+    "**/*.ngfactory.ts": true,
+    "**/*.ngsummary.json": true,
+    "**/*.dll.js": true,
+    "**/*.dll.js.map": true,
+    "**/usr/*": true,
+    "**/coverage/*": true,
+    "**/_node-modules": true,
+    "**/node_modules": true
+    // "**/*.bundle.js": true,
+    // "**/dist/*": true,
+    // "**/dll/*": true,
+    // "**/compiled/*": true,
+  },
+  "vscode_custom_css.imports": [
+    "file:///C:/xampp/htdocs/projects/code%20talk/dzcode.talk/config/vscodestyles.css"
+    //"file:///C:/Users/Hp/.vscodestyles.css"
+  ],
+  "editor.letterSpacing": 0.5,
+  "files.trimTrailingWhitespace": true,
+  "editor.fontWeight": "400",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.renderWhitespace": "all",
+  "workbench.activityBar.visible": true,
+  "editor.wordWrap": "on",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "files.insertFinalNewline": false,
+  "editor.tabSize": 2,
+  /*   "team.showWelcomeMessage": false,
+  */
+  "workbench.editor.tabSizing": "shrink",
+  "html.format.enable": true,
+  "html.format.preserveNewLines": true,
+  "editor.showFoldingControls": "always",
+  "editor.lineHeight": 40,
+  // "[jade]": {
+  //   "togglequotes.chars": [
+  //     "\"",
+  //     "'",
+  //     "`"
+  //   ]
+  // },
+  "editor.quickSuggestionsDelay": 30,
+  "editor.cursorBlinking": "expand",
+  // "editor.colorDecorators": false,
+  // "editor.minimap.enabled": false,
+  "editor.minimap.showSlider": "always",
+  "workbench.startupEditor": "newUntitledFile",
+  // show snippets before any other auto completion
+  "editor.snippetSuggestions": "top",
+  // this lets you quick open multiple items in a row and now have the previous ones closed on you
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
+  "editor.autoIndent": true,
+  "editor.useTabStops": true,
+  // "editor.detectIndentation": false,
+  "window.closeWhenEmpty": true,
+  "editor.find.seedSearchStringFromSelection": true,
+  "editor.matchBrackets": true,
+  "window.openFilesInNewWindow": "off",
+  "workbench.editor.enablePreview": true,
+  "editor.scrollBeyondLastLine": true,
+  "editor.parameterHints.enabled": false
   // "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
   // "php.executablePath": "C:\\xampp\\php\\php.exe",
   // "phpserver.phpPath": "C:\\xampp\\php\\php.exe",

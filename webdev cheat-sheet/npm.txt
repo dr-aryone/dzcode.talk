@@ -15,7 +15,10 @@ npm config delete proxy
 npm config delete http-proxy
 npm config delete https-proxy
 
-npm shrinkwrap (google it)
+SET PATH=C:\Program Files\Nodejs;%PATH%
+
+
+npm shrinkwrap locks your dependencies version
 
 npm i -g eslint-config-airbnb eslint-config-airbnb-base eslint-config-jest-enzyme eslint-config-prettier eslint-config-standard eslint-config-standard-jsx eslint-plugin-babel eslint-plugin-flowtype eslint-plugin-import eslint-plugin-jest eslint-plugin-jsx-a11y eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise eslint-plugin-react eslint-plugin-standard prettier-eslint prettier-eslint-cli prettier-stylelint @typescript-eslint/eslint-plugin babel-eslint babel-core babel-loader babel-jest @typescript-eslint/parser typescript jshint eslint webpack babel eslint-plugin-typescript 
 
@@ -57,3 +60,27 @@ npm i -D nodemon
 npm run electron-tsc ( moddoc for nodejs modules )
 
 ****
+all in one =>
+
+npm dedupe && npm outdated && npm update && npx npm-update-all && npm-collect && npm-collect --save && npm-collect --new --save && npm audit fix --force && npm cache clean --force
+
+***
+npm init -y from a folder with node modules in it and it will generate the mods for you
+***
+Run npm-check-updates to list what packages are out of date (basically the same thing as running npm outdated)
+Run npm-check-updates -u to update all the versions in your package.json (this is the magic sauce)
+Run npm update as usual to install the new versions of your packages based on the updated package.json
+
+***
+npm i -g npm-check-updates && ncu -u && npm i
+npx npm-check -u
+***
+5. Lock down your dependencies versions
+Run: npm shrinkwrap
+
+Using shrinkwrap in your project generates an npm-shrinkwrap.json file. This allows you to pin the dependencies of your project to the specific version you’re currently using within your node_modules directory. When you run npm install and there is a npm-shrinkwrap.json present, it will override the listed dependencies and any semver ranges in package.json.
+
+If you need verified consistency across package.json, npm-shrinkwrap.json and node_modules for your project, you should consider using npm-shrinkwrap.
+
+***
+npm i -g esm => a node module for compiling import from syntax
