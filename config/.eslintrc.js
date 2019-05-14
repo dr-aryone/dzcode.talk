@@ -28,6 +28,7 @@ module.exports = {
      "sourceType": "module",
     // Can I remove these now?
     "ecmaFeatures": {
+      "allowImportExportEverywhere": true,
       "experimentalObjectRestSpread": true,
       "jsx": true,
       "impliedStrict": true,
